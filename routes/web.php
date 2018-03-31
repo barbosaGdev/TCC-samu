@@ -23,3 +23,5 @@ Route::get('/admin', ['middleware' => 'authAdmin', 'uses' => 'HomeController@adm
 
 
 
+
+

@@ -27,12 +27,7 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/home';
 
-    protected function redirectTo()
-    {
-       if ($_POST['email'] == 'admin@adm.com') {
-           return redirect('/admin');
-       }
-    }
+  
 
     /**
      * Create a new controller instance.
