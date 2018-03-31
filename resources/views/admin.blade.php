@@ -4,18 +4,24 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            
                 <h1>Bem Vindo Administrador!</h1>
+                <br>
                 <h2>O que deseja fazer?</h2>
+                <br>
 
-                <a href="{{ route('register') }}">Registrar novos Colaboradores</a>
-                <p>Lista de quem está realizando o cursos</p>
+                <ul>
+                <li><a href="{{ route('register') }}">Registrar novos Colaboradores</a></li>
+               
 
-                <a href="/adminOuvidoria">Ouvidoria</a>
+                <li><a href="/adminOuvidoria">Ouvidoria</a></li>
                 
-                <a href="/adminAddCurso" >Adicionar novos cursos</a>
+                <li><a href="/adminAddCurso" >Adicionar novos cursos</a></li>
 
-            </div>
+                <li><p>Lista de quem está realizando o cursos</p></li>
+
+                </ul>
+            
         </div>
     </div>
 </div>
