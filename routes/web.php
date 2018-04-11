@@ -21,6 +21,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', ['middleware' => 'authAdmin', 'uses' => 'HomeController@admin' ]);
 
-
+Route::get('/inserir', 'CursoController@inserir');
+Route::post('/salvar', 'CursoController@salvar');
+Route::get('/cursos', 'CursoController@cursos');
+Route::get('/cursosView/{dados}', 'CursoController@cursosView');
 
 
