@@ -19,6 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/ouvidoria', 'OuvidoriaController@ouvidoria');
+
+Route::post('/saveFeedback', 'OuvidoriaController@saveFeedback');
+
 Route::get('/admin', ['middleware' => 'authAdmin', 'uses' => 'HomeController@admin' ]);
 
 
