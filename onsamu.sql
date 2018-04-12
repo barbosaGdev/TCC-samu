@@ -23,7 +23,7 @@ USE `onsamu` ;
 CREATE TABLE IF NOT EXISTS `onsamu`.`cursos` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NULL,
-  `descricao` VARCHAR(100) NULL,
+  `descricao` MEDIUMTEXT NULL,
   `video` VARCHAR(150) NULL,
   `imagem` VARCHAR(150) NULL,
   `created_at` TIMESTAMP NULL,
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`feedback` (
   `nome` VARCHAR(45) NULL,
   `telefone` VARCHAR(45) NULL,
   `email` VARCHAR(45) NULL,
-  `texto` VARCHAR(300) NULL,
+  `texto` MEDIUMTEXT NULL,
   `created_at` TIMESTAMP NULL,
   `updated_at` TIMESTAMP NULL,
   PRIMARY KEY (`id`))
@@ -61,20 +61,6 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`users` (
   `remember_token` VARCHAR(150) NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
-
-CREATE TABLE IF NOT EXISTS `onsamu`.`cursos` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `nome` VARCHAR(45) NULL,
-  `descricao` VARCHAR(100) NULL,
-  `video` VARCHAR(45) NULL,
-  `created_at` TIMESTAMP NULL,
-  `updated_at` TIMESTAMP NULL,
-  `imagem` VARCHAR(150) NULL,
-  `pdf` VARCHAR(150) NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
 
 -- -----------------------------------------------------
 -- Table `mydb`.`cursos_has_users`
