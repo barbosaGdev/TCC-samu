@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-8">
-            <h1 class="display-3">Ouvidoria teste</h1>
+            <h1 class="display-3">Ouvidoria do Samu</h1>
 
     <form action="/saveFeedback" method="post">
         {{ csrf_field() }}
@@ -37,7 +37,7 @@
         
         <div class="form-group">
     
-        <label for="texto">Feedback</label>
+        <label for="texto">Críticas,Sugestões e Reclamações</label>
         <input class="form-control" type="text" id="texto" name="texto">
         </div>
 

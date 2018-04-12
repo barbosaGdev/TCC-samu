@@ -17,7 +17,7 @@ class authAdmin
     {
         $loggedUser = \Auth::user();
 
-        if($loggedUser['email'] != 'admin@adm.com' ){
+        if($loggedUser['email'] != 'admin@samu.com' ){
 
             return redirect('/home');
 

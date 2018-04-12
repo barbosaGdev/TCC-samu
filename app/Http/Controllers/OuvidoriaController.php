@@ -16,15 +16,15 @@ class OuvidoriaController extends Controller
     public function saveFeedback(Request $request)
     {
     
-        $user = new Feedback();   
+        $feedback = new Feedback();   
      
-        $user->nome = $request->nome;
-        $user->telefone = $request->telefone;
-        $user->email = $request->email;
-        $user->texto = $request->texto;
+        $feedback->nome = $request->nome;
+        $feedback->telefone = $request->telefone;
+        $feedback->email = $request->email;
+        $feedback->texto = $request->texto;
         
         
-        $user->save();
+        $feedback->save();
         
         return redirect('/');
         

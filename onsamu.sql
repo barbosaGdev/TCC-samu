@@ -14,13 +14,13 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- -----------------------------------------------------
 -- Schema mydb
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `onsamu` DEFAULT CHARACTER SET utf8 ;
+USE `onsamu` ;
 
 -- -----------------------------------------------------
 -- Table `mydb`.`cursos`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`cursos` (
+CREATE TABLE IF NOT EXISTS `onsamu`.`cursos` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NULL,
   `descricao` VARCHAR(100) NULL,
@@ -36,7 +36,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`feedbacks`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `onsamu`.`feedbacks` (
+CREATE TABLE IF NOT EXISTS `onsamu`.`feedback` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NULL,
   `telefone` VARCHAR(45) NULL,
@@ -99,6 +99,8 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`cursos_has_users` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
+
+INSERT INTO `users` (`name`, `password`, `email`, `remember_token`) VALUES ('AdminSamu', '$10$3SBVcTBkQicYVleQkasVOOrShhasCq0v1zVm2ofT7dOp7NCx22Y9m', 'admin@samu.com', 'HIvjs071x7KKFmtDi8HWi0M5LENA0fvbqdEKz6xZtdisbee15xIugnUMVOTu');
 
 
 SET SQL_MODE=@OLD_SQL_MODE=NULL;
