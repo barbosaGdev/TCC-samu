@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Feedback;
+
 class OuvidoriaController extends Controller
 {
     public function ouvidoria()
@@ -14,7 +16,7 @@ class OuvidoriaController extends Controller
     public function saveFeedback(Request $request)
     {
     
-        $user = new User();   
+        $user = new Feedback();   
      
         $user->nome = $request->nome;
         $user->telefone = $request->telefone;

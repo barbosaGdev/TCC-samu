@@ -9,10 +9,22 @@ use App\Curso;
 class CursoController extends Controller
 {
 
+
+    //para acessar as funções desse controlador, será necessário realizar o login
+    
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+  
+
+
     public function inserir()
     {
         return view('inserir_curso');
     }
+
     public function salvar(Request $request)
     {
         $cursos = new Curso();

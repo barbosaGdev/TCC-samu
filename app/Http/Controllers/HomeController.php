@@ -31,11 +31,7 @@ class HomeController extends Controller
         return view('admin');
     }
 
-    public function registra()
-    {
-        return view('registra');
-    }
-
+   
     
     
 
