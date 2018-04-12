@@ -10,12 +10,12 @@ class CursoController extends Controller
 {
 
 
-    //para acessar as funções desse controlador, será necessário realizar o login
+    // //para acessar as funções desse controlador, será necessário realizar o login
     
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
   
 
