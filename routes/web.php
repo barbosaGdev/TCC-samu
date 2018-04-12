@@ -23,6 +23,8 @@ Route::get('/ouvidoria', 'OuvidoriaController@ouvidoria');
 
 Route::post('/saveFeedback', 'OuvidoriaController@saveFeedback');
 
+Route::get('/adminOuvidoria', ['middleware' => 'authAdmin', 'uses' => 'HomeController@ouvidoria' ]);
+
 Route::get('/admin', ['middleware' => 'authAdmin', 'uses' => 'HomeController@admin' ]);
 
 Route::get('/inserir', 'CursoController@inserir');

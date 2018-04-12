@@ -100,7 +100,6 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`cursos_has_users` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-INSERT INTO `users` (`name`, `password`, `email`, `remember_token`) VALUES ('AdminSamu', '$10$3SBVcTBkQicYVleQkasVOOrShhasCq0v1zVm2ofT7dOp7NCx22Y9m', 'admin@samu.com', 'HIvjs071x7KKFmtDi8HWi0M5LENA0fvbqdEKz6xZtdisbee15xIugnUMVOTu');
 
 
 SET SQL_MODE=@OLD_SQL_MODE=NULL;

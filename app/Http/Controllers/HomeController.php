@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Feedback;
+
 class HomeController extends Controller
 {
     /**
@@ -31,6 +33,12 @@ class HomeController extends Controller
         return view('admin');
     }
 
+    public function ouvidoria()
+    {
+        $dados = Feedback::all();
+
+        return view('ouvidoriaAdmin', compact('dados'));
+    }
    
     
     
