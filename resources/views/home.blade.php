@@ -4,20 +4,13 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
                     Olá,Colaborador!
+
+                    @foreach ($dados as $v)
+                    {{ $v->nome }} 
+                     <a href="/insert/{{$v->id}}" class="btn btn-primary">Cursar</a> <br>
+                     @endforeach
                 </div>
             </div>
         </div>
-    </div>
-</div>
 @endsection

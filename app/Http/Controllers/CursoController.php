@@ -10,17 +10,17 @@ class CursoController extends Controller
 {
 
 
-    // //para acessar as funções desse controlador, será necessário realizar o login
+    //para acessar as funções desse controlador, será necessário realizar o login
     
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
   
 
 
-    public function inserir()
+    public function adminAddCurso()
     {
         return view('inserir_curso');
     }
@@ -41,16 +41,25 @@ class CursoController extends Controller
     }
 
     public function cursos()
-    {
+    {   
+
         $dados = Curso::All();
 
-        return view('cursos', compact('dados'));
+        return view('home', compact('dados'));
 
     }
 
+    public function insert()
+    {
+        $loggedUser = \Auth::user();
+
+
+    }
 
     public function cursosView(Curso $dados)
     {
+
+
         return view('cursosView', compact('dados'));
     }
 

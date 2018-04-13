@@ -27,9 +27,11 @@ Route::get('/adminOuvidoria', ['middleware' => 'authAdmin', 'uses' => 'HomeContr
 
 Route::get('/admin', ['middleware' => 'authAdmin', 'uses' => 'HomeController@admin' ]);
 
-Route::get('/inserir', 'CursoController@inserir');
+Route::get('/adminAddCurso', ['middleware' => 'authAdmin', 'uses' => 'CursoController@adminAddCurso' ]);
 Route::post('/salvar', 'CursoController@salvar');
 Route::get('/cursos', 'CursoController@cursos');
 Route::get('/cursosView/{dados}', 'CursoController@cursosView');
+Route::get('/insert/{dados}', 'CursoController@insert');
+
 
 

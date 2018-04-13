@@ -19,7 +19,7 @@ class authAdmin
 
         if($loggedUser['email'] != 'admin@samu.com' ){
 
-            return redirect('/home');
+            return redirect('/cursos');
 
         } 
             
