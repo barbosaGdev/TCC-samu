@@ -52,10 +52,10 @@ class CursoController extends Controller
 
     public function insert(Request $request)
     {
+        $cursando = new Curso_has_user();
+        
         $loggedUser = \Auth::user();
         
-        $cursando = new Curso_has_user;
-
         $cursando->users_id = $loggedUser['id'];
         $cursando->cursos_id = $request->id;
 

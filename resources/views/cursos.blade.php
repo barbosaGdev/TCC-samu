@@ -10,10 +10,15 @@
     <body>
     
     @foreach ($dados as $v)
+    
         {{ $v->nome }} 
+
     <form action="/insert" method="post">
+
     <input type="hidden" value="{{$v->id}}" name="id">
+
     <button class="btn btn-primary">Cursar</button> <br>
+
     </form>
     @endforeach
 
