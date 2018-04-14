@@ -4,12 +4,17 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-                    Olá,Colaborador!
+        @foreach ($dados as $v)
+    
+            {{ $v->nome }} 
 
-                    @foreach ($dados as $v)
-                    {{ $v->nome }} 
-                     <a href="/insert/{{$v->id}}" class="btn btn-primary">Cursar</a> <br>
-                     @endforeach
+            <form action="/insert" method="post">
+
+                <input type="hidden" value="{{$v->id}}" name="id">
+                <button class="btn btn-primary">Cursar</button> <br>
+
+            </form>
+        @endforeach
                 </div>
             </div>
         </div>

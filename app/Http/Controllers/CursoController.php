@@ -60,7 +60,8 @@ class CursoController extends Controller
         $cursando->cursos_id = $request->id;
 
         $cursando->save();
-        return redirect('/cursos');
+
+        return redirect('/cursosView/{$request->id}');
         
 
 
