@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Curso;
-use App\Curso_has_user;
+use App\Cursos_has_user;
 
 class CursoController extends Controller
 {
@@ -52,18 +52,14 @@ class CursoController extends Controller
 
     public function insert(Request $request)
     {
-        $cursando = new Curso_has_user();
-        
+        $cursando = new Cursos_has_user();
         $loggedUser = \Auth::user();
         
         $cursando->users_id = $loggedUser['id'];
         $cursando->cursos_id = $request->id;
 
         $cursando->save();
-
-        return redirect('/cursosView/{$request->id}');
-        
-
+        return redirect('/');
 
     }
 

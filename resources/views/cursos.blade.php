@@ -14,11 +14,9 @@
         {{ $v->nome }} 
 
     <form action="/insert" method="post">
-
-    <input type="hidden" value="{{$v->id}}" name="id">
-
-    <button class="btn btn-primary">Cursar</button> <br>
-
+    {{ csrf_field() }}
+    <input type="hidden" value="{{$v->id}}" name="id" id="id">
+    <button class="btn btn-primary" type="submit">Cursar</button> <br>
     </form>
     @endforeach
 
