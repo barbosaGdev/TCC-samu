@@ -11,7 +11,10 @@
     
     @foreach ($dados as $v)
         {{ $v->nome }} 
-    <a href="/cursosView/{{$v->id}}" class="btn btn-primary">Cursar</a> <br>
+    <form action="/insert" method="post">
+    <input type="hidden" value="{{$v->id}}" name="id">
+    <button class="btn btn-primary">Cursar</button> <br>
+    </form>
     @endforeach
 
     </body>
