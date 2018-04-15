@@ -45,7 +45,6 @@ class CursoController extends Controller
     {   
 
         $dados = Curso::All();
-
         return view('home', compact('dados'));
 
     }

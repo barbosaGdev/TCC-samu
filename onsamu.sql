@@ -21,7 +21,7 @@ USE `onsamu` ;
 -- Table `onsamu`.`users`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `onsamu`.`users` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
   `password` VARCHAR(150) NULL,
   `email` VARCHAR(45) NULL,
