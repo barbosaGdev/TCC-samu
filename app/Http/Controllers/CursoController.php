@@ -32,8 +32,9 @@ class CursoController extends Controller
 
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
-        $cursos->video = $request->video;
-        $cursos->imagem = $request->imagem;
+        $cursos->video1 = $request->video1;
+        $cursos->video2 = $request->video2;
+        $cursos->video3 = $request->video3;
         $cursos->pdf = $request->pdf;
         $cursos->save();
         return redirect('/cursos');
@@ -58,7 +59,7 @@ class CursoController extends Controller
         $cursando->cursos_id = $request->id;
 
         $cursando->save();
-        return redirect('/');
+        return redirect('/cursosView')->with('dados', $request->id);
 
     }
 
