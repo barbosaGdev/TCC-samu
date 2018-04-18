@@ -101,6 +101,7 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`noticias` (
   `imagem3` VARCHAR(150) NULL DEFAULT NULL,
   `paragrafo1` LONGTEXT NULL DEFAULT NULL,
   `paragrafo2` LONGTEXT NULL,
+  `paragrafo3` LONGTEXT NULL,
   `paragrafo4` LONGTEXT NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;

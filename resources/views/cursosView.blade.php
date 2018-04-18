@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+<br><br><br>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +22,15 @@
     </div><br>
 
     <div>
-        <img src="{{$dados->imagem}}">
+    <iframe width="560" height="315" src="{{$dados->video1}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div><br>
 
     <div>
-    <iframe width="560" height="315" src="{{$dados->video}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="{{$dados->video2}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div><br>
+
+    <div>
+    <iframe width="560" height="315" src="{{$dados->video3}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div><br>
 
     
@@ -32,3 +40,4 @@
     </div><br>
 </body>
 </html>
+@endsection
