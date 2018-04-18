@@ -1,16 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+
+<br><br><div class="container">
     
     @foreach ($dados as $v)
     
         {{ $v->nome }} 
 
-    <form action="/insert" method="post">
-    {{ csrf_field() }}
-    <input type="hidden" value="{{$v->id}}" name="id" id="id">
-    <button class="btn btn-primary" type="submit">Cursar</button> <br>
-    </form>
+    <div class="align-right">
+    <a href="/insert/{{$v->id}}" class="btn btn-primary" method="post">Cursar</a>
+    </div>
+    <br>
     @endforeach
-
+</div>
 @endsection

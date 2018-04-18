@@ -46,20 +46,20 @@ class CursoController extends Controller
     {   
 
         $dados = Curso::All();
-        return view('home', compact('dados'));
+        return view('cursos', compact('dados'));
 
     }
 
-    public function insert(Request $request)
+    public function insert(Curso $dados)
     {
         $cursando = new Cursos_has_user();
         $loggedUser = \Auth::user();
         
         $cursando->users_id = $loggedUser['id'];
         $cursando->cursos_id = $request->id;
-
         $cursando->save();
-        return redirect('/cursosView')->with('dados', $request->id);
+        
+        return redirect('/cursosView')->with('dados', $dados->id);
 
     }
 

@@ -17,18 +17,33 @@
         <p>{{$dados->descricao}}</p>
     </div><br>
 
+    @if ($dados->video1 == '')
+    @else
     <div>
-        <img src="{{$dados->imagem}}">
+    <iframe width="560" height="315" src="{{$dados->video1}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div><br>
+    @endif
 
+    @if ($dados->video2 == '')
+    @else
     <div>
-    <iframe width="560" height="315" src="{{$dados->video}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="{{$dados->video2}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div><br>
+    @endif
 
+
+    @if ($dados->video3 == '')
+    @else
+    <div>
+    <iframe width="560" height="315" src="{{$dados->video3}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div><br>
+    @endif
     
-
+    @if ($dados->pdf == '')
+    @else
     <div class>
     <iframe src="{{$dados->pdf}}" width="740" height="580"></iframe>
     </div><br>
+    @endif
 </body>
 </html>
