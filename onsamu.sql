@@ -53,13 +53,12 @@ ENGINE = InnoDB;
 -- Table `onsamu`.`cursos_has_users`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `onsamu`.`cursos_has_users` (
+  `id` INT NOT NULL AUTO_INCREMENT,
   `cursos_id` INT NOT NULL,
   `users_id` INT NOT NULL,
   `created_at` TIMESTAMP NULL,
   `updated_at` TIMESTAMP NULL,
-  PRIMARY KEY (`cursos_id`, `users_id`),
-  INDEX `fk_cursos_has_users1_users1_idx` (`users_id` ASC),
-  INDEX `fk_cursos_has_users1_cursos_idx` (`cursos_id` ASC),
+  PRIMARY KEY (`id`),
   CONSTRAINT `fk_cursos_has_users1_cursos`
     FOREIGN KEY (`cursos_id`)
     REFERENCES `onsamu`.`cursos` (`id`)

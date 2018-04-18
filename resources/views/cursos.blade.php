@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<<<<<<< HEAD
 <br><br><br>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,10 +12,10 @@
     <title>Document</title>
 </head>
 <body>
-=======
+
 
 <br><br><div class="container">
->>>>>>> 7292a87bbcb2c05781a663d00167fe40339ebea0
+
     
     @foreach ($dados as $v)
     

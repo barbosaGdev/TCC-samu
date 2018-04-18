@@ -56,7 +56,8 @@ class CursoController extends Controller
         $loggedUser = \Auth::user();
         
         $cursando->users_id = $loggedUser['id'];
-        $cursando->cursos_id = $request->id;
+        $cursando->cursos_id = $dados['id'];
+        
         $cursando->save();
         
         return redirect('/cursosView')->with('dados', $dados->id);
