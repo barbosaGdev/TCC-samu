@@ -30,7 +30,7 @@ Route::get('/adminAddCurso', ['middleware' => 'authAdmin', 'uses' => 'CursoContr
 Route::post('/salvar', 'CursoController@salvar');
 Route::get('/cursos', 'CursoController@cursos');
 Route::get('/cursosView/{dados}', 'CursoController@cursosView');
-Route::post('/insert', 'CursoController@insert');
+Route::get('/insert/{dados}', 'CursoController@insert');
 
 
 

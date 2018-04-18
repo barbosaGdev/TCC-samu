@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<<<<<<< HEAD
 <br><br><br>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,16 +13,19 @@
     <title>Document</title>
 </head>
 <body>
+=======
+
+<br><br><div class="container">
+>>>>>>> 7292a87bbcb2c05781a663d00167fe40339ebea0
     
     @foreach ($dados as $v)
     
         {{ $v->nome }} 
 
-    <form action="/insert" method="post">
-    {{ csrf_field() }}
-    <input type="hidden" value="{{$v->id}}" name="id" id="id">
-    <button class="btn btn-primary" type="submit">Cursar</button> <br>
-    </form>
+    <div class="align-right">
+    <a href="/insert/{{$v->id}}" class="btn btn-primary" method="post">Cursar</a>
+    </div>
+    <br>
     @endforeach
-
+</div>
 @endsection
