@@ -2,12 +2,6 @@
 
 @section('content')
 <br><br><br>
-    
-    <div class="container">
-
-    <h1>Feedback da Comunidade</h1>
-    <br>
-
     <table class="table table-striped">
             <thead>
                 <tr>
@@ -37,10 +31,9 @@
 
             @endforeach
             
-            </tbody>
-        </table>
-    </div>
+            </tbody
+
+    </table>
 </body>
 </html>
-
 @endsection

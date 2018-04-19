@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Curso;
 use App\Cursos_has_user;
+use App\User;
 
 class CursoController extends Controller
 {
@@ -18,14 +19,13 @@ class CursoController extends Controller
         $this->middleware('auth');
     }
 
-  
-
-
+    //Retorna a view de cadastrar cursos
     public function adminAddCurso()
     {
         return view('inserir_curso');
     }
 
+    //Controller que coloca os dados do curso no banco, como os videos de PDF  
     public function salvar(Request $request)
     {
         $cursos = new Curso();
@@ -42,6 +42,7 @@ class CursoController extends Controller
 
     }
 
+    //Pagina de lista de cursos
     public function cursos()
     {   
 
@@ -50,6 +51,7 @@ class CursoController extends Controller
 
     }
 
+    //Controller que gerencia os usuarios que acessam o curso
     public function insert(Curso $dados)
     {
         $cursando = new Cursos_has_user();
@@ -64,11 +66,19 @@ class CursoController extends Controller
 
     }
 
+    //Retorna a view do curso já com os videos e o PDF
     public function cursosView(Curso $dados)
     {
         return view('cursosView', compact('dados'));
     }
 
+    //Pega a lista de usuarios cadastrados
+    public function users()
+    {
+        $dados =  User::All();
+        return view('users', compact('dados'));
+        
+    }
 
 
 }
