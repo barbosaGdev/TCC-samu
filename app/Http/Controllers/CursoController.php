@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Curso;
 use App\Cursos_has_user;
 use App\User;
+use DB;
 
 class CursoController extends Controller
 {
@@ -80,6 +81,21 @@ class CursoController extends Controller
         
     }
 
+    //Lista de acesso do usuario especifico
+    public function adminUsersCurso(User $dados)
+    {
+        $users = DB::table('cursos_has_users')
+        ->join('cursos', 'cursos.id', '=', 'cursos_has_users.cursos_id')
+        ->join('users', 'users.id', '=', 'cursos_has_users.users_id')
+        ->where('users.id', '=', $dados->id)
+        ->select('users.name as nome', 'cursos.nome as curso', 'cursos_has_users.created_at as acesso')
+        ->get();
+
+        // dd($dados); 
+        
+        return view('listaUsers', compact('users'));
+
+    }
 
 }
 

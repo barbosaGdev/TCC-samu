@@ -8,16 +8,18 @@
                     <tr>
                         
                         <th>Nome</th>
-                        <th>Email</th>
+                        <th>Curso</th>
+                        <th>Data do ultimo acesso</th>
 
                     </tr>
                 </thead>
                 <tbody>
-                @foreach($dados as $d)
+                @foreach($users as $d)
 
                     <tr>
-                        <td><a href="adminUsersCurso/{{$d->id}}">  {{ $d->name }}</a></td>
-                        <td>{{ $d->email }}</td>
+                        <td>{{ $d->nome }}</td>
+                        <td>{{ $d->curso }}</td>
+                        <td>{{ $d->acesso }}</td>
                     </tr>
 
                 @endforeach

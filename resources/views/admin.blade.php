@@ -19,8 +19,9 @@
                 
                 <li><a href="/adminAddCurso" >Adicionar novos cursos</a></li>
 
-                <li><p>Lista de quem está realizando o cursos</p></li>
-
+                <li><a href="/adminUsers">Lista de quem está realizando o cursos</a></li>
+                
+                
                 </ul>
             
         </div>
