@@ -17,7 +17,7 @@
  
  
  <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #191970">
       <div class="container">
           <img src="{{ asset('images/samu_logo.png') }}">
         <a class="navbar-brand" href="index.html">Samu Baixa Mogiana</a>
@@ -27,27 +27,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Sobre</a>
+              <a class="nav-link" href="about.html"><font color="white"><strong>Sobre</strong></font></a>
             </li>
           
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Ouvidoria</a>
+              <a class="nav-link" href="/ouvidoria"><font color="white"><strong>Ouvidoria</strong></font></a>
             </li>
-            <li class="nav-item active dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                NEP
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item active" href="portfolio-1-col.html">Cursos</a>
-                
-                <a class="dropdown-item" href="portfolio-item.html">Curso</a>
-              </div>
+
                @guest
-                    <li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+                    <li><a class="nav-link" href="{{ route('login') }}"><font color="white"><strong>NEP<strong></font></a></li>
                         @else
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    <font color="white"><strong>{{ Auth::user()->name }}</strong></font> <span class="caret"></span>
                         </a>
 
                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
