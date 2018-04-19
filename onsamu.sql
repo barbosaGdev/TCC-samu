@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`feedback` (
   `email` VARCHAR(45) NULL DEFAULT NULL,
   `texto` MEDIUMTEXT NULL,
   `created_at` TIMESTAMP NULL DEFAULT NULL,
-  `update_at` TIMESTAMP NULL DEFAULT NULL,
+  `updated_at` TIMESTAMP NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
