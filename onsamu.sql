@@ -105,6 +105,9 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`noticias` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
+INSERT INTO `onsamu`.`users` (`id`, `name`, `password`, `email`, `created_at`, `updated_at`) VALUES ('1', 'samu', '$2y$10$D8VVa8Gu.NBiOCkArbSx4OB91.CJXPxiC4iF38m2hEcUj/FmHRsZS', 'admin@samu.com', '2018-04-19 16:34:39', '2018-04-19 16:34:39');
+
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
