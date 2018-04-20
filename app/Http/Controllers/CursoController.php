@@ -58,18 +58,25 @@ class CursoController extends Controller
         $cursando = new Cursos_has_user();
         $loggedUser = \Auth::user();
         
-        $cursando->users_id = $loggedUser['id'];
-        $cursando->cursos_id = $dados['id'];
+        $cursando->users_id = $loggedUser->id;
+        $cursando->cursos_id = $dados->id;
         
         $cursando->save();
         
-        return redirect('/cursosView')->with('dados', $dados->id);
-
+        return redirect('/cursosView')->withInput($dados->only('id'));
     }
 
     //Retorna a view do curso já com os videos e o PDF
     public function cursosView(Curso $dados)
     {
+        $cursando = new Cursos_has_user();
+        $loggedUser = \Auth::user();
+        
+        $cursando->users_id = $loggedUser->id;
+        $cursando->cursos_id = $dados->id;
+        
+        $cursando->save();
+
         return view('cursosView', compact('dados'));
     }
 
@@ -94,6 +101,12 @@ class CursoController extends Controller
         // dd($dados); 
         
         return view('listaUsers', compact('users'));
+
+    }
+
+    //rota que exclui historico de acesso dos usuarios
+    public function deleteListUsers()
+    {
 
     }
 

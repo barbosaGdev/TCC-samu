@@ -25,24 +25,13 @@
     @else
     <div>
     <iframe width="560" height="315" src="{{$dados->video1}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<<<<<<< HEAD
-    </div><br>
-
-    <div>
-    <iframe width="560" height="315" src="{{$dados->video2}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-=======
->>>>>>> 7292a87bbcb2c05781a663d00167fe40339ebea0
     </div><br>
     @endif
 
     @if ($dados->video2 == '')
     @else
     <div>
-<<<<<<< HEAD
-    <iframe width="560" height="315" src="{{$dados->video3}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-=======
     <iframe width="560" height="315" src="{{$dados->video2}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
->>>>>>> 7292a87bbcb2c05781a663d00167fe40339ebea0
     </div><br>
     @endif
 
