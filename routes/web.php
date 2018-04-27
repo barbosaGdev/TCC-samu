@@ -35,4 +35,9 @@ Route::get('/adminUsers', 'CursoController@users');
 Route::get('/adminUsersCurso/{dados}', 'CursoController@adminUsersCurso');
 Route::get('/deleteListUsers', 'CursoController@deleteListUsers');
 
+Route::get('/noticiaInsere', ['middleware' => 'authAdmin', 'uses' => 'HomeController@inserirNoticia' ]);
+Route::post('/noticiaInserir', 'HomeController@persisteNoticia');
+Route::get('/noticia/{id}', 'NoticiaController@exibirNoticia');
+
+
 
