@@ -34,5 +34,8 @@ Route::get('/insert/{dados}', 'CursoController@insert');
 Route::get('/adminUsers', 'CursoController@users');
 Route::get('/adminUsersCurso/{dados}', 'CursoController@adminUsersCurso');
 Route::get('/deleteListUsers', 'CursoController@deleteListUsers');
+Route::get('/adminEditarCurso', 'CursoController@adminEditarCurso');
+Route::get('/editarCurso/{dados}', 'CursoController@editarCurso');
+Route::post('/editar', 'CursoController@editar');
 
 

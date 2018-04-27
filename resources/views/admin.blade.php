@@ -20,6 +20,8 @@
                 <li><a href="/adminAddCurso" >Adicionar novos cursos</a></li>
 
                 <li><a href="/adminUsers">Lista de quem está realizando o cursos</a></li>
+
+                <li><a href="/adminEditarCurso">Editar um curso</a></li>
                 
                 
                 </ul>

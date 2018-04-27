@@ -30,12 +30,11 @@ class CursoController extends Controller
     public function salvar(Request $request)
     {
         $cursos = new Curso();
-
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
-        $cursos->video1 = $request->video1;
-        $cursos->video2 = $request->video2;
-        $cursos->video3 = $request->video3;
+        $cursos->video1 = str_replace("watch?v=","embed/",$request->video1);
+        $cursos->video2 = str_replace("watch?v=","embed/",$request->video2);
+        $cursos->video3 = str_replace("watch?v=","embed/",$request->video3);
         $cursos->pdf = $request->pdf;
         $cursos->save();
         return redirect('/cursos');
@@ -53,19 +52,7 @@ class CursoController extends Controller
     }
 
     //Controller que gerencia os usuarios que acessam o curso
-    public function insert(Curso $dados)
-    {
-        $cursando = new Cursos_has_user();
-        $loggedUser = \Auth::user();
-        
-        $cursando->users_id = $loggedUser->id;
-        $cursando->cursos_id = $dados->id;
-        
-        $cursando->save();
-        
-        return redirect('/cursosView')->withInput($dados->only('id'));
-    }
-
+  
     //Retorna a view do curso já com os videos e o PDF
     public function cursosView(Curso $dados)
     {
@@ -110,5 +97,31 @@ class CursoController extends Controller
 
     }
 
+    public function adminEditarCurso()
+    {
+        $dados = Curso::all();
+
+        return view('adminEditarCurso', compact('dados'));
+
+    }
+
+    public function editarCurso(Curso $dados)
+    {
+        return view('editarCurso', compact('dados'));
+    }
+
+    public function editar(Request $request)
+    {
+        $dados = find::Curso($request->id);
+
+        $cursos->nome = $request->nome;
+        $cursos->descricao = $request->descricao;
+        $cursos->video1 = $request->video1;
+        $cursos->video2 = $request->video2;
+        $cursos->video3 = $request->video3;
+        $cursos->pdf = $request->pdf;
+        $cursos->save();
+        return redirect('/adminEditarCurso');
+    }
 }
 
