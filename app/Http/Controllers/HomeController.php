@@ -94,6 +94,15 @@ class HomeController extends Controller
         $noticia->save();
         return redirect('/adminEditarCurso');
     }
+
+    public function deleteNoticia(Noticia $noticia)
+    {
+        $noticia->delete();
+        return redirect('/admin');
+        
+        //return 'ok';
+    }
+
     
     
 

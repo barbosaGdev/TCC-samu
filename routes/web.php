@@ -45,5 +45,6 @@ Route::get('/verNoticia', 'NoticiasController@menuNoticia');
 Route::get('/adminEditarNoticia', 'HomeController@adminEditarNoticia');
 Route::get('/editarNoticia/{dados}', 'HomeController@editarNoticia');
 Route::post('/updateNoticia', 'HomeController@updateNoticia');
+Route::post('/deleteNoticia/{noticia}', 'HomeController@deleteNoticia');
 
 
