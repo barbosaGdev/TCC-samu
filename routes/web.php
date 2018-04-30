@@ -18,14 +18,14 @@ Route::get('/', function () {
 Auth::routes();
 
 
-Route::get('/ouvidoria', 'OuvidoriaController@ouvidoria');
-
-Route::post('/saveFeedback', 'OuvidoriaController@saveFeedback');
-
-Route::get('/adminOuvidoria', ['middleware' => 'authAdmin', 'uses' => 'HomeController@ouvidoria' ]);
-
 Route::get('/admin', ['middleware' => 'authAdmin', 'uses' => 'HomeController@admin' ]);
 
+//rotas ouvidoria
+Route::get('/ouvidoria', 'OuvidoriaController@ouvidoria');
+Route::post('/saveFeedback', 'OuvidoriaController@saveFeedback');
+Route::get('/adminOuvidoria', ['middleware' => 'authAdmin', 'uses' => 'HomeController@ouvidoria' ]);
+
+//rotas curso
 Route::get('/adminAddCurso', ['middleware' => 'authAdmin', 'uses' => 'CursoController@adminAddCurso' ]);
 Route::post('/salvar', 'CursoController@salvar');
 Route::get('/cursos', 'CursoController@cursos');
@@ -38,9 +38,11 @@ Route::get('/adminEditarCurso', 'CursoController@adminEditarCurso');
 Route::get('/editarCurso/{dados}', 'CursoController@editarCurso');
 Route::post('/editar', 'CursoController@editar');
 
+//rotas notícia
 Route::get('/noticiaInsere', ['middleware' => 'authAdmin', 'uses' => 'HomeController@inserirNoticia' ]);
 Route::post('/noticiaInserir', 'HomeController@persisteNoticia');
-Route::get('/noticia/{id}', 'NoticiaController@exibirNoticia');
+Route::get('/verNoticia', 'NoticiasController@menuNoticia');
+Route::get('/noticia/{id}', 'NoticiasController@exibirNoticia');
 
 
 

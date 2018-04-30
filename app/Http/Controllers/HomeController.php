@@ -62,7 +62,7 @@ class HomeController extends Controller
 
         $noticia->save();
 
-        return redirect('/noticiaInsere');
+        return redirect('/admin');
 
     }
     

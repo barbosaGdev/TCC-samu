@@ -23,6 +23,7 @@
 
                 <li><a href="/adminEditarCurso">Editar um curso</a></li>
                 
+                <li><a href="/noticiaInsere">Inserir uma notícia</a></li>
                 
                 </ul>
             
