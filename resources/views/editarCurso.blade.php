@@ -20,7 +20,7 @@
 <input type="text" name="video1" id="video1" value="{{$dados->video1}}"><br><br>
 
 <label for="video2">video 2 do Curso</label>
-<input type="text" name="video2" id="video2" value="{{$dados->video}}2"><br><br>
+<input type="text" name="video2" id="video2" value="{{$dados->video2}}"><br><br>
 
 <label for="video3">video 3 do Curso</label>
 <input type="text" name="video3" id="video3" value="{{$dados->video3}}"><br><br>

@@ -24,6 +24,8 @@
                 <li><a href="/adminEditarCurso">Editar um curso</a></li>
                 
                 <li><a href="/noticiaInsere">Inserir uma notícia</a></li>
+
+                <li><a href="/adminEditarNoticia">Editar uma Notícia</a></li>
                 
                 </ul>
             

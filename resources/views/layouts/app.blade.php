@@ -28,19 +28,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="about.html"><font color="white"><strong>Sobre</strong></font></a>
+              <a class="nav-link" href="about.html"><font color="white">Sobre</font></a>
             </li>
           
             <li class="nav-item">
-              <a class="nav-link" href="/ouvidoria"><font color="white"><strong>Ouvidoria</strong></font></a>
+              <a class="nav-link" href="/ouvidoria"><font color="white">Ouvidoria</font></a>
             </li>
 
                @guest
-                    <li><a class="nav-link" href="{{ route('login') }}"><font color="white"><strong>NEP<strong></font></a></li>
+                    <li><a class="nav-link" href="{{ route('login') }}"><font color="white">NEP</font></a></li>
                         @else
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <font color="white"><strong>{{ Auth::user()->name }}</strong></font> <span class="caret"></span>
+                                    <font color="white">{{ Auth::user()->name }}</font> <span class="caret"></span>
                         </a>
 
                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">

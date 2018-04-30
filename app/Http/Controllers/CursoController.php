@@ -112,7 +112,7 @@ class CursoController extends Controller
 
     public function editar(Request $request)
     {
-        $dados = find::Curso($request->id);
+        $dados = Curso::find($request->id);
 
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;

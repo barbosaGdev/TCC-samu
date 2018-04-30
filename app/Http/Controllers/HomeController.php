@@ -65,6 +65,35 @@ class HomeController extends Controller
         return redirect('/admin');
 
     }
+
+    public function adminEditarNoticia()
+    {
+        $dados = Noticia::all();
+
+        return view('adminEditarNoticia', compact('dados'));
+
+    }
+
+    public function editarNoticia(Noticia $dados)
+    {
+        return view('editarNoticia', compact('dados'));
+    }
+
+    public function updateNoticia(Request $request)
+    {
+        $dados = Noticia::find($request->id);
+
+        $noticia->titulo_noticia = $request->titulo_noticia;
+        $noticia->imagem1 = $request->imagem1;
+        $noticia->paragrafo1 = $request->paragrafo1;
+        $noticia->imagem2 = $request->imagem2;
+        $noticia->paragrafo2 = $request->paragrafo2;
+        $noticia->imagem3 = $request->imagem3;
+        $noticia->paragrafo3 = $request->paragrafo3;
+        $noticia->paragrafo4 = $request->paragrafo4;
+        $noticia->save();
+        return redirect('/adminEditarCurso');
+    }
     
     
 
