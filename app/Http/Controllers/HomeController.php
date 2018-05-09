@@ -81,7 +81,7 @@ class HomeController extends Controller
 
     public function updateNoticia(Request $request)
     {
-        $dados = Noticia::find($request->id);
+        $noticia = Noticia::find($request->id);
 
         $noticia->titulo_noticia = $request->titulo_noticia;
         $noticia->imagem1 = $request->imagem1;
@@ -92,7 +92,7 @@ class HomeController extends Controller
         $noticia->paragrafo3 = $request->paragrafo3;
         $noticia->paragrafo4 = $request->paragrafo4;
         $noticia->save();
-        return redirect('/adminEditarCurso');
+        return redirect('/adminEditarNoticia');
     }
 
     public function deleteNoticia(Noticia $noticia)

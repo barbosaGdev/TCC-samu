@@ -17,7 +17,7 @@
 <input type="text" name="imagem1" id="imagem1" value="{{$dados->imagem1}}"><br><br>
 
 <label for="paragrafo1">Parágrafo 1</label>
-<input type="text" name="descrica" id="paragrafo1" value="{{$dados->paragrafo1}}"><br><br>
+<input type="text" name="paragrafo1" id="paragrafo1" value="{{$dados->paragrafo1}}"><br><br>
 
 <label for="imagem2">Imagem 2</label>
 <input type="text" name="imagem2" id="imagem2" value="{{$dados->imagem2}}"><br><br>

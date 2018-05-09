@@ -32,6 +32,7 @@ class CursoController extends Controller
         $cursos = new Curso();
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
+        $cursos->img = $request->img;
         $cursos->video1 = str_replace("watch?v=","embed/",$request->video1);
         $cursos->video2 = str_replace("watch?v=","embed/",$request->video2);
         $cursos->video3 = str_replace("watch?v=","embed/",$request->video3);
@@ -112,16 +113,29 @@ class CursoController extends Controller
 
     public function editar(Request $request)
     {
-        $dados = Curso::find($request->id);
+        $cursos = Curso::find($request->id);
 
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
-        $cursos->video1 = $request->video1;
-        $cursos->video2 = $request->video2;
-        $cursos->video3 = $request->video3;
+        $cursos->img = $request->img;
+        $cursos->video1 = str_replace("watch?v=","embed/",$request->video1);
+        $cursos->video2 = str_replace("watch?v=","embed/",$request->video2);
+        $cursos->video3 = str_replace("watch?v=","embed/",$request->video3);
         $cursos->pdf = $request->pdf;
         $cursos->save();
         return redirect('/adminEditarCurso');
+    }
+
+    public function deleteCurso(Curso_has_user $curso_has_user)
+    {
+        $curso = Curso::find($curso_has_user->curso_id);
+        $curso_has_user->delete();
+        $curso->delete();
+
+
+        // $curso->delete();
+        return redirect('/adminEditarCurso');
+        
     }
 }
 

@@ -16,6 +16,9 @@
 <label for="descricao">Descrição do Curso</label>
 <input type="text" name="descricao" id="descricao" value="{{$dados->descricao}}"><br><br>
 
+<label for="img">Imagem do curso</label>
+<input type="text" name="img" id="img" value="{{$dados->img}}"><br><br>
+
 <label for="video1">Video principal do Curso</label>
 <input type="text" name="video1" id="video1" value="{{$dados->video1}}"><br><br>
 
