@@ -42,6 +42,7 @@ Route::post('/editar', 'CursoController@editar');
 Route::get('/noticiaInsere', ['middleware' => 'authAdmin', 'uses' => 'HomeController@inserirNoticia' ]);
 Route::post('/noticiaInserir', 'HomeController@persisteNoticia');
 Route::get('/verNoticia', 'NoticiasController@menuNoticia');
+Route::get('/noticia/{id}', 'NoticiasController@exibirNoticia');
 Route::get('/adminEditarNoticia', 'HomeController@adminEditarNoticia');
 Route::get('/editarNoticia/{dados}', 'HomeController@editarNoticia');
 Route::post('/updateNoticia', 'HomeController@updateNoticia');
