@@ -2,53 +2,66 @@
 
 @section('content')
 <br><br><br>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-<body>
-<div class="container">
-    <div class="row">
-    <h1>{{$dados->nome}}</h1>
-    </div><br>
+    <!-- Page Content -->
+    <div class="container">
 
-    <div class="row">
-        <p>{{$dados->descricao}}</p>
-    </div><br>
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">{{$dados->nome}}
+        <small>Nep</small>
+      </h1>
 
-    @if ($dados->video1 == '')
-    @else
-    <div>
-    <iframe width="560" height="315" src="{{$dados->video1}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div><br>
-    @endif
+      <!-- Portfolio Item Row -->
+      <div class="row">
+          @if ($dados->video1 == '')
+          @else
+        <div class="col-md-8">
+            <iframe width="750" height="500" src="{{$dados->video1}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+          @endif
 
-    @if ($dados->video2 == '')
-    @else
-    <div>
-    <iframe width="560" height="315" src="{{$dados->video2}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div><br>
-    @endif
+        <div class="col-md-4">
+          <h3 class="my-3">Descrição do Curso</h3>
+          <p>{{$dados->descricao}}</p>
+        </div>
 
+      </div>
+      <!-- /.row -->
 
-    @if ($dados->video3 == '')
-    @else
-    <div>
-    <iframe width="560" height="315" src="{{$dados->video3}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div><br>
-    @endif
-    
-    @if ($dados->pdf == '')
-    @else
-    <div class>
-    <iframe src="{{$dados->pdf}}" width="740" height="580"></iframe>
-    </div><br>
-    @endif
+      <!-- Related Projects Row -->
+      <h3 class="my-4">Videos</h3>
+
+      <div class="row">
+          
+          @if ($dados->video2 == '')
+          @else
+        <div class="text-align-left">
+       
+        <iframe width="500" height="300" src="{{$dados->video2}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>          
+        </div>
+         &nbsp; &nbsp; &nbsp; &nbsp;
+          @endif
+          
+          @if ($dados->video3 == '')
+          @else
+        <div class="text-align-right">
+            <iframe width="500" height="300" src="{{$dados->video3}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+          @endif
+     
+
+      </div>
+      
+         @if ($dados->pdf == '')
+        @else
+       <center>
+                                
+        <iframe src="{{$dados->pdf}}" width="740" height="580"></iframe>
+           
+       </center>
+        @endif
+
+    </div>
+   
 </body>
 </html>
 @endsection

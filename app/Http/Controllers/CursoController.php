@@ -115,6 +115,7 @@ class CursoController extends Controller
     {
         $cursos = Curso::find($request->id);
 
+
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
         $cursos->img = $request->img;

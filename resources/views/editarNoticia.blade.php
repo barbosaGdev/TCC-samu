@@ -36,6 +36,6 @@
 
 <button type="submit">ENVIAR</button>
 </form> 
-
+</div>
 
 @endsection

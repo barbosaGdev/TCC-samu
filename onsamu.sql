@@ -55,11 +55,12 @@ ENGINE = InnoDB;
 -- Table `onsamu`.`cursos_has_users`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `onsamu`.`cursos_has_users` (
+  `id` INT NOT NULL,
   `cursos_id` INT NOT NULL,
   `users_id` INT NOT NULL,
   `created_at` TIMESTAMP NULL,
   `updated_at` TIMESTAMP NULL,
-  PRIMARY KEY (`cursos_id`, `users_id`),
+  PRIMARY KEY (`id`),
   INDEX `fk_cursos_has_users1_users1_idx` (`users_id` ASC),
   INDEX `fk_cursos_has_users1_cursos_idx` (`cursos_id` ASC),
   CONSTRAINT `fk_cursos_has_users1_cursos`
@@ -74,6 +75,8 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`cursos_has_users` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+ALTER TABLE `onsamu`.`cursos_has_users` 
+CHANGE COLUMN `id` `id` INT(11) NOT NULL AUTO_INCREMENT ;
 
 -- -----------------------------------------------------
 -- Table `onsamu`.`feedback`
