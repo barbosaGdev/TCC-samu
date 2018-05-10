@@ -76,30 +76,6 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`users` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `onsamu`.`cursos_has_users`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `onsamu`.`cursos_has_users` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `cursos_id` INT NULL,
-  `users_id` INT NULL,
-  `created_at` TIMESTAMP NULL,
-  `updated_at` TIMESTAMP NULL,
-  PRIMARY KEY (`id`),
-  INDEX `fk_cursos_has_users1_users1_idx` (`users_id` ASC),
-  INDEX `fk_cursos_has_users1_cursos_idx` (`cursos_id` ASC),
-  CONSTRAINT `fk_cursos_has_users1_cursos`
-    FOREIGN KEY (`cursos_id`)
-    REFERENCES `onsamu`.`cursos` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_cursos_has_users1_users1`
-    FOREIGN KEY (`users_id`)
-    REFERENCES `onsamu`.`users` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
 
 -- -----------------------------------------------------
 -- Table `onsamu`.`feedback`
@@ -141,7 +117,8 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `onsamu`.`primeiros_socorros` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NULL,
-  `descricao` LONGTEXT NULL,
+  `descricao` LONGTEXT NULL, 
+  `processo` LONGTEXT NULL,
   `img` VARCHAR(45) NULL,
   `created_at` TIMESTAMP NULL,
   `updated_at` TIMESTAMP NULL,
