@@ -6,7 +6,7 @@
     <div class="container">
     <div class="align align-right">
     </div>
-        <table class="table table-striped">
+        <table class="table table-striped table-hover">
                 <thead>
                     <tr>
                         
