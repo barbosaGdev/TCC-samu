@@ -30,7 +30,7 @@
         <div class="form-group">
     
         <label for="texto">Críticas,Sugestões e Reclamações</label>
-        <input class="form-control" type="text" id="texto" name="texto">
+        <textarea rows="6" cols="100" type="text" class="form-control" name="texto" id="texto"></textarea>
         </div>
 
         <button class="btn btn-primary">Enviar</button>

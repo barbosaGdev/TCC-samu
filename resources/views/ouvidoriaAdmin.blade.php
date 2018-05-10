@@ -8,7 +8,7 @@
     <h1>Feedback da Comunidade</h1>
     <br>
 
-    <table class="table table-striped">
+    <table class="table table-striped table-hover table-primary">
             <thead>
                 <tr>
                     <th>Nome</th>
