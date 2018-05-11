@@ -13,6 +13,11 @@ class OuvidoriaController extends Controller
         return view('feedback');    
     }
 
+    public function sobre()
+    {
+        return view('about');    
+    }
+
     public function saveFeedback(Request $request)
     {
         

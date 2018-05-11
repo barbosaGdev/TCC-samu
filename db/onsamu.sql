@@ -100,9 +100,9 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`noticias` (
   `titulo_noticia` VARCHAR(45) NULL,
   `created_at` TIMESTAMP NULL DEFAULT NULL,
   `updated_at` TIMESTAMP NULL DEFAULT NULL,
-  `imagem1` VARCHAR(150) NULL DEFAULT NULL,
-  `imagem2` VARCHAR(150) NULL DEFAULT NULL,
-  `imagem3` VARCHAR(150) NULL DEFAULT NULL,
+  `imagem1` LONGTEXT NULL DEFAULT NULL,
+  `imagem2` LONGTEXT NULL DEFAULT NULL,
+  `imagem3` LONGTEXT NULL DEFAULT NULL,
   `paragrafo1` LONGTEXT NULL DEFAULT NULL,
   `paragrafo2` LONGTEXT NULL,
   `paragrafo3` LONGTEXT NULL,
@@ -110,20 +110,6 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`noticias` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
-
--- -----------------------------------------------------
--- Table `onsamu`.`primeiros_socorros`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `onsamu`.`primeiros_socorros` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `nome` VARCHAR(45) NULL,
-  `descricao` LONGTEXT NULL, 
-  `processo` LONGTEXT NULL,
-  `img` VARCHAR(45) NULL,
-  `created_at` TIMESTAMP NULL,
-  `updated_at` TIMESTAMP NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
 
 
 INSERT INTO `onsamu`.`users` (`id`, `name`, `password`, `email`, `created_at`, `updated_at`) VALUES ('1', 'samu', '$2y$10$D8VVa8Gu.NBiOCkArbSx4OB91.CJXPxiC4iF38m2hEcUj/FmHRsZS', 'admin@samu.com', '2018-04-19 16:34:39', '2018-04-19 16:34:39');

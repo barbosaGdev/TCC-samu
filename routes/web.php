@@ -11,14 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', 'NoticiasController@menuNoticia');
+
 
 Auth::routes();
 
 
 Route::get('/admin', ['middleware' => 'authAdmin', 'uses' => 'HomeController@admin' ]);
+Route::get('/about', 'OuvidoriaController@sobre');
 
 //rotas ouvidoria
 Route::get('/ouvidoria', 'OuvidoriaController@ouvidoria');
@@ -42,7 +43,6 @@ Route::post('/deleteCurso/{curso}', 'CursoController@deleteCurso');
 //rotas notícia
 Route::get('/noticiaInsere', ['middleware' => 'authAdmin', 'uses' => 'HomeController@inserirNoticia' ]);
 Route::post('/noticiaInserir', 'HomeController@persisteNoticia');
-Route::get('/verNoticia', 'NoticiasController@menuNoticia');
 Route::get('/noticia/{id}', 'NoticiasController@exibirNoticia');
 Route::get('/adminEditarNoticia', 'HomeController@adminEditarNoticia');
 Route::get('/editarNoticia/{dados}', 'HomeController@editarNoticia');
