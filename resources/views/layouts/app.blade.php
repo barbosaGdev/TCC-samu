@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
-    <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
+    
 </head>
 <body>
  
@@ -21,7 +21,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #191970">
       <div class="container">
           <img src="{{ asset('images/samu_logo.png') }}">
-        <a class="navbar-brand" href="index.html">Samu Baixa Mogiana</a>
+        <a class="navbar-brand" href="/">Samu Baixa Mogiana</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -74,5 +74,9 @@
     
 
   <script src="{{ asset('js/app.js') }}"></script>
+  <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('js/contact_me.js') }}"></script>
+  <script src="{{ asset('js/jqBootstrapValidation.js') }}"></script>
+
 </body>
 </html>

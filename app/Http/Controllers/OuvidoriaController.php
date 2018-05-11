@@ -15,7 +15,7 @@ class OuvidoriaController extends Controller
 
     public function saveFeedback(Request $request)
     {
-    
+        
         $feedback = new Feedback();   
      
         $feedback->nome = $request->nome;
