@@ -1,21 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<br><br><br>
+<br><br>
     <!-- Page Content -->
     <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
       <h1 class="mt-4 mb-3">{{$dados->nome}}
-        <small>Nep</small>
+        <small>- Nep</small>
       </h1>
 
       <!-- Portfolio Item Row -->
       <div class="row">
           @if ($dados->video1 == '')
           @else
-        <div class="col-md-8">
-            <iframe width="750" height="500" src="{{$dados->video1}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="col-md-8 embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="750" height="500" src="{{$dados->video1}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
           @endif
 
@@ -28,12 +28,13 @@
       <!-- /.row -->
 
       <!-- Related Projects Row -->
-      <h3 class="my-4">Videos</h3>
+      
 
       <div class="row">
           
           @if ($dados->video2 == '')
           @else
+          <h3 class="my-4">Videos</h3>
         <div class="text-align-left">
        
         <iframe width="500" height="300" src="{{$dados->video2}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>          
@@ -50,17 +51,16 @@
      
 
       </div>
-      
+      <br>
          @if ($dados->pdf == '')
         @else
-       <center>
-                                
-        <iframe src="{{$dados->pdf}}" width="740" height="580"></iframe>
-           
-       </center>
-        @endif
+      <div>                       
+        <center>  
+        <iframe   src="{{$dados->pdf}}" width= "840" height= "680"></iframe>
 
-    </div>
+        @endif
+      </center>
+      </div>
    
 </body>
 </html>

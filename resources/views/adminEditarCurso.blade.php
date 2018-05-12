@@ -16,6 +16,7 @@
         {{csrf_field()}}
         <button class="btn btn-danger fa fa-trash"></button>
     </form>
+    <br>
     @endforeach
     </div>
     <br>

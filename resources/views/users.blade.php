@@ -2,7 +2,10 @@
 
 @section('content')
 <br><br><br>
+
+
     <div class="container">
+    <h1>Colaboradores</h1>
         <table class="table table-striped table-hover">
                 <thead>
                     <tr>
