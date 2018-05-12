@@ -27,14 +27,11 @@
       </div>
       <!-- /.row -->
 
-      <!-- Related Projects Row -->
-      
-
-      <div class="row">
-          
+      <!-- Related Projects Row -->  
           @if ($dados->video2 == '')
           @else
           <h3 class="my-4">Videos</h3>
+          <div class="row">
         <div class="text-align-left">
        
         <iframe width="500" height="300" src="{{$dados->video2}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>          
