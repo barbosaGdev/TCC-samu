@@ -2,68 +2,96 @@
 
 @section('content')
 <br><br><br>
-    
+    <!-- Page Content -->
     <div class="container">
 
-    <h4>{{$dados->titulo_noticia}}<h4>
-    <br>
-            @if ($dados->imagem1 == '')
-            @else
-            <div>
-            <img width="560" height="315" src="{{$dados->imagem1}}"></img>
-            </div>
-            @endif
-           
-            @if ($dados->paragrafo1 == '')
-            @else
-            <div>
-                <p>{{$dados->paragrafo1}}</p>
-            </div>
-            @endif
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">{{$dados->titulo_noticia}}
+      </h1>
 
-             @if ($dados->imagem2 == '')
-            @else
-            <div>
-            <img width="560" height="315" src="{{$dados->imagem2}}"></img>
-            </div>
-            @endif
+      <div class="row">
 
-             @if ($dados->paragrafo2 == '')
-            @else
-            <div>
-                <p>{{$dados->paragrafo2}}</p>
-            </div>
-            @endif
+        <!-- Post Content Column -->
+        
+        <div class="col-lg-8">
+        @if ($dados->imagem1 == '')
+        @else
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" width="400" height="500" src="{{$dados->imagem1}}" ><br><br>
+        @endif   
 
-             @if ($dados->imagem3 == '')
-            @else
-            <div>
-            <img width="560" height="315" src="{{$dados->imagem3}}"></img>
-            </div>
-            @endif
+          <hr>
 
-            @if ($dados->paragrafo3 == '')
-            @else
-            <div>
-                <p>{{$dados->paragrafo3}}</p>
-            </div>
-            @endif
+          <!-- Date/Time -->
+          <p>Data do Post da Notícia: {{$dados->created_at}}</p>
 
-            @if ($dados->paragrafo4 == '')
-            @else
-            <div>
-                <p>{{$dados->paragrafo4}}</p>
-            </div>
-            @endif
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">{{$dados->paragrafo1}}</p>
+
+        <div class="col-lg-8">
+        @if ($dados->imagem2 == '')
+        @else
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" width="400" height="500" src="{{$dados->imagem2}}" ><br><br>
+        @endif   
+
+          <p>{{$dados->paragrafo2}}</p><br>
+        
+        
+        @if ($dados->imagem3 == '')
+        @else
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" width="600" height="700" src="{{$dados->imagem3}}" ><br><br>
+        @endif   
+        
+        
+        <div class="col-lg-8">
+          <p>{{$dados->paragrafo3}}</p>
+
+          <p>{{$dados->paragrafo4}}</p>
+
+        </div>  
+          <hr>
+
+          <!-- Comments Form -->
+         
+
+          <!-- Single Comment -->
+          
+
+          <!-- Comment with nested comments -->
+          <div class="media mb-4">
             
+            <div class="media-body">
+              
 
+              
 
-           
-           
-            
-            
-    </div>
-</body>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    
+    <!-- /.container -->
+
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
 </html>
-
 @endsection
