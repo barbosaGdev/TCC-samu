@@ -7,21 +7,25 @@
   @foreach($dados as $n)
    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+          <li data-target="#carouselExampleIndicators" data-slide-to="{{$n->id}}"></li>
+       </ol>
          <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active" style="background-image: url('{{$n->imagem1}}')">
             <div class="carousel-caption d-none d-md-block">
               <h3><font color="black">{{ $n->titulo_noticia }}</font></h3>
-
-             <a href="/noticia/{{$n->id}}" class="btn-dark" method="get">Ver Notícia</a>
+               <a href="/noticia/{{$n->id}}" class="btn-dark" method="get">Ver Notícia</a>
             </div>
           </div>
         </div>
-    </header>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="{{$n->id--}}">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+       </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="{{$n->id++}}">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
    @endforeach 
 
     <!-- Page Content -->
