@@ -4,29 +4,36 @@
 
     
 
-  @foreach($dados as $n)
+  
    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="{{$n->id}}"></li>
+           @for ($i = 0; $i < count($dados); $i++)
+            <li data-target="#carouselExampleIndicators" data-slide-to="{{ $i }}" class="{{$i == 0 ? 'active' : ''}}"></li>
+           @endfor
        </ol>
+
+       <!--REPETIR--> 
          <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active" style="background-image: url('{{$n->imagem1}}')">
+          <div class="carousel-item active" style="background-image: url('')">
             <div class="carousel-caption d-none d-md-block">
-              <h3><font color="black">{{ $n->titulo_noticia }}</font></h3>
-               <a href="/noticia/{{$n->id}}" class="btn-dark" method="get">Ver Notícia</a>
+              <h3><font color="black">aaaa</font></h3>
+               <a href="/" class="btn-dark" method="get">Ver Notícia</a>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="{{$n->id--}}">
+
+        <!--REPETIR--> 
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="0">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="{{$n->id++}}">
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="1">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+
     </div>
-   @endforeach 
+  
 
     <!-- Page Content -->
     <div class="container">
