@@ -127,10 +127,9 @@ class CursoController extends Controller
         return redirect('/adminEditarCurso');
     }
 
-    public function deleteCurso(Curso_has_user $curso_has_user)
+    public function deleteCurso(Curso $curso)
     {
-        $curso = Curso::find($curso_has_user->curso_id);
-        $curso_has_user->delete();
+
         $curso->delete();
 
 

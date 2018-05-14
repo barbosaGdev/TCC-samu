@@ -51,12 +51,11 @@
       <br>
          @if ($dados->pdf == '')
         @else
-      <div>                       
-        <center>  
-        <iframe   src="{{$dados->pdf}}" width= "840" height= "680"></iframe>
-
-        @endif
-      </center>
+      <div class="main-container threecolumns">      
+      <p>                  
+        <iframe src="{{$dados->pdf}}" width= "840" height= "680"></iframe>
+      </p>
+        @endif>
       </div>
    
 </body>
