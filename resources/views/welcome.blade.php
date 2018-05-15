@@ -2,35 +2,37 @@
 
 @section('content')
 
-    
-
-  
-   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
            @for ($i = 0; $i < count($dados); $i++)
-            <li data-target="#carouselExampleIndicators" data-slide-to="{{ $i }}" class="{{$i == 0 ? 'active' : ''}}"></li>
+            <li data-target="#carouselIndicators" data-slide-to="{{ $i }}" class="{{$i == 0 ? 'active' : ''}}"></li>
            @endfor
        </ol>
-
        <!--REPETIR--> 
+        
          <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active" style="background-image: url('')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3><font color="black">aaaa</font></h3>
-               <a href="/" class="btn-dark" method="get">Ver Notícia</a>
+         <?php $i = 0;?>
+         @foreach($dados as $v) 
+          <div class="{{$i == 0 ? 'carousel-item active' : 'carousel-item' }}" style="background-image: url('{{$v->imagem1}}')">
+          <div class="carousel-caption d-none d-md-block">
+              <h3><font color="black">{{$v->titulo_noticia}}</font></h3>
+               <a href="/noticia/{{$v->id}}" class="btn-dark" method="get">Ver Notícia</a>
             </div>
           </div>
         </div>
+        <?php $i++;?>
+      @endforeach
 
-        <!--REPETIR--> 
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="0">
+      
+        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="1">
+        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+     
 
     </div>
   

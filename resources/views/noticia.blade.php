@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<br><br><br>
+<br><br>
     <!-- Page Content -->
     <div class="container">
 
