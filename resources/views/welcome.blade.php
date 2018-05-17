@@ -2,39 +2,48 @@
 
 @section('content')
 
-<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+
+ <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-           @for ($i = 0; $i < count($dados); $i++)
-            <li data-target="#carouselIndicators" data-slide-to="{{ $i }}" class="{{$i == 0 ? 'active' : ''}}"></li>
-           @endfor
-       </ol>
-       <!--REPETIR--> 
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <?php $i = 0;?>
         
-         <div class="carousel-inner" role="listbox">
-         <?php $i = 0;?>
-         @foreach($dados as $v) 
+        <div class="carousel-inner" role="listbox">
+
+          @foreach($dados as $v) 
           <div class="{{$i == 0 ? 'carousel-item active' : 'carousel-item' }}" style="background-image: url('{{$v->imagem1}}')">
-          <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-none d-md-block">
               <h3><font color="black">{{$v->titulo_noticia}}</font></h3>
                <a href="/noticia/{{$v->id}}" class="btn-dark" method="get">Ver Notícia</a>
             </div>
           </div>
-        </div>
-        <?php $i++;?>
-      @endforeach
+          <?php $i++; ?>
+          @endforeach
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
 
-      
-        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-       </a>
-        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-     
 
-    </div>
+
+
+
+
+
+
+
+
   
 
     <!-- Page Content -->
@@ -401,7 +410,9 @@ A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida 
         </div>
       
 
-    
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <!-- /.container -->
 
 @endsection
