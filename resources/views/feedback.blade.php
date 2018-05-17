@@ -65,7 +65,7 @@
             <div class="control-group form-group">
               <div class="controls">
                 <label>Email:</label>
-                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                <input type="email" class="form-control" id="email" name="email" required data-validation-required-message="Please enter your email address.">
               </div>
             </div>
             <div class="control-group form-group">

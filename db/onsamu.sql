@@ -50,8 +50,8 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`cursos_has_users` (
   CONSTRAINT `fk_cursos_has_users1_cursos`
     FOREIGN KEY (`cursos_id`)
     REFERENCES `onsamu`.`cursos` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
   CONSTRAINT `fk_cursos_has_users1_users1`
     FOREIGN KEY (`users_id`)
     REFERENCES `onsamu`.`users` (`id`)
@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`feedback` (
   `email` VARCHAR(45) NULL DEFAULT NULL,
   `texto` MEDIUMTEXT NULL,
   `created_at` TIMESTAMP NULL DEFAULT NULL,
-  `update_at` TIMESTAMP NULL DEFAULT NULL,
+  `updated_at` TIMESTAMP NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 

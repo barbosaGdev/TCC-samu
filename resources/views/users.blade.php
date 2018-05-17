@@ -5,6 +5,12 @@
 
 
     <div class="container">
+
+        <form method="post" style="display: inline;" action="/deleteUsers">
+            {{csrf_field()}}
+            <button class="btn btn-danger fa fa-trash" onclick="return confirm('Tem certeza que deseja deletar esse registro?'); return false;"></button>
+         </form>  
+
     <h1>Colaboradores</h1>
         <table class="table table-striped table-hover">
                 <thead>

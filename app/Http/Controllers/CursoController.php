@@ -93,9 +93,13 @@ class CursoController extends Controller
     }
 
     //rota que exclui historico de acesso dos usuarios
-    public function deleteListUsers()
+    public function deleteUsers()
     {
+        
+        $dados = new Cursos_has_user();
+        $dados->delete()->all();
 
+        return redirect('/admin');
     }
 
     public function adminEditarCurso()
@@ -134,7 +138,7 @@ class CursoController extends Controller
 
 
         // $curso->delete();
-        return redirect('/adminEditarCurso');
+        return redirect('/admin');
         
     }
 }
