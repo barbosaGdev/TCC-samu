@@ -13,14 +13,14 @@
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="public/css/main.css" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/modern-business.css') }}" rel="stylesheet">
 </head>
 <body>
  
  
  <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #191970">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" id="nav">
       <div class="container">
           <img src="{{ asset('images/samu_logo.png') }}">
         <a class="navbar-brand" href="/">Samu Baixa Mogiana</a>
@@ -73,6 +73,7 @@
             @yield('content')
         </main>
     </div>
+ 
     
 
   <script src="{{ asset('js/app.js') }}"></script>
