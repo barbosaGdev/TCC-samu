@@ -96,10 +96,9 @@ class CursoController extends Controller
     public function deleteUsers()
     {
         
-        $dados = new Cursos_has_user();
-        $dados->delete()->all();
+        Cursos_has_user::getQuery()->delete();
 
-        return redirect('/admin');
+        return redirect('/adminUsers');
     }
 
     public function adminEditarCurso()
