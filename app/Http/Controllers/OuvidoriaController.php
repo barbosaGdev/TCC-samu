@@ -22,7 +22,7 @@ class OuvidoriaController extends Controller
     {
         
         $feedback = new Feedback();   
-     
+    
         $feedback->nome = $request->nome;
         $feedback->telefone = $request->telefone;
         $feedback->email = $request->email;

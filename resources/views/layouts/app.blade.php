@@ -23,7 +23,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" id="nav">
       <div class="container">
           <img src="{{ asset('images/samu_logo.png') }}">
-        <a class="navbar-brand" href="/">Samu Baixa Mogiana</a>
+        <a class="navbar-brand" href="/">SAMU Baixa Mogiana</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,7 +53,7 @@
                     <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
-                                        Logout
+                                        Sair
                     </a>
                     
 
