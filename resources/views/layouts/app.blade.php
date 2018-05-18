@@ -75,29 +75,12 @@
     </div>
 
    <!-- Footer -->
-    <footer class="py-5 bg-dark" id="colorFooter" >
+    <footer id="colorFooter" >
       <div class="container">
-        <h5 class="m-0 text-left text-white">Descrições do Footer</h5>
-        <p class="text-white">Here you can use rows and columns here to organize your footer content.</p>
-        <p class="text-white">Here you can use rows and columns here to organize your footer content.</p>
+        <br><br><br><h5 class="m-0 text-left text-white">SAMU Baixa Mogiana</h5>
+        <p class="text-white">Acesse a nossa página no  <a href="https://www.facebook.com/samubaixamogiana/?rf=287489251342339">Facebook</a></p>
+        
        
-        <div class="col-md-9 text-right">
-                <h5 class="text-white">Links</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#!">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="#!">Link 2</a>
-                    </li>
-                    <li>
-                        <a href="#!">Link 3</a>
-                    </li>
-                    <li>
-                        <a href="#!">Link 4</a>
-                    </li>
-                </ul>
-           </div>    
       </div>
   
       <!-- /.container -->

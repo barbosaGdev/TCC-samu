@@ -48,10 +48,10 @@
     <br><br><br>
     <!-- Page Content -->
     <div class="container">
-
+      <div class="text-center">
         
         
-          <h2>Samu:</h2>
+          <h2>SAMU 192:</h2>
           <p>O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) <br>
               é um serviço Pré-hospitalar de Atendimento Móvel <br>
               de Urgência e Emergência, tendo como objetivo <br>
@@ -60,7 +60,7 @@
               cirúrgica, traumática, obstétrica, pediátrica, <br>
               psiquiátrica, entre outras). </p>
           
-          
+       </div>   
         
         
         
