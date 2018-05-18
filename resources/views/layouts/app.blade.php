@@ -69,10 +69,45 @@
         </div>
       </div>
     </nav>
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
     </div>
+
+   <!-- Footer -->
+    <footer class="py-5 bg-dark" id="colorFooter" >
+      <div class="container">
+        <h5 class="m-0 text-left text-white">Descrições do Footer</h5>
+        <p class="text-white">Here you can use rows and columns here to organize your footer content.</p>
+        <p class="text-white">Here you can use rows and columns here to organize your footer content.</p>
+       
+        <div class="col-md-9 text-right">
+                <h5 class="text-white">Links</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+           </div>    
+      </div>
+  
+      <!-- /.container -->
+
+      <div class="footer-copyright py-3 text-center">
+        
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/" class="text-white"> © 2018 Copyright:</a>
+    </div>
+    </footer>
+                      
  
     
 

@@ -2,3 +2,7 @@
     height: 100px;
     background: linear-gradient(orangered, #191970 35%);
 }
+
+#colorFooter{
+    background: linear-gradient(orangered, #191970 10%);
+}

@@ -45,7 +45,7 @@
 
 
   
-
+    <br><br><br>
     <!-- Page Content -->
     <div class="container">
 
@@ -305,7 +305,7 @@ A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida 
 		<div class="modal-dialog" role="document">
                     <div class="modal-content">
 			<div class="modal-header">
-                           <h4 class="modal-title text-center" id="myModalLabel">Termo de Uso</h4>
+                           <h4 class="modal-title text-center" id="myModalLabel">Engasgo</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
 				<div class="modal-body">
