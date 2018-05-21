@@ -48,7 +48,7 @@
     <br><br><br>
     <!-- Page Content -->
     <div class="container">
-      <div class="text-center">
+      <div class="text-left">
         
         
           <h2>SAMU 192:</h2>
@@ -60,7 +60,11 @@
               cirúrgica, traumática, obstétrica, pediátrica, <br>
               psiquiátrica, entre outras). </p>
           
-       </div>   
+       </div>
+
+       <div> 
+            <img id="imgWelcome"src="{{ asset('images/imgWelcome.png') }}">
+        </div> 
         
         
         

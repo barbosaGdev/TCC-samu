@@ -6,3 +6,15 @@
 #colorFooter {
     background: linear-gradient(rgb(214, 65, 11), #18186d 23%);
 }
+
+#imgFooter {
+    
+    height:125px;
+}
+
+#imgWelcome {
+    height:150px;
+    top:25%;
+    right:30%;
+    position: absolute;
+}
