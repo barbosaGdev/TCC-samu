@@ -79,6 +79,7 @@
       <div class="container">
         <br><br><br><h5 class="m-0 text-left text-white">SAMU Baixa Mogiana</h5>
         <p class="text-white">Acesse a nossa página no  <a href="https://www.facebook.com/samubaixamogiana/?rf=287489251342339">Facebook</a></p>
+        <p class="text-white">Telefone Administrativo: (19)3811-7450</p>
         <div class="text-right"> 
             <img id="imgFooter" src="{{ asset('images/logo.png') }}">
           

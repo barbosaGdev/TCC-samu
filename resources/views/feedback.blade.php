@@ -39,7 +39,9 @@
         </div>
       </div>
       <!-- /.row -->
-
+      <br>
+        <h2>*informação sobre fake news e a relação com o SAMU</h2>
+      <br>
       <!-- Contact Form -->
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
       <div class="row">

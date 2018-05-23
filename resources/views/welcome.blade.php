@@ -63,7 +63,7 @@
        </div>
 
        <div> 
-            <img id="imgWelcome"src="{{ asset('images/imgWelcome.png') }}">
+            
         </div> 
         
         
