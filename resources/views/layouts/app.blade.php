@@ -75,15 +75,16 @@
     </div>
 
    <!-- Footer -->
-    <footer id="colorFooter" >
+    <footer class="footer" >
       <div class="container">
-        <br><br><br><h5 class="m-0 text-left text-white">SAMU Baixa Mogiana</h5>
-        <p class="text-white">Acesse a nossa página no  <a href="https://www.facebook.com/samubaixamogiana/?rf=287489251342339">Facebook</a></p>
-        <p class="text-white">Telefone Administrativo: (19)3811-7450</p>
-        <div class="text-right"> 
-            <img id="imgFooter" src="{{ asset('images/logo.png') }}">
+        <br><br><br><h5 class="m-0 text-left text-white"><i>Plataforma Web do SAMU da Baixa Mogiana</i></h5><br>
+        <p class="text-white">Acesse a nossa página no  <a href="https://www.facebook.com/samubaixamogiana/?rf=287489251342339">Facebook</a><img id="imgFooter" src="{{ asset('images/logo.png') }}"> </p>
+        <p class="text-white">Telefone Administrativo: (19)3811-7450 </p>
+        <a href="https://github.com/barbosaGdev/TCC-samu" class="text-white"> Copyright © OnSamu BM 2018</a>
+        
+           
           
-        </div>
+        
        
       </div>
   
@@ -91,8 +92,7 @@
 
       <div class="footer-copyright py-3 text-center">
         
-        <a href="https://mdbootstrap.com/material-design-for-bootstrap/" class="text-white"> © 2018 Copyright:</a>
-    </div>
+      </div>
     </footer>
                       
  

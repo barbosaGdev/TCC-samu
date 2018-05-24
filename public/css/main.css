@@ -3,18 +3,21 @@
     background: #191970;
 }
 
-#colorFooter {
+.footer {
     background: linear-gradient(rgb(214, 65, 11), #18186d 23%);
 }
 
 #imgFooter {
-    
-    height:125px;
+    height: 120px;
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
-#imgWelcome {
-    height:150px;
-    top:25%;
-    right:30%;
+.imgWelcome {
+    height: 150px;
+    top: 25%;
+    right: 30%;
     position: absolute;
 }

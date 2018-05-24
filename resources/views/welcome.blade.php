@@ -405,7 +405,7 @@ A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida 
       <!-- Portfolio Section -->
     
       <!-- /.row -->
-      <hr>
+      
 
       <!-- Call to Action Section -->
      

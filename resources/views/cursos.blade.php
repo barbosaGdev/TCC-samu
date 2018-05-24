@@ -28,7 +28,7 @@
 
 <hr>
 @endforeach 
-
+<br><br><br><br><br><br><br><br><br>
    
 </div>
 @endsection

@@ -30,6 +30,5 @@
                 </tbody>
         </table>
     </div>
-</body>
-</html>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 @endsection

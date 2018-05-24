@@ -4,12 +4,13 @@
 <br><br><br>
 <div class="container">
 <center>
-    <img src="http://download.seaicons.com/icons/aha-soft/large-user/512/Doctor-icon.png"  width="280" height="180" />
+    <img src="{{ asset('images/logo1_neu.png') }}"  width="80" height="100" />
 </center>
+<br>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Entrar</div>
+                <div class="card-header" style="background: orangered"><strong>Faça seu Login</strong></div>
                 
                 <div class="container">
                 </div>
@@ -57,7 +58,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" style="background: #18186d">
                                     Entrar
                                 </button>
 
@@ -72,4 +73,6 @@
         </div>
     </div>
 </div>
+
+<br><br><br><br>
 @endsection
