@@ -28,26 +28,26 @@ Route::get('/adminOuvidoria', ['middleware' => 'authAdmin', 'uses' => 'HomeContr
 
 //rotas curso
 Route::get('/adminAddCurso', ['middleware' => 'authAdmin', 'uses' => 'CursoController@adminAddCurso' ]);
-Route::post('/salvar', 'CursoController@salvar');
+Route::post('/salvar', ['middleware' => 'authAdmin', 'uses' => 'CursoController@salvar']);
+Route::get('/insert/{dados}', 'CursoController@insert');
+Route::get('/adminUsers', ['middleware' => 'authAdmin', 'uses' => 'CursoController@users']);
+Route::get('/adminUsersCurso/{dados}', ['middleware' => 'authAdmin', 'uses' => 'CursoController@adminUsersCurso']);
+Route::post('/deleteUsers', ['middleware' => 'authAdmin', 'uses' => 'CursoController@deleteUsers']);
+Route::get('/adminEditarCurso', ['middleware' => 'authAdmin', 'uses' => 'CursoController@adminEditarCurso']);
+Route::get('/editarCurso/{dados}', ['middleware' => 'authAdmin', 'uses' => 'CursoController@editarCurso']);
+Route::post('/editar', ['middleware' => 'authAdmin', 'uses' => 'CursoController@editar']);
+Route::post('/deleteCurso/{curso}', ['middleware' => 'authAdmin', 'uses' => 'CursoController@deleteCurso']);
 Route::get('/cursos', 'CursoController@cursos');
 Route::get('/cursosView/{dados}', 'CursoController@cursosView');
-Route::get('/insert/{dados}', 'CursoController@insert');
-Route::get('/adminUsers', 'CursoController@users');
-Route::get('/adminUsersCurso/{dados}', 'CursoController@adminUsersCurso');
-Route::post('/deleteUsers', 'CursoController@deleteUsers');
-Route::get('/adminEditarCurso', 'CursoController@adminEditarCurso');
-Route::get('/editarCurso/{dados}', 'CursoController@editarCurso');
-Route::post('/editar', 'CursoController@editar');
-Route::post('/deleteCurso/{curso}', 'CursoController@deleteCurso');
 
 //rotas notícia
 Route::get('/noticiaInsere', ['middleware' => 'authAdmin', 'uses' => 'HomeController@inserirNoticia' ]);
-Route::post('/noticiaInserir', 'HomeController@persisteNoticia');
+Route::post('/noticiaInserir',['middleware' => 'authAdmin', 'uses' => 'HomeController@persisteNoticia' ] );
+Route::get('/adminEditarNoticia', ['middleware' => 'authAdmin', 'uses' => 'HomeController@adminEditarNoticia' ]);
+Route::get('/editarNoticia/{dados}', ['middleware' => 'authAdmin', 'uses' => 'HomeController@editarNoticia' ]);
+Route::post('/updateNoticia', ['middleware' => 'authAdmin', 'uses' => 'HomeController@updateNoticia' ]);
+Route::post('/deleteNoticia/{noticia}', ['middleware' => 'authAdmin', 'uses' => 'HomeController@deleteNoticia' ]);
 Route::get('/noticia/{id}', 'NoticiasController@exibirNoticia');
-Route::get('/adminEditarNoticia', 'HomeController@adminEditarNoticia');
-Route::get('/editarNoticia/{dados}', 'HomeController@editarNoticia');
-Route::post('/updateNoticia', 'HomeController@updateNoticia');
-Route::post('/deleteNoticia/{noticia}', 'HomeController@deleteNoticia');
 
 
 
