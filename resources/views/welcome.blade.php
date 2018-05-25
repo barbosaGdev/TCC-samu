@@ -19,7 +19,7 @@
           <div class="{{$i == 0 ? 'carousel-item active' : 'carousel-item' }}" style="background-image: url('{{$v->imagem1}}')">
             <div class="carousel-caption d-none d-md-block">
               <h3><font color="black">{{$v->titulo_noticia}}</font></h3>
-               <a href="/noticia/{{$v->id}}" class="btn-dark" method="get">Ver Notícia</a>
+               <a href="/noticia/{{$v->id}}" class="btn-dark" method="get">Saiba Mais</a>
             </div>
           </div>
           <?php $i++; ?>

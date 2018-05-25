@@ -112,20 +112,6 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`noticias` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `onsamu`.`primeiros_socorros`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `onsamu`.`primeiros_socorros` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `nome` VARCHAR(45) NULL,
-  `descricao` LONGTEXT NULL,
-  `img` VARCHAR(45) NULL,
-  `created_at` TIMESTAMP NULL,
-  `updated_at` TIMESTAMP NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
 
 INSERT INTO `onsamu`.`users` (`id`, `name`, `password`, `email`, `created_at`, `updated_at`) VALUES ('1', 'samu', '$2y$10$D8VVa8Gu.NBiOCkArbSx4OB91.CJXPxiC4iF38m2hEcUj/FmHRsZS', 'admin@samu.com', '2018-04-19 16:34:39', '2018-04-19 16:34:39');
 

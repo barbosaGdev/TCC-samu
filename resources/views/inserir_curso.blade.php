@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+<br><br>
 <div class="container">
         <div class="row">
             <div class="col-8">
@@ -48,9 +48,9 @@
 <input type="text" class="form-control" name="pdf" id="pdf">
 </div>
 
-<button type="submit" class="btn btn-primary">Enviar</button>
-</form> 
-</div>    
-</body>
-</html>
+<button type="submit" class="btn btn-primary" style="background:#191970">Enviar</button>
+</form>
+<br><br><br><br> 
+</div>  
+  
 @endsection
