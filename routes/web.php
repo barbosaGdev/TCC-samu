@@ -37,6 +37,7 @@ Route::get('/adminEditarCurso', ['middleware' => 'authAdmin', 'uses' => 'CursoCo
 Route::get('/editarCurso/{dados}', ['middleware' => 'authAdmin', 'uses' => 'CursoController@editarCurso']);
 Route::post('/editar', ['middleware' => 'authAdmin', 'uses' => 'CursoController@editar']);
 Route::post('/deleteCurso/{curso}', ['middleware' => 'authAdmin', 'uses' => 'CursoController@deleteCurso']);
+Route::post('/deleteColaborador/{user}', ['middleware' => 'authAdmin', 'uses' => 'CursoController@deleteColaborador']);
 Route::get('/cursos', 'CursoController@cursos');
 Route::get('/cursosView/{dados}', 'CursoController@cursosView');
 

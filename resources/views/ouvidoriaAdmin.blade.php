@@ -25,19 +25,13 @@
                     <td>{{ $value->nome }}</td>
                     <td>{{ $value->telefone }}</td>
                     <td>{{ $value->email }}</td>
-                    <td>{{ $value->texto }}</td>
-                
-                <td>
-                
-                   
-                    
-                </td>
-                
-            </tr>
+                    <td style="white-space: initial">{{ $value->texto }}</td>
+                </tr>
+
 
             @endforeach
-            
             </tbody>
+            
         </table>
     </div>
     

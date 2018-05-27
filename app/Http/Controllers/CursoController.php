@@ -101,6 +101,14 @@ class CursoController extends Controller
         return redirect('/adminUsers');
     }
 
+    public function deleteColaborador(User $user)
+    {
+        
+        $user->delete();
+
+        return redirect('/adminUsers');
+    }
+
     public function adminEditarCurso()
     {
         $dados = Curso::all();

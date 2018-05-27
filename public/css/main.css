@@ -5,6 +5,10 @@
 
 .footer {
     background: linear-gradient(rgb(214, 65, 11), #18186d 23%);
+    margin: auto;
+    width: 100%;
+    bottom: 0;
+    position: relative;
 }
 
 #imgFooter {
@@ -20,4 +24,11 @@
     top: 25%;
     right: 30%;
     position: absolute;
+}
+
+#fonteHome {
+    font-family: Impact;
+    font-size: 25px;
+    letter-spacing: 0, 5px;
+    color: whitesmoke;
 }
