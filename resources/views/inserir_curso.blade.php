@@ -4,6 +4,11 @@
 
 <br><br>
 <div class="container">
+<nav class="breadcrumb">
+    <a class="breadcrumb-item" href="/">Home</a>
+    <a class="breadcrumb-item" href="/admin">Administrar</a>
+    <span class="breadcrumb-item active">Novo Curso</span>
+    </nav>
         <div class="row">
             <div class="col-8">
             <h1 class="display-3">Novo Curso</h1>
@@ -24,7 +29,7 @@
 </div>
 
 <div class="form-group">
-<label for="img">Imagem do curso</label>
+<label for="img">Imagem Principal</label>
 <input type="text" class="form-control" name="img" id="img">
 </div>
 

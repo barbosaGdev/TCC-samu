@@ -4,8 +4,12 @@
 <br><br>
     <!-- Page Content -->
     <div class="container">
-
-      <!-- Page Heading/Breadcrumbs -->
+    <!-- Page Heading/Breadcrumbs -->
+    <nav class="breadcrumb">
+    <a class="breadcrumb-item" href="/">Home</a>
+    <a class="breadcrumb-item" href="/admin">Meus Cursos</a>
+    <span class="breadcrumb-item active">curso</span>
+    </nav>
       <h1 class="mt-4 mb-3">{{$dados->nome}}
         <small>- Nep</small>
       </h1>

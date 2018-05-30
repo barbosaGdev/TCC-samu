@@ -3,6 +3,11 @@
 @section('content')
 <br><br><br>
 <div class="container">
+<nav class="breadcrumb">
+    <a class="breadcrumb-item" href="/">Home</a>
+    <a class="breadcrumb-item" href="/admin">Administrar</a>
+    <span class="breadcrumb-item active">Registrar</span>
+    </nav>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

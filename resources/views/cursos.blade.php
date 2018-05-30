@@ -5,6 +5,10 @@
 
 <div class="container">
 <!-- Page Heading/Breadcrumbs -->
+<nav class="breadcrumb">
+<a class="breadcrumb-item" href="/">Home</a>
+<span class="breadcrumb-item active">Meus Cursos</span>
+</nav>
 <h1 class="mt-4 mb-3">Meus Cursos
   <small>- Núcleo de Educação e Pesquisa</small>
 </h1>

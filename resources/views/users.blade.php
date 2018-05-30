@@ -5,7 +5,11 @@
 
 
     <div class="container">
-
+    <nav class="breadcrumb">
+    <a class="breadcrumb-item" href="/">Home</a>
+    <a class="breadcrumb-item" href="/admin">Administrar</a>
+    <span class="breadcrumb-item active">Lista de quem está realizando os cursos</span>
+    </nav>
         
 
     <h1>Colaboradores</h1>
