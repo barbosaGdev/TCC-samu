@@ -4,8 +4,12 @@
 <br><br><br>
 
      <div class="container">
-
       <!-- Page Heading/Breadcrumbs -->
+      <nav class="breadcrumb">
+      <a class="breadcrumb-item" href="/">Home</a>
+      <a class="breadcrumb-item" href="/about">Sobre</a>
+      <span class="breadcrumb-item active">Editar curso</span>
+      </nav>
       <h1 class="mt-4 mb-3">Ouvidoria<br>
         <small>Base: Delta1</small>
       </h1>    
