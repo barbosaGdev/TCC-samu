@@ -21,7 +21,7 @@
           @foreach($dados as $v) 
           <div class="{{$i == 0 ? 'carousel-item active' : 'carousel-item' }}" style="background-image: url('{{$v->imagem1}}')">
             <div class="carousel-caption d-none d-md-block">
-              <h3><font color="black">{{$v->titulo_noticia}}</font></h3>
+              <h3><font color="black" style="background: #FF4500">{{$v->titulo_noticia}}</font></h3>
                <a href="/noticia/{{$v->id}}" class="btn-dark" method="get">Saiba Mais</a>
             </div>
           </div>
@@ -84,7 +84,7 @@
               <p class="card-text">A Hipoglicemia ocorre quando há falta de açúcar no sangue (falta de glicose). Geralmente acontece no período da manhã e não ocorre necessariamente com pessoas diabéticas. A glicose é responsável por levar o oxigênio para o cérebro; com a diminuição ocorre tonturas , confusão mental e até parada respiratória.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
-              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="background-color: orangered;">Leia Mais</a>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="background-color: orangered; border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
               <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
@@ -145,7 +145,7 @@
 Em alguns casos ocorrem devidos a TCE's ( Trauma Crânio Encefálico) e overdoses.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
-              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal2" style="background-color: orangered;">Leia Mais</a>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal2" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
               <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	      	<div class="modal-dialog" role="document">
@@ -193,7 +193,7 @@ Em alguns casos ocorrem devidos a TCE's ( Trauma Crânio Encefálico) e overdose
 Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadeira. Enquanto uma queda da própria altura, seria basicamente tropeçar e cair.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
-              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal3" style="background-color: orangered;">Leia Mais</a>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal3" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
               <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
@@ -241,7 +241,7 @@ A Parada Cardiorrespiratória é o momento em que o coração deixa de funcionar
 A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida parada cardíaca. O Trauma pode levar diretamente a parada cardíaca.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
-              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal4" style="background-color: orangered;">Leia Mais</a>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal4" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
               <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
@@ -306,7 +306,7 @@ A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida 
               <p class="card-text">Denominamos engasgo quando ocorre o bloqueio da traqueia ( órgão responsável em enviar e retirar o ar dos pulmões) por um objeto estranho, por vômito ou até mesmo sangue. Fisiologicamente, a traqueia é frequentemente protegida pela epiglote; esta nada mais serve como uma porta que abre e fecha, conforme a necessidade de ar. </p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
-              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal5" style="background-color: orangered;">Leia Mais</a>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal5" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
               <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
@@ -373,7 +373,7 @@ A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida 
               <p class="card-text">O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
-              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal6" style="background-color: orangered;">Leia Mais</a>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal6" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
               <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
