@@ -44,7 +44,22 @@
       </div>
       <!-- /.row -->
       <br>
-        <h2>*informação sobre fake news e a relação com o SAMU</h2>
+        <h2>Fake news / Trote e o SAMU</h2>
+        <p>
+            Segundo levantamento nacional do Ministério
+            da Saúde, em 2007, cerca de 40% das ligações para o
+            SAMU, eram trotes. Os horários de pico desses trotes
+            são justamente o de intervalo das escolas, tanto
+            de manhã quanto à tarde, e o de saída dos alunos. Os
+            deslocamentos das ambulâncias em razão desses trotes
+            geram gastos e perda de tempo ao serviço. Mas a
+            consequência mais preocupante é fazer com que uma
+            pessoa que necessite realmente de socorro tenha que
+            aguardar mais do que precisaria, agravando seu estado,
+            ou, em alguns casos, vindo a falecer.<br>
+            O trote além de desviar as ações das equipes para casos 
+            inverídicos pode render pena de detenção de 1 a 3 anos, e multa.
+        </p>
       <br>
       <!-- Contact Form -->
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
