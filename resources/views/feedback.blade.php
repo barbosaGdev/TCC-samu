@@ -44,7 +44,7 @@
       </div>
       <!-- /.row -->
       <br>
-        <h2>Fake news / Trote e o SAMU</h2>
+        <h2>Fake news / Trote e o SAMU</h2><br>
         <p>
             Segundo levantamento nacional do Ministério
             da Saúde, em 2007, cerca de 40% das ligações para o
@@ -65,7 +65,7 @@
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
       <div class="row">
         <div class="col-lg-8 mb-4">
-          <h3>Deixe sua Sugestão,Reclamação ou Crítica que atenderemos você!</h3><br>
+          <h3>Deixe sua sugestão, reclamação ou crítica que atenderemos você!</h3><br>
           <form method="post" action="/saveFeedback">
 
           {{ csrf_field() }}

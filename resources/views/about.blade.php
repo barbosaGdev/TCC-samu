@@ -49,10 +49,10 @@
 </P>
 <h4>Como chamar:</h4> <br>
 <p>
-   *Por meio do número 192 vocÊ tem acesso ao Serviço de Atendimento Móvel de Urgência;
-   *O acionamento é feito pela central telefônica. Após o contato você deve dizer seu nome, o que e onde aconteceu;
-   *A partir do relato será feita a classificação do risco: que pode ser desde uma orientação por telefone até o envio de uma ambulância básica ou avançada para o local;
-   *Não mexa na vítima. Isso pode acarretar outra sequela mais grave.
+   *Por meio do número 192 você tem acesso ao Serviço de Atendimento Móvel de Urgência;<br>
+   *O acionamento é feito pela central telefônica. Após o contato você deve dizer seu nome, o que e onde aconteceu;<br>
+   *A partir do relato será feita a classificação do risco: que pode ser desde uma orientação por telefone até o envio de uma ambulância básica ou avançada para o local;<br>
+   *Não mexa na vítima. Isso pode acarretar outra sequela mais grave.<br>
     
 </p>
 
@@ -64,7 +64,7 @@
     <div class="card h-100 text-center">
       <img class="card-img-top" src="http://placehold.it/750x450" alt="">
       <div class="card-body">
-        <h4 class="card-title">Wagner</h4>
+        <h4 class="card-title">Coordenador</h4>
         <h6 class="card-subtitle mb-2 text-muted">Geral</h6>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
       </div>
@@ -77,7 +77,7 @@
     <div class="card h-100 text-center">
       <img class="card-img-top" src="http://placehold.it/750x450" alt="">
       <div class="card-body">
-        <h4 class="card-title">Machado</h4>
+        <h4 class="card-title">Coordenador</h4>
         <h6 class="card-subtitle mb-2 text-muted">Enfermagem</h6>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
       </div>
@@ -90,7 +90,7 @@
     <div class="card h-100 text-center">
       <img class="card-img-top" src="http://placehold.it/750x450" alt="">
       <div class="card-body">
-        <h4 class="card-title">Fabiano</h4>
+        <h4 class="card-title">Coordenador</h4>
         <h6 class="card-subtitle mb-2 text-muted">Educação</h6>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
       </div>
