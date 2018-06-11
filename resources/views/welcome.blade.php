@@ -51,17 +51,20 @@
     <br><br><br>
     <!-- Page Content -->
     <div class="container">
-      <div class="text-left">
+      <div class="text-center">
         
         
-          <h2>SAMU 192:</h2>
-          <p>O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) <br>
-              é um serviço Pré-hospitalar de Atendimento Móvel <br>
-              de Urgência e Emergência, tendo como objetivo <br>
-              chegar precocemente à vítima após ter ocorrido <br>
-              um agravo à sua saúde (de natureza clínica, <br>
-              cirúrgica, traumática, obstétrica, pediátrica, <br>
-              psiquiátrica, entre outras). </p>
+          <h2 style="font-family:Stencil Std,fantasy; font-size:40px">SAMU 192</h2>
+          <p style="font-family:verdana">O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) 
+              é um serviço Pré-hospitalar de Atendimento Móvel 
+              de Urgência e Emergência, tendo como objetivo 
+              chegar precocemente à vítima após ter ocorrido 
+              um agravo à sua saúde (de natureza clínica, 
+              cirúrgica, traumática, obstétrica, pediátrica, 
+              psiquiátrica, entre outras). O serviço SAMU 192 presta socorro a população nas 
+              residências, locais de trabalho e vias públicas. A equipe é composta por condutores-socorristas, 
+              técnicos em enfermagem, enfermeiros e médicos, todos capacitados em atendimento de 
+              urgência de natureza traumática, clínica, pediátrica, obstétricas e psiquiátricas.</p>
           
        </div>
 
@@ -71,12 +74,12 @@
         
         
         
-      <h1 class="my-4">Primeiros Socorros</h1>
+      <h1 style="margin-top:50px;font-family:Gill Sans, sans-serif;font-weight:600">Primeiros Socorros</h1>
 
       <!-- Marketing Icons Section -->
   
        <!-- Marketing Icons Section -->
-       <div class="row">
+       <div class="row" style="margin-top:30px">
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
             <h4 class="card-header" style="background-color: rgb(25, 25, 112);"><font color="white">Hipoglicemia</font></h4>
