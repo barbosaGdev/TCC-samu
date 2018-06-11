@@ -21,6 +21,15 @@ class NoticiasController extends Controller
         return view('noticia', compact('dados'));
     }
 
+    public function mostrarNoticias()
+    {
+        $dados = Noticia::all();
+
+        // dd($dados);
+
+        return view('mostrarNoticias', compact('dados'));
+
+    }    
     
 
 }

@@ -49,6 +49,7 @@ Route::get('/editarNoticia/{dados}', ['middleware' => 'authAdmin', 'uses' => 'Ho
 Route::post('/updateNoticia', ['middleware' => 'authAdmin', 'uses' => 'HomeController@updateNoticia' ]);
 Route::post('/deleteNoticia/{noticia}', ['middleware' => 'authAdmin', 'uses' => 'HomeController@deleteNoticia' ]);
 Route::get('/noticia/{id}', 'NoticiasController@exibirNoticia');
+Route::get('/ver/noticias', 'NoticiasController@mostrarNoticias');
 
 
 
