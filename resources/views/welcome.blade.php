@@ -368,9 +368,9 @@ A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida 
           
           <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header" style="background-color: rgb(25, 25, 112);"><font color="white">Traumas</font></h4>
+            <h4 class="card-header" style="background-color: rgb(25, 25, 112);"><font color="white">Desmaio</font></h4>
             <div class="card-body">
-              <p class="card-text">É a lesão corporal resultado da exposição à energia (mecânica, térmica, elétrica, química ou radiação) que interagiu com o corpo em quantidades acima da suportada fisiologicamente. O tempo de exposição e o surgimento da lesão devem ser curtos (alguns minutos). O trauma pode ser intencional ou não intencional e varia de leve a grave.</p>
+              <p class="card-text">O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal6" style="background-color: orangered;">Leia Mais</a>
@@ -383,10 +383,20 @@ A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida 
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
 				<div class="modal-body">
-                                    <p> O que é trauma (traumatismo)? <br><br>
+                                    <p> O que é desmaio? <br><br>
 
-                                      É a lesão corporal resultado da exposição à energia (mecânica, térmica, elétrica, química ou radiação) que interagiu com o corpo em quantidades acima da suportada fisiologicamente. Pode ainda em alguns casos ser resultado da insuficiência de algum elemento vital (afogamento, estrangulamento, congelamento). O tempo de exposição e o surgimento da lesão devem ser curtos (alguns minutos). O trauma pode ser intencional ou não intencional e varia de leve a grave.
+                                      O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.
+                                      É a perda momentânea dos sentidos.<br><br>
 
+                                      Sintomas Apresentados:<br><br>
+
+                                      Inconsciência, suor abundante, pulso e respiração fracos, visão nublada.<br><br>
+
+                                      Como proceder?<br><br>
+
+                                      Deite a vítima de costas, com a cabeça mais baixa, levante suas perna, afrouxe suas roupas e aplique compressas frias no rosto e na testa. Verifique a respiração e pulsação.<br>
+                                      Se a vítima apresentar o rosto demasiadamente avermelhado, a cabeça deve ser mantida mais alta que o corpo enquanto persistir este sintoma. Se a situação prolongar-se por mais de 2 minutos,
+                                      agasalhe a vítima e procure atendimento médico imediatamente, pois ela pode estar entrando em estado de choque. Mesmo após recuperada a consciência, a vítima deve ficar em repouso durante vários minutos.
                                     </p>   
                                 </div>	
 			
