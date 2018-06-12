@@ -28,11 +28,13 @@
                     <tr>
                         <td><a href="adminUsersCurso/{{$d->id}}">  {{ $d->name }}</a></td>
                         <td>{{ $d->email }}</td>
-                        <td> 
+                        <td>
+                        @if($d->email != 'admin@samu.com') 
                             <form method="post" style="display: inline;" action="/deleteColaborador/{{$d->id}}">
                                 {{csrf_field()}}
                                     <button class="btn btn-danger fa fa-trash" onclick="return confirm('Tem certeza que deseja deletar esse colaborador?'); return false;"></button>
                             </form> 
+                        @endif    
                         </td>
 
                     </tr>

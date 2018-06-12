@@ -71,8 +71,9 @@ class CursoController extends Controller
     //Pega a lista de usuarios cadastrados
     public function users()
     {
+        $loggedUser = \Auth::user();
         $dados =  User::All();
-        return view('users', compact('dados'));
+        return view('users', compact('dados','loggedUser'));
         
     }
 
@@ -103,7 +104,6 @@ class CursoController extends Controller
 
     public function deleteColaborador(User $user)
     {
-        
         $user->delete();
 
         return redirect('/adminUsers');

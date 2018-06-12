@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<br><br><br>
+
 <div class="container">
 <nav class="breadcrumb">
     <a class="breadcrumb-item" href="/">Home</a>
@@ -25,7 +25,7 @@
 
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('name') }}</strong>
+                                        <strong>Nome Inválido</strong>
                                     </span>
                                 @endif
                             </div>
@@ -39,7 +39,7 @@
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                        <strong>Email já cadastrado</strong>
                                     </span>
                                 @endif
                             </div>
@@ -53,7 +53,7 @@
 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('password') }}</strong>
+                                        <strong>As senhas não se coincidem</strong>
                                     </span>
                                 @endif
                             </div>
@@ -80,5 +80,5 @@
         </div>
     </div>
 </div>
-<br><br><br><br><br><br><br><br><br>
+
 @endsection

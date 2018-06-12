@@ -54,7 +54,7 @@
       <div class="text-center">
         
         
-          <h2 style="font-family:Stencil Std,fantasy; font-size:40px">SAMU 192</h2>
+          <h2 style="font-family:Impact; font-size:40px">SAMU 192</h2>
           <p style="font-family:verdana">O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) 
               é um serviço Pré-hospitalar de Atendimento Móvel 
               de Urgência e Emergência, tendo como objetivo 
@@ -89,8 +89,8 @@
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="background-color: orangered; border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
+              <div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
 			<div class="modal-header">
                            <h4 class="modal-title text-center" id="myModalLabel">Hipoglicemia</h4>
@@ -150,8 +150,8 @@ Em alguns casos ocorrem devidos a TCE's ( Trauma Crânio Encefálico) e overdose
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal2" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
-              <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	      	<div class="modal-dialog" role="document">
+              <div class="modal fade bd-example-modal-lg" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	      	<div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
 		      	<div class="modal-header">
                            <h4 class="modal-title text-center" id="myModalLabel">Convulsão</h4>
@@ -198,8 +198,8 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal3" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
-              <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
+              <div class="modal fade bd-example-modal-lg" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
 			<div class="modal-header">
                            <h4 class="modal-title text-center" id="myModalLabel">Traumas</h4>
@@ -246,8 +246,8 @@ A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida 
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal4" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
-              <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
+              <div class="modal fade bd-example-modal-lg" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
 			<div class="modal-header">
                            <h4 class="modal-title text-center" id="myModalLabel">Parada Cardiorrespiratória</h4>
@@ -311,8 +311,8 @@ A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida 
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal5" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
-              <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
+              <div class="modal fade bd-example-modal-lg" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
 			<div class="modal-header">
                            <h4 class="modal-title text-center" id="myModalLabel">Engasgo</h4>
@@ -378,8 +378,8 @@ A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida 
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal6" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
-              <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
+              <div class="modal fade bd-example-modal-lg" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
 			<div class="modal-header">
                            <h4 class="modal-title text-center" id="myModalLabel">Traumas</h4>
