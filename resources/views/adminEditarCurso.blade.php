@@ -10,9 +10,14 @@
 <span class="breadcrumb-item active">Editar curso</span>
 </nav>
     
-    @foreach ($dados as $v)
-    
-        {{ $v->nome }} 
+ @foreach ($dados as $v)
+<!-- Project One -->
+<div class="row">
+  <div class="col-md-7 img-fluid">
+      <img class="img-fluid rounded mb-3 mb-md-0" src="{{$v->img}}" height="700" width="500" >
+  </div>
+  <div class="col-md-5">
+    <h3>{{$v->nome}}</h3>
 
     <div class="align-right">
       <a href="/editarCurso/{{$v->id}}" class="btn btn-primary fa fa-wrench" method="post"></a>
@@ -21,10 +26,22 @@
         <button class="btn btn-danger fa fa-trash" onclick="return confirm('Tem certeza que deseja deletar esse registro?'); return false;"></button>
     </form>
     <br>
-    @endforeach
-    </div>
-    <br>
+
+
+    
+    <p class="lead">{{$v->descricao}}</p>
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-@endsection
+</div>
+<!-- /.row -->
+<hr>
+@endforeach 
+
+</div>
+<br>
+</div>
+
+
   
