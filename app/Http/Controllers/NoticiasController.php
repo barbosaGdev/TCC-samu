@@ -11,7 +11,10 @@ class NoticiasController extends Controller
 {
     public function menuNoticia()
     {
-        $dados = Noticia::all();
+        $dados = Noticia::orderBy('id', $direction = 'desc')->take(3)->get();
+
+        // dd($dados);
+
         return view('welcome', compact('dados'));
     }
     

@@ -145,7 +145,7 @@ class CursoController extends Controller
 
 
         // $curso->delete();
-        return redirect('/admin');
+        return redirect('/adminEditarCurso');
         
     }
 }

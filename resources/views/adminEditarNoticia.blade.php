@@ -11,8 +11,16 @@
 </nav>
     
     @foreach ($dados as $v)
-    
-        {{ $v->titulo_noticia }} 
+<!-- Project One -->
+<div class="row">
+  <div class="col-md-7 img-fluid">
+      <img class="img-fluid rounded mb-3 mb-md-0" src="{{$v->imagem1}}" height="700" width="500" >
+  </div>
+  <div class="col-md-5">
+    <h3>{{$v->titulo_noticia}}</h3>
+
+    <p>Data do Post da Notícia: {{$v
+    ->created_at}}</p>
 
     <div class="align-right">
       <a href="/editarNoticia/{{$v->id}}" class="btn btn-primary fa fa-wrench" method="post"></a>
@@ -20,8 +28,19 @@
         {{csrf_field()}}
         <button class="btn btn-danger fa fa-trash" onclick="return confirm('Tem certeza que deseja deletar esse registro?'); return false;"></button>
     </form>
-    <br>
-    @endforeach
+
+    
+    <p class="lead">{{$v->paragrafo1}}</p>
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+</div>
+<!-- /.row -->
+
+<hr>
+@endforeach 
+        </div>
     </div> 
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

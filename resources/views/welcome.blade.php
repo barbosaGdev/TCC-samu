@@ -1,3 +1,9 @@
+ <?php 
+ 
+  $c = 0;
+  $i = 0;
+ ?>
+
 @extends('layouts.app')
 
 @section('content')
@@ -5,16 +11,18 @@
 
  <header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+     
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-       
+
+        @foreach($dados as $n )
+
+          <li data-target="#carouselExampleIndicators" data-slide-to="{{$c}}" {{$c == 0 ? 'class="carousel-item active"' : '' }}"></li>
+          <?php $c++; ?>
+
+        @endforeach
         </ol>
 
-        <?php $i = 0;?>
+        
         
         <div class="carousel-inner" role="listbox">
 

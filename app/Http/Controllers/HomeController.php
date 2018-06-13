@@ -98,7 +98,7 @@ class HomeController extends Controller
     public function deleteNoticia(Noticia $noticia)
     {
         $noticia->delete();
-        return redirect('/admin');
+        return redirect('/adminEditarNoticia');
         
         //return 'ok';
     }
