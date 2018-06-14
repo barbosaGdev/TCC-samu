@@ -23,7 +23,7 @@
   <div class="col-md-5">
     <h3>{{$v->nome}}</h3>
     <p>{{$v->descricao}}</p>
-    <a href="/cursosView/{{$v->id}}" class="btn btn-primary">Cursar
+    <a href="/cursosView/{{$v->id}}" class="btn btn-primary"style="background-color: orangered;border-color: orangered;">Cursar
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div>

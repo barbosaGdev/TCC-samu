@@ -1,5 +1,5 @@
 #nav {
-    height: 80px;
+
     background: #191970;
 }
 
@@ -7,7 +7,7 @@
     background: #191970;
     margin: auto;
     width: 100%;
-    margin-top: 300px ;
+    margin-top: 200px ;
     bottom: 0;
     position: relative;
 }
@@ -28,7 +28,7 @@
 }
 
 #fonteHome {
-    font-family: Impact;
+    font-family: Agenda;
     font-size: 25px;
     letter-spacing: 0, 5px;
     color: whitesmoke;

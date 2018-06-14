@@ -55,7 +55,7 @@
 <input type="text" class="form-control" name="pdf" id="pdf" value="{{$dados->pdf}}">
 </div>
 
-<button type="submit" class="btn btn-primary">Enviar</button>
+<button type="submit" class="btn btn-primary" style="background-color: orangered;border-color: orangered;">Enviar</button>
 </form> 
 </div>
 </div>    

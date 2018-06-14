@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+<br>
 <div class="container">
 <nav class="breadcrumb">
     <a class="breadcrumb-item" href="/">Home</a>
@@ -11,7 +11,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="background:orangered"><strong>Registro de Novos Colaboradores</strong></div>
+                <div class="card-header" style="background: rgb(25, 25, 112);"><strong><font style="color: white">Registro de Novos Colaboradores</font></strong></div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -69,7 +69,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary" style="background: #191970">
+                                <button type="submit" class="btn btn-primary" style="background-color: orangered;border-color: orangered;">
                                     Registrar
                                 </button>
                             </div>

@@ -53,7 +53,7 @@
 <input type="text" class="form-control" name="pdf" id="pdf">
 </div>
 
-<button type="submit" class="btn btn-primary" style="background:#191970">Enviar</button>
+<button type="submit" class="btn btn-primary" style="background-color: orangered;border-color: orangered;">Enviar</button>
 </form>
 <br><br><br><br> 
 </div>  

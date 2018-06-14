@@ -10,8 +10,8 @@
       <a class="breadcrumb-item" href="/about">Sobre</a>
       <span class="breadcrumb-item active">Ouvidoria</span>
       </nav>
-      <h1 class="mt-4 mb-3">Ouvidoria<br>
-        <small>Base: Delta1</small>
+      <h1 class="mt-4 mb-3">Ouvidoria<h1>
+        <small>Base Delta1</small>
       </h1>    
 
       <!-- Content Row -->
@@ -61,11 +61,12 @@
             inverídicos pode render pena de detenção de 1 a 3 anos, e multa.
         </p>
       <br>
+      <h2>Deixe sua sugestão, reclamação ou crítica que atenderemos você!</h2><br> 
       <!-- Contact Form -->
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
       <div class="row">
+        
         <div class="col-lg-8 mb-4">
-          <h3>Deixe sua sugestão, reclamação ou crítica que atenderemos você!</h3><br>
           <form method="post" action="/saveFeedback">
 
           {{ csrf_field() }}

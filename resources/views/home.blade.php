@@ -12,7 +12,7 @@
             <form action="/insert" method="post">
 
                 <input type="hidden" value="{{$v->id}}" name="id">
-                <button class="btn btn-primary">Cursar</button> <br>
+                <button class="btn btn-primary" style="background-color: orangered;border-color: orangered;">Cursar</button> <br>
 
             </form>
         @endforeach

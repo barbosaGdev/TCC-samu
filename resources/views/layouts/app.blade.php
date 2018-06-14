@@ -23,8 +23,8 @@
  <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" id="nav">
       <div class="container">
-          <img src="{{ asset('images/samu_logo.png') }}" style="margin: 3px;">
-        <a class="navbar-brand" href="/" id="fonteHome">SAMU Baixa Mogiana</a>
+          <img src="{{ asset('images/logoo.png') }}" width="45">
+        <a class="navbar-brand" href="/" id="logoo">&nbsp SAMU Baixa Mogiana</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -81,16 +81,13 @@
 
    <!-- Footer -->
     <footer class="footer" >
-      <div class="container">
-        <br><br><br><h5 class="m-0 text-left text-white"><i>Plataforma Web do SAMU da Baixa Mogiana</i></h5><br>
-        <p class="text-white">Acesse a nossa página no  <a href="https://www.facebook.com/samubaixamogiana/?rf=287489251342339" >Facebook<i style="margin: 2px" class="fa fa-facebook-square"></i></a> <img id="imgFooter" src="{{ asset('images/logo.png') }}"> </p>
-        <p class="text-white">Telefone Administrativo:(19)3811-7450<i style="margin: 2px" class="fa fa-address-book-o"></i> </p>
+        <br><br>
+        <div class="container">
+        <h5 class="m-0 text-left text-white" ><i>Plataforma Web do SAMU da Baixa Mogiana</h5>&nbsp;&nbsp;&nbsp;&nbsp;   <img id="imgFooter" src="{{ asset('images/logo.png') }}"> <br> 
+        <p class="text-white">Acesse a nossa página no  <a href="https://www.facebook.com/samubaixamogiana/?rf=287489251342339"<i style="margin: 2px" class="	fa fa-facebook-square"> Facebook</a></p>
+        <p class="text-white"><i style="margin: 2px" class="fa fa-phone"> Telefone Administrativo: (19) 3811-7450</i> </p> 
         <a href="https://github.com/barbosaGdev/TCC-samu" class="text-white"> Copyright © OnSamu BM 2018</a>
         
-           
-          
-        
-       
       </div>
   
       <!-- /.container -->

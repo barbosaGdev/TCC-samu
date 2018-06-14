@@ -59,7 +59,7 @@
 <textarea rows="6" cols="100" class="form-control" type="text" name="paragrafo4" id="paragrafo4" value="{{$dados->paragrafo4}}"></textarea>
 </div>
 
-<button type="submit" class="btn btn-primary">Enviar</button><br><br><br><br><br><br>
+<button type="submit" class="btn btn-primary" style="background-color: orangered;border-color: orangered;">Enviar</button><br><br><br><br><br><br>
 </form> 
 </div>    
 

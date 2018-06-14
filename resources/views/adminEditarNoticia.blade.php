@@ -21,16 +21,13 @@
 
     <p>Data do Post da Notícia: {{$v
     ->created_at}}</p>
-
+    <p class="lead">{{$v->paragrafo1}}</p>
     <div class="align-right">
       <a href="/editarNoticia/{{$v->id}}" class="btn btn-primary fa fa-wrench" method="post"></a>
       <form method="post" style="display: inline;" action="/deleteNoticia/{{$v->id}}">
         {{csrf_field()}}
         <button class="btn btn-danger fa fa-trash" onclick="return confirm('Tem certeza que deseja deletar esse registro?'); return false;"></button>
     </form>
-
-    
-    <p class="lead">{{$v->paragrafo1}}</p>
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div>

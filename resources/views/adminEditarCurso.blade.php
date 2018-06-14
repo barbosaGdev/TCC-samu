@@ -18,7 +18,7 @@
   </div>
   <div class="col-md-5">
     <h3>{{$v->nome}}</h3>
-
+    <p class="lead">{{$v->descricao}}</p>
     <div class="align-right">
       <a href="/editarCurso/{{$v->id}}" class="btn btn-primary fa fa-wrench" method="post"></a>
       <form method="post" style="display: inline;" action="/deleteCurso/{{$v->id}}">
@@ -26,10 +26,6 @@
         <button class="btn btn-danger fa fa-trash" onclick="return confirm('Tem certeza que deseja deletar esse registro?'); return false;"></button>
     </form>
     <br>
-
-
-    
-    <p class="lead">{{$v->descricao}}</p>
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div>

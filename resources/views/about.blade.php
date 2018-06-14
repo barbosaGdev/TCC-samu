@@ -32,33 +32,32 @@
 </div>
 <!-- /.row -->
 
-<h2>QUANDO E COMO CHAMAR O SAMU</h2> <br><br>
-<h3>Quando chamar </h3><br>
-<p>
-*Em trabalhos de parto onde haja risco de morte da mãe e o feto; <br>
-*Em casos de tentativa de suicídio; <br>
-*Quando houver acidentes com vítimas; <br>
-*Em acidentes de trânsito (atropelamentos); <br>
-*Intoxicação exógena; <br>
-*Afogamento; <br>
-*Choque elétrico; <br>
-*Problema cardiorrespiratório; <br>
-*Crise hipertensiva; <br>
-*Acidentes com produtos perigosos; <br>
-*Queimaduras graves. <br><br>  
-</P>
-<h3>Como chamar</h3> <br>
-<p>
-   *Por meio do número 192 você tem acesso ao Serviço de Atendimento Móvel de Urgência;<br>
-   *O acionamento é feito pela central telefônica. Após o contato você deve dizer seu nome, o que e onde aconteceu;<br>
-   *A partir do relato será feita a classificação do risco: que pode ser desde uma orientação por telefone até o envio de uma ambulância básica ou avançada para o local;<br>
-   *Não mexa na vítima. Isso pode acarretar outra sequela mais grave.<br><br>
-    
-</p>
-
+<h2>QUANDO E COMO CHAMAR O SAMU</h2><br>
+  <h3>Quando chamar </h3>
+    <ul class="inside">
+      <li>Em trabalhos de parto onde haja risco de morte da mãe e o feto</li> 
+      <li>Em casos de tentativa de suicídio</li>  
+      <li>Quando houver acidentes com vítimas </li> 
+      <li>Em acidentes de trânsito (atropelamentos)</li> 
+      <li>Intoxicação exógena </li>  
+      <li>Afogamento </li>  
+      <li>Choque elétrico </li> 
+      <li>Problema cardiorrespiratório </li> 
+      <li>Crise hipertensiva </li>  
+      <li>Acidentes com produtos perigosos </li> 
+      <li>Queimaduras graves.</li>  
+</ul>
+<h3>Como chamar</h3>
+<ul class="inside">
+   <li>Por meio do número 192 você tem acesso ao Serviço de Atendimento Móvel de Urgência</li>
+   <li>O acionamento é feito pela central telefônica. Após o contato você deve dizer seu nome, o que e onde aconteceu</li>
+   <li>A partir do relato será feita a classificação do risco: que pode ser desde uma orientação por telefone até o envio de uma ambulância básica ou avançada para o local</li>
+   <li>Não mexa na vítima. Isso pode acarretar outra sequela mais grave.</li>   
+</ul>
+<br>
 <!-- Team Members -->
 <h2>Coordenadores</h2>
-<br>
+
 <div class="row">
   <div class="col-lg-4 mb-4">
     <div class="card h-100 text-center">
@@ -101,9 +100,9 @@
   </div>
 </div>
 <!-- /.row -->
-
+<br>
 <!-- Our Customers -->
-<h2>Desenvolvedores do site</h2><br>
+<h2>Desenvolvedores do site</h2>
 <div class="row">
   <div class="col-lg-2 col-sm-4 mb-4">
     <img class="img-fluid" src="http://placehold.it/500x300" alt="">
