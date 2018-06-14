@@ -23,7 +23,7 @@
     <p>Data do Post da Notícia: {{$v
     ->created_at}}</p>
     <p class="lead">{{$v->paragrafo1}}</p>
-    <a href="/noticia/{{$v->id}}" class="btn btn-primary">ler
+    <a href="/noticia/{{$v->id}}" class="btn btn-primary" style="background-color: orangered;border-color: orangered;">Ver
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div>

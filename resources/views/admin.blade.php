@@ -12,19 +12,19 @@
                 <br>
 
                 <ul>
-                <li><a href="{{ route('register') }}">Registrar novos Colaboradores</a></li>
+                <li><a href="{{ route('register') }}"><font size="5">Registrar novos Colaboradores</font></a></li>
                
-                <li><a href="/adminOuvidoria">Ouvidoria</a></li>
+                <li><a href="/adminOuvidoria"><font size="5">Ouvidoria</font></a></li>
 
-                <li><a href="/adminUsers">Lista de quem está realizando os cursos</a></li>
+                <li><a href="/adminUsers"><font size="5">Lista de quem está realizando os cursos</font></a></li>
                 
-                <li><a href="/adminAddCurso" >Adicionar novos cursos</a></li>
+                <li><a href="/adminAddCurso" ><font size="5">Adicionar novos cursos</font></a></li>
 
-                <li><a href="/noticiaInsere">Adicionar uma Notícia</a></li>
+                <li><a href="/noticiaInsere"><font size="5">Adicionar uma Notícia</font></a></li>
 
-                <li><a href="/adminEditarCurso">Editar um curso</a></li>
+                <li><a href="/adminEditarCurso"><font size="5">Editar um curso</font></a></li>
 
-                <li><a href="/adminEditarNoticia">Editar uma Notícia</a></li>
+                <li><a href="/adminEditarNoticia"><font size="5">Editar uma Notícia</font></a></li>
                 
                 </ul>
             

@@ -97,7 +97,7 @@
             </div>
             <div id="success"></div>
             <!-- For success/fail messages -->
-            <button type="submit" class="btn btn-primary" id="sendMessageButton">Enviar</button>
+            <button type="submit" class="btn btn-primary" id="sendMessageButton" style="background-color: orangered;border-color: orangered;">Enviar</button>
           </form>
         </div>
 

@@ -10,7 +10,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="background: orangered"><strong>Faça seu Login</strong></div>
+                <div class="card-header" style="background: rgb(25, 25, 112);"><strong><font style="color: white">Faça seu Login</font></strong></div>
                 
                 <div class="container">
                 </div>
@@ -48,7 +48,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary" style="background: #18186d">
+                                <button type="submit" class="btn btn-primary" style="background-color: orangered;border-color: orangered;">
                                     Entrar
                                 </button>
 

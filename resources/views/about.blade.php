@@ -20,9 +20,9 @@
     <img class="img-fluid rounded mb-4" src="http://www.saobentodosul.sc.gov.br/img/noticias/foto/28796.jpg" alt="">
   </div>
   <div class="col-lg-6">
-    <h2>SAMU:</h2>
-    <p>O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) é um serviço Pré-hospitalar de Atendimento Móvel de Urgência e Emergência, tendo como objetivo chegar precocemente à vítima após ter ocorrido um agravo à sua saúde (de natureza clínica, cirúrgica, traumática, obstétrica, pediátrica, psiquiátrica, entre outras). </p>
-    <h2>SAMU NO BRASIL:</h2>
+    <h2>SAMU</h2>
+    <p>O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) é um serviço Pré-hospitalar de Atendimento Móvel de Urgência e Emergência, tendo como objetivo chegar precocemente à vítima após ter ocorrido um agravo à sua saúde (de natureza clínica, cirúrgica, traumática, obstétrica, pediátrica, psiquiátrica, entre outras). </p><br>
+    <h2>SAMU NO BRASIL</h2>
     <p>Teve inicio a partir de um acordo bilateral entre Brasil e França, baseado
        no modelo Frances considerado por especialistas o melhor do mundo. 
        O Serviço é oferecido pelo Governo Federal em parcerias  com Estados e Municípios, com o objetivo de padronização e cobertura em todo território nacional,  regulamentada pela portaria 1010/MS e 2048/MS. 
@@ -32,8 +32,8 @@
 </div>
 <!-- /.row -->
 
-<h2>QUANDO E COMO CHAMAR O SAMU:</h2> <br>
-<h4>Quando chamar: </h4><br>
+<h2>QUANDO E COMO CHAMAR O SAMU</h2> <br><br>
+<h3>Quando chamar </h3><br>
 <p>
 *Em trabalhos de parto onde haja risco de morte da mãe e o feto; <br>
 *Em casos de tentativa de suicídio; <br>
@@ -45,20 +45,20 @@
 *Problema cardiorrespiratório; <br>
 *Crise hipertensiva; <br>
 *Acidentes com produtos perigosos; <br>
-*Queimaduras graves. <br>  
+*Queimaduras graves. <br><br>  
 </P>
-<h4>Como chamar:</h4> <br>
+<h3>Como chamar</h3> <br>
 <p>
    *Por meio do número 192 você tem acesso ao Serviço de Atendimento Móvel de Urgência;<br>
    *O acionamento é feito pela central telefônica. Após o contato você deve dizer seu nome, o que e onde aconteceu;<br>
    *A partir do relato será feita a classificação do risco: que pode ser desde uma orientação por telefone até o envio de uma ambulância básica ou avançada para o local;<br>
-   *Não mexa na vítima. Isso pode acarretar outra sequela mais grave.<br>
+   *Não mexa na vítima. Isso pode acarretar outra sequela mais grave.<br><br>
     
 </p>
 
 <!-- Team Members -->
 <h2>Coordenadores</h2>
-
+<br>
 <div class="row">
   <div class="col-lg-4 mb-4">
     <div class="card h-100 text-center">
@@ -103,7 +103,7 @@
 <!-- /.row -->
 
 <!-- Our Customers -->
-<h2>Desenvolvedores do site</h2>
+<h2>Desenvolvedores do site</h2><br>
 <div class="row">
   <div class="col-lg-2 col-sm-4 mb-4">
     <img class="img-fluid" src="http://placehold.it/500x300" alt="">

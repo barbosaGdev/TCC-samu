@@ -32,10 +32,14 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="/about"><font color="white" size="3px">Sobre</font></a>
-            </li>
-          
+            </li>           
+
             <li class="nav-item">
               <a class="nav-link" href="/ouvidoria"><font color="white" size="3px">Ouvidoria</font></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/ver/noticias"><font color="white" size="3px">Noticias</font></a>
             </li>
 
                @guest
