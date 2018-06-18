@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/modern-business.css') }}" rel="stylesheet">
 </head>
@@ -24,38 +25,38 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" id="nav">
       <div class="container">
           <img src="{{ asset('images/logoo.png') }}" width="45">
-        <a class="navbar-brand" href="/" id="logoo">&nbsp SAMU Baixa Mogiana</a>
+        <a class="navbar-brand Logoo" href="/">&nbsp SAMU Baixa Mogiana</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/about"><font color="white" size="3px">Sobre</font></a>
+              <a class="nav-link Logoo" href="/about"><font color="white" size="3px">Sobre</font></a>
             </li>           
 
             <li class="nav-item">
-              <a class="nav-link" href="/ouvidoria"><font color="white" size="3px">Ouvidoria</font></a>
+              <a class="nav-link Logoo" href="/ouvidoria"><font color="white" size="3px">Ouvidoria</font></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/ver/noticias"><font color="white" size="3px">Noticias</font></a>
+              <a class="nav-link Logoo" href="/ver/noticias"><font color="white" size="3px">Noticias</font></a>
             </li>
 
                @guest
-                    <li><a class="nav-link" href="{{ route('login') }}"><font color="white" size="3px">NEP</font></a></li>
+                    <li><a class="nav-link Logoo" href="{{ route('login') }}"><font color="white" size="3px">NEP</font></a></li>
                         @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item dropdown Logoo">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle Logoo" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <font color="white" size="3px">{{ Auth::user()->name }}</font> <span class="caret"></span>
                         </a>
 
-                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/cursos">
+                 <div class="dropdown-menu Logoo" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item Logoo" href="/cursos">
                                         Meus Cursos
                     </a>
 
-                    <a class="dropdown-item" href="{{ route('logout') }}"
+                    <a class="dropdown-item Logoo" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                                         Sair
@@ -84,9 +85,9 @@
         <br><br>
         <div class="container">
         <h5 class="m-0 text-left text-white" ><i>Plataforma Web do SAMU da Baixa Mogiana</h5>&nbsp;&nbsp;&nbsp;&nbsp;   <img id="imgFooter" src="{{ asset('images/logo.png') }}"> <br> 
-        <p class="text-white">Acesse a nossa página no  <a href="https://www.facebook.com/samubaixamogiana/?rf=287489251342339"<i style="margin: 2px" class="	fa fa-facebook-square"> Facebook</a></p>
-        <p class="text-white"><i style="margin: 2px" class="fa fa-phone"> Telefone Administrativo: (19) 3811-7450</i> </p> 
-        <a href="https://github.com/barbosaGdev/TCC-samu" class="text-white"> Copyright © OnSamu BM 2018</a>
+        <p class="text-white ">Acesse a nossa página no  <a href="https://www.facebook.com/samubaixamogiana/?rf=287489251342339"<i style="margin: 2px" class="	fa fa-facebook-square"> Facebook</a></p>
+        <p class="text-white "><i style="margin: 2px" class="fa fa-phone"> Telefone Administrativo: (19) 3811-7450</i> </p> 
+        <a href="https://github.com/barbosaGdev/TCC-samu" class="text-white "> Copyright © OnSamu BM 2018</a>
         
       </div>
   

@@ -30,14 +30,13 @@
           <!-- Post Content -->
           <p class="lead">{{$dados->paragrafo1}}</p>
 
-        <div class="col-lg-8">
         @if ($dados->imagem2 == '')
         @else
           <!-- Preview Image -->
           <img class="img-fluid rounded" width="400" height="500" src="{{$dados->imagem2}}" ><br><br>
         @endif   
 
-          <p>{{$dados->paragrafo2}}</p><br>
+          <p class="lead">{{$dados->paragrafo2}}</p><br>
         
         
         @if ($dados->imagem3 == '')
@@ -46,11 +45,9 @@
           <img class="img-fluid rounded" width="600" height="700" src="{{$dados->imagem3}}" ><br><br>
         @endif   
         
-        
-        <div class="col-lg-8">
-          <p>{{$dados->paragrafo3}}</p>
+          <p class="lead">{{$dados->paragrafo3}}</p>
 
-          <p>{{$dados->paragrafo4}}</p>
+          <p class="lead">{{$dados->paragrafo4}}</p>
 
         </div>  
           <hr>
