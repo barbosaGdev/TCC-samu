@@ -22,6 +22,7 @@ class authAdmin
             return redirect('/cursos');
 
         } 
+           
             
 
         return $next($request);
