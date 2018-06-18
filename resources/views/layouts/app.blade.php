@@ -61,7 +61,6 @@
                                         Meus Cursos
                     </a>
 
-<<<<<<< HEAD
                     <a class="dropdown-item Logoo" href="{{ route('logout') }}"
 
                     <a class="dropdown-item Logoo" href="{{ route('logout') }}"

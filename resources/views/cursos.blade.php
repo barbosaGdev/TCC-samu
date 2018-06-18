@@ -7,6 +7,9 @@
 <!-- Page Heading/Breadcrumbs -->
 <nav class="breadcrumb">
 <a class="breadcrumb-item" href="/">Home</a>
+@if($loggedUser->email == 'admin@samu.com')
+<a class="breadcrumb-item" href="/admin">Admin</a>
+@endif
 <span class="breadcrumb-item active">Meus Cursos</span>
 </nav>
 <h1 class="mt-4 mb-3">Meus Cursos

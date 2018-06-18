@@ -48,7 +48,8 @@ class CursoController extends Controller
     {   
 
         $dados = Curso::All();
-        return view('cursos', compact('dados'));
+        $loggedUser = \Auth::user();
+        return view('cursos', compact('dados','loggedUser'));
 
     }
 
