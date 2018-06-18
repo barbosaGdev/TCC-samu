@@ -16,7 +16,7 @@
 
         @foreach($dados as $n )
 
-          <li data-target="#carouselExampleIndicators" data-slide-to="{{$c}}" {{$c == 0 ? 'class="carousel-item active"' : '' }}"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="{{$c}}" {{$c == 0 ? 'class="carousel-item active"' : '' }}></li>
           <?php $c++; ?>
 
         @endforeach
@@ -119,6 +119,8 @@
                                         Agitação e agressividade (em alguns casos);<br> 
                                         Perda de consciência (casos mais graves);<br> 
                                         Dificuldade respiratória.<br> <br> 
+                                        
+                                        <img class="imgi" src="{{ asset('images/sintomas-hipoglicemia.png') }}" width="700"> <br><br>
 
                                         Como proceder? <br><br>
 
@@ -180,6 +182,8 @@ Em alguns casos ocorrem devidos a TCE's ( Trauma Crânio Encefálico) e overdose
                                         Sudorese intensa;<br>
                                         Liberação de esfíncter (urinar ou defecar) em alguns casos.<br><br>
 
+                                        
+                                        
                                         Como proceder?<br><br>
 
                                         Ligar 192;<br>
@@ -227,6 +231,8 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
                                         Encurtamento ou rotação dos membros inferiores (pernas);<br>
                                         Hematomas.<br><br>
                                         
+                                        
+
                                         Como proceder?<br><br>
 
                                         Ligar 192 ou 193;<br>
@@ -281,6 +287,8 @@ A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida 
 
                                         Falta de pulso;<br>
                                         Falta de movimento respiratório.<br><br>
+
+                                        
 
                                         Como proceder?<br><br>
 
