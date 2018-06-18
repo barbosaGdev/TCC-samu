@@ -25,29 +25,34 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" id="nav">
       <div class="container">
           <img src="{{ asset('images/logoo.png') }}" width="45">
-        <a class="navbar-brand Logoo" href="/">&nbsp SAMU Baixa Mogiana</a>
+
+
+        <a class="navbar-brand navHome Logoo" href="/">&nbsp SAMU Baixa Mogiana</a>
+
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link Logoo" href="/about"><font color="white" size="3px">Sobre</font></a>
+
+              <a class="nav-link navHome" href="/about"><font color="white" size="3px">Sobre</font></a>
             </li>           
 
             <li class="nav-item">
-              <a class="nav-link Logoo" href="/ouvidoria"><font color="white" size="3px">Ouvidoria</font></a>
+              <a class="nav-link navHome" href="/ouvidoria"><font color="white" size="3px">Ouvidoria</font></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link Logoo" href="/ver/noticias"><font color="white" size="3px">Noticias</font></a>
+              <a class="nav-link navHome" href="/ver/noticias"><font color="white" size="3px">Noticias</font></a>
             </li>
 
                @guest
-                    <li><a class="nav-link Logoo" href="{{ route('login') }}"><font color="white" size="3px">NEP</font></a></li>
+                    <li><a class="nav-link navHome" href="{{ route('login') }}"><font color="white" size="3px">NEP</font></a></li>
                         @else
-                        <li class="nav-item dropdown Logoo">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle Logoo" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item dropdown">
+                            <a  class="nav-link dropdown-toggle navHome" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
                                     <font color="white" size="3px">{{ Auth::user()->name }}</font> <span class="caret"></span>
                         </a>
 
@@ -56,7 +61,11 @@
                                         Meus Cursos
                     </a>
 
+<<<<<<< HEAD
                     <a class="dropdown-item Logoo" href="{{ route('logout') }}"
+
+                    <a class="dropdown-item Logoo" href="{{ route('logout') }}"
+
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                                         Sair

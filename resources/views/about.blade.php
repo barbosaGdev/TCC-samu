@@ -56,7 +56,7 @@
 </ul>
 <br>
 <!-- Team Members -->
-<h2>Coordenadores</h2>
+<h2>Hierarquia</h2>
 
 <div class="row">
   <div class="col-lg-4 mb-4">
