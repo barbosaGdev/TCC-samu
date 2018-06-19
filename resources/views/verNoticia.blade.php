@@ -4,8 +4,8 @@
 <br><br><br>
 
     @foreach($dados as $v)
-
-    {{ $v->titulo_noticia }}
+    
+    <h1 class="mt-4 mb-3 Titulo">{{$dados->titulo_noticia}}</h1>
     <br>
     @if ($v->imagem1 == '')
     @else
@@ -15,7 +15,7 @@
      @endif
     <br>
     <div class="align-right">
-    <a href="/noticia/{{$v->id}}" class="btn btn-primary" method="get">Ver Notícia</a>
+    <a href="/noticia/{{$v->id}}" class="btn btn-primary Texto" method="get">Ver Notícia</a>
     </div>
 <br>
     @endforeach

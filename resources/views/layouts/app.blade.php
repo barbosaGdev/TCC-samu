@@ -44,7 +44,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link navHome" href="/ver/noticias"><font color="white" size="3px">Noticias</font></a>
+              <a class="nav-link navHome" href="/ver/noticias"><font color="white" size="3px">Notícias</font></a>
             </li>
 
                @guest
@@ -53,17 +53,17 @@
                         <li class="nav-item dropdown">
                             <a  class="nav-link dropdown-toggle navHome" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-                                    <font color="white" size="3px">{{ Auth::user()->name }}</font> <span class="caret"></span>
+                                    <font color="white" class="Titulo"size="3px">{{ Auth::user()->name }}</font> <span class="caret"></span>
                         </a>
 
-                 <div class="dropdown-menu Logoo" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item Logoo" href="/cursos">
+                 <div class="dropdown-menu Texto" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item Texto" href="/cursos">
                                         Meus Cursos
                     </a>
 
-                    <a class="dropdown-item Logoo" href="{{ route('logout') }}"
+                    <a class="dropdown-item Texto" href="{{ route('logout') }}"
 
-                    <a class="dropdown-item Logoo" href="{{ route('logout') }}"
+                    <a class="dropdown-item Texto" href="{{ route('logout') }}"
 
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
