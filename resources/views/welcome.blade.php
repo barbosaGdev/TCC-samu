@@ -170,7 +170,7 @@
                                         Sudorese intensa;<br>
                                         Liberação de esfíncter (urinar ou defecar) em alguns casos.<br><br>
 
-                                        
+                                        <img class="imgi" src="{{ asset('images/convulsaao.jpg') }}" width="500"> <br><br>
                                         
                                         Como proceder?<br><br>
 
@@ -219,7 +219,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
                                         Encurtamento ou rotação dos membros inferiores (pernas);<br>
                                         Hematomas.<br><br>
                                         
-                                        
+                                        <img class="imgi" src="{{ asset('images/traumas.jpg') }}" width="500"> <br><br>
 
                                         Como proceder?<br><br>
 
@@ -276,7 +276,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
                                         Falta de pulso;<br>
                                         Falta de movimento respiratório.<br><br>
 
-                                        
+                                        <img class="imgi" src="{{ asset('images/paradascar.jpg') }}" width="500"> <br><br>
 
                                         Como proceder?<br><br>
 
@@ -331,6 +331,8 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
 
                                         É necessário saber que dependendo da gravidade do engasgo, este é uma situação de emergência médica, sendo necessário chamar o serviço de atendimento especializado em emergência o mais rápido possível; pode ser uma questão de vida ou morte!<br><br>
                                       
+                                        <img class="imgi" src="{{ asset('images/engasgo.jpg') }}" width="700"> <br><br>
+
                                         Como proceder?<br><br>
 
                                         Em caso de engasgo por corpos estranhos como: moedas, pequenos brinquedos, pedra ou qualquer outro objeto pequeno, a manobra que se realiza é a conhecida mundialmente como Manobra de Heimlich. Esta manobra tem como objetivo realizar uma pressão positiva na região do epigastro (“boca do estômago”), a qual fica localizada dois dedos abaixo do fim do esterno (osso longo que une as costelas), colaborando com a desobstrução e consequente passagem de ar.<br><br>
@@ -398,6 +400,8 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
                                       Sintomas Apresentados:<br><br>
 
                                       Inconsciência, suor abundante, pulso e respiração fracos, visão nublada.<br><br>
+
+                                      <img class="imgi" src="{{ asset('images/desmaio.jpg') }}" width="500"> <br><br>
 
                                       Como proceder?<br><br>
 
