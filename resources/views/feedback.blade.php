@@ -75,26 +75,26 @@
             <div class="control-group form-group">
               <div class="controls">
                 <label class="Texto">Nome Completo:</label>
-                <input type="text" class="form-control" name="nome" id="nome" required data-validation-required-message="Please enter your name.">
+                <input type="text" class="Texto form-control" name="nome" id="nome" required data-validation-required-message="Please enter your name.">
                 <p class="help-block"></p>
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
                 <label class="Texto">Telefone para Contato:</label>
-                <input type="tel" class="form-control" name="telefone" id="telefone" required data-validation-required-message="Please enter your phone number.">
+                <input type="tel" class="Texto form-control" name="telefone" id="telefone" required data-validation-required-message="Please enter your phone number.">
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
                 <label class="Texto">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                <input type="email" class="Texto form-control" id="email" name="email" required data-validation-required-message="Please enter your email address.">
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
                 <label class="Texto">Mensagem:</label>
-                <textarea rows="10" cols="100" class="form-control" name="texto" id="texto" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                <textarea rows="10" cols="100" class="Texto form-control" name="texto" id="texto" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
               </div>
             </div>
             <div id="success"></div>

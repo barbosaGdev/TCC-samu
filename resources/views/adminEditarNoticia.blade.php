@@ -5,9 +5,9 @@
 <br><br>
 <div class="container">
 <nav class="breadcrumb">
-<a class="breadcrumb-item" href="/">Home</a>
-<a class="breadcrumb-item" href="/admin">Administrar</a>
-<span class="breadcrumb-item active">Editar Notícia</span>
+<a class="breadcrumb-item Texto" href="/">Home</a>
+<a class="breadcrumb-item Texto" href="/admin">Administrar</a>
+<span class="breadcrumb-item active Texto">Editar Notícia</span>
 </nav>
     
     @foreach ($dados as $v)
@@ -17,11 +17,11 @@
       <img class="img-fluid rounded mb-3 mb-md-0" src="{{$v->imagem1}}" height="700" width="500" >
   </div>
   <div class="col-md-5">
-    <h3>{{$v->titulo_noticia}}</h3>
+    <h3 class="Titulo">{{$v->titulo_noticia}}</h3>
 
-    <p>Data do Post da Notícia: {{$v
+    <p class="Texto">Data do Post da Notícia: {{$v
     ->created_at}}</p>
-    <p class="lead">{{$v->paragrafo1}}</p>
+    <p class="lead Texto">{{$v->paragrafo1}}</p>
     <div class="align-right">
       <a href="/editarNoticia/{{$v->id}}" class="btn btn-primary fa fa-wrench" method="post"></a>
       <form method="post" style="display: inline;" action="/deleteNoticia/{{$v->id}}">

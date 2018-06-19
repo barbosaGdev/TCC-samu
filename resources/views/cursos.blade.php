@@ -6,14 +6,14 @@
 <div class="container">
 <!-- Page Heading/Breadcrumbs -->
 <nav class="breadcrumb">
-<a class="breadcrumb-item" href="/">Home</a>
+<a class="breadcrumb-item Texto" href="/">Home</a>
 @if($loggedUser->email == 'admin@samu.com')
-<a class="breadcrumb-item" href="/admin">Admin</a>
+<a class="breadcrumb-item Texto" href="/admin">Admin</a>
 @endif
-<span class="breadcrumb-item active">Meus Cursos</span>
+<span class="breadcrumb-item active Texto">Meus Cursos</span>
 </nav>
-<h1 class="mt-4 mb-3">Meus Cursos
-  <small>- Núcleo de Educação e Pesquisa</small>
+<h1 class="mt-4 mb-3 Titulo">Meus Cursos
+  <small class="Titulo">- Núcleo de Educação e Pesquisa</small>
 </h1>
 <br>
 
@@ -24,9 +24,9 @@
       <img class="img-fluid rounded mb-3 mb-md-0" src="{{$v->img}}" height="700" width="500" >
   </div>
   <div class="col-md-5">
-    <h3>{{$v->nome}}</h3>
-    <p>{{$v->descricao}}</p>
-    <a href="/cursosView/{{$v->id}}" class="btn btn-primary"style="background-color: orangered;border-color: orangered;">Cursar
+    <h3 class="Titulo">{{$v->nome}}</h3>
+    <p class="Texto">{{$v->descricao}}</p>
+    <a href="/cursosView/{{$v->id}}" class="btn btn-primary Texto" style="background-color: orangered;border-color: orangered;">Cursar
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div>

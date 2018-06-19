@@ -6,12 +6,12 @@
     <div class="container">
     <!-- Page Heading/Breadcrumbs -->
     <nav class="breadcrumb">
-    <a class="breadcrumb-item" href="/">Home</a>
-    <a class="breadcrumb-item" href="/admin">Meus Cursos</a>
-    <span class="breadcrumb-item active">curso</span>
+    <a class="breadcrumb-item Texto" href="/">Home</a>
+    <a class="breadcrumb-item Texto" href="/cursos">Meus Cursos</a>
+    <span class="breadcrumb-item active Texto">Curso</span>
     </nav>
-      <h1 class="mt-4 mb-3">{{$dados->nome}}
-        <small>- Nep</small>
+      <h1 class="mt-4 mb-3 Titulo">{{$dados->nome}}
+        <small class="Titulo">- Nep</small>
       </h1>
 
       <!-- Portfolio Item Row -->
@@ -24,8 +24,7 @@
           @endif
 
         <div class="col-md-4">
-          <h3 class="my-3">Descrição do Curso</h3>
-          <p>{{$dados->descricao}}</p>
+          <p class="Texto">{{$dados->descricao}}</p>
         </div>
 
       </div>

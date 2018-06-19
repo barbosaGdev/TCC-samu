@@ -5,31 +5,30 @@
     
     <div class="container">
     <nav class="breadcrumb">
-    <a class="breadcrumb-item" href="/">Home</a>
-    <a class="breadcrumb-item" href="/admin">Administrar</a>
-    <span class="breadcrumb-item active">Ouvidoria</span>
+    <a class="breadcrumb-item Texto" href="/">Home</a>
+    <a class="breadcrumb-item Texto" href="/admin">Administrar</a>
+    <span class="breadcrumb-item active Texto">Ouvidoria</span>
     </nav>
-    <h1>Feedback da Comunidade</h1>
+    <h1 class="Texto">Feedback da Comunidade</h1>
     <br>
 
     <table class="table table-striped table-hover">
             <thead>
                 <tr>
-                    <th>Nome</th>
-                    <th>Telefone para Contato</th>
-                    <th>Email para Contato</th>
-                    <th>Texto</th>
+                    <th class="Texto">Nome</th>
+                    <th class="Texto">Telefone para Contato</th>
+                    <th class="Texto">Email para Contato</th>
+                    <th class="Texto">Texto</th>
                     
-                
                 </tr>
             </thead>
             <tbody>
             @foreach($dados as $value)
                 <tr>
-                    <td>{{ $value->nome }}</td>
-                    <td>{{ $value->telefone }}</td>
-                    <td>{{ $value->email }}</td>
-                    <td style="white-space: initial">{{ $value->texto }}</td>
+                    <td class="Texto">{{ $value->nome }}</td>
+                    <td class="Texto">{{ $value->telefone }}</td>
+                    <td class="Texto">{{ $value->email }}</td>
+                    <td class="Texto" style="white-space: initial">{{ $value->texto}}</td>
                 </tr>
 
 

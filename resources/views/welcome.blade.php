@@ -1,7 +1,8 @@
  <?php 
- 
+
   $c = 0;
   $i = 0;
+
  ?>
 
 @extends('layouts.app')
@@ -21,8 +22,6 @@
 
         @endforeach
         </ol>
-
-        
         
         <div class="carousel-inner Logoo" role="listbox">
 
@@ -45,14 +44,13 @@
         </a>
       </div>
     </header>
-  
-    <br><
+    
     <!-- Page Content -->
     <div class="container">
       <div class="text-center">
         
-        
-          <h2 class="Titulo"><strong>SAMU 192</strong></h2>
+      <br>
+          <h1 class="Titulo">SAMU 192</h1>
           <p class="Texto">O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) 
               é um serviço Pré-hospitalar de Atendimento Móvel 
               de Urgência e Emergência, tendo como objetivo 
@@ -72,7 +70,7 @@
         
         
         
-      <h1 style="margin-top:50px;font-family: Agenda Medium, sans-serif;font-weight:600">Primeiros Socorros</h1>
+      <h1 class="Titulo">Primeiros Socorros</h1>
 
       <!-- Marketing Icons Section -->
   
@@ -377,7 +375,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
           
           <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header Titulo" style="background-color: rgb(25, 25, 112);"><font color="white">Desmaio</font></h4>
+            <h4 class="card-header Titulo" style="background-color: rgb(25, 25, 112);"><font color="white" class="Titulo">Desmaio</font></h4>
             <div class="card-body">
               <p class="card-text Texto">O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.</p>
             </div>
@@ -388,11 +386,11 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
 		<div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
 			<div class="modal-header">
-                           <h4 class="modal-title text-center Titulo" id="myModalLabel">Traumas</h4>
+                           <h4 class="modal-title text-center Titulo" id="myModalLabel">Desmaio</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
 				<div class="modal-body">
-                                    <p class="Texto"> O que é desmaio? <br><br>
+                                    <p class="Texto"> O que é Desmaio? <br><br>
 
                                       O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.
                                       É a perda momentânea dos sentidos.<br><br>
