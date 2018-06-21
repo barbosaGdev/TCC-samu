@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-8">
             <h1 class="display-3 Texto">Editar Curso</h1>
-<form method="post" action="/editar">
+<form method="post" action="/editar" enctype="multipart/form-data">
 
     {{ csrf_field() }}
 
@@ -30,7 +30,7 @@
 
 <div class="form-group">
 <label for="img" class="Texto">Imagem do curso</label>
-<input type="text" class="Texto form-control" name="img" id="img" value="{{$dados->img}}">
+<input type="file" class="Texto form-control" name="img" id="img" value="{{$dados->img}}">
 </div>
 
 <div class="form-group">

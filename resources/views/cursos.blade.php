@@ -21,7 +21,7 @@
 <!-- Project One -->
 <div class="row">
   <div class="col-md-7 img-fluid">
-      <img class="img-fluid rounded mb-3 mb-md-0" src="{{$v->img}}" height="700" width="500" >
+      <img class="img-fluid rounded mb-3 mb-md-0" src="{{ $v->img }}" height="500" width="500" >
   </div>
   <div class="col-md-5">
     <h3 class="Titulo">{{$v->nome}}</h3>

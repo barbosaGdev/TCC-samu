@@ -13,7 +13,7 @@
             <div class="col-8">
             <h1 class="display-3 Texto">Editar Notícia</h1>
 
-<form method="post" action="/updateNoticia">
+<form method="post" action="/updateNoticia" enctype="multipart/form-data">
 
     {{ csrf_field() }}
 
@@ -26,7 +26,7 @@
 
 <div class="form-group"
 <label for="imagem1" class="Texto">Primeira Imagem</label>
-<input type="text" class="Texto form-control" name="imagem1" id="imagem1" value="{{$dados->imagem1}}">
+<input type="file" class="Texto form-control" name="imagem1" id="imagem1" value="{{$dados->imagem1}}">
 </div>
 
 <div class="form-group"
@@ -36,7 +36,7 @@
 
 <div class="form-group"
 <label for="video2" class="Texto">Segunda Imagem</label>
-<input type="text" class="Texto form-control" name="imagem2" id="imagem2" value="{{$dados->imagem2}}">
+<input type="file" class="Texto form-control" name="imagem2" id="imagem2" value="{{$dados->imagem2}}">
 </div>
 
 <div class="form-group"
@@ -46,7 +46,7 @@
 
 <div class="form-group"
 <label for="pdf" class="Texto">Terceira Imagem</label>
-<input type="text" class="Texto form-control" name="imagem3" id="imagem3" value="{{$dados->imagem3}}">
+<input type="file" class="Texto form-control" name="imagem3" id="imagem3" value="{{$dados->imagem3}}">
 </div>
 
 <div class="form-group"

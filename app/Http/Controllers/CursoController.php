@@ -8,6 +8,8 @@ use App\Curso;
 use App\Cursos_has_user;
 use App\User;
 use DB;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Storage;
 
 class CursoController extends Controller
 {
@@ -32,12 +34,17 @@ class CursoController extends Controller
         $cursos = new Curso();
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
-        $cursos->img = $request->img;
+
+        $path = Storage::disk('public')->putFile('cursos',$request->img);
+        $cursos->img = ( URL::to('/storage') . "/" . $path);
+
         $cursos->video1 = str_replace("watch?v=","embed/",$request->video1);
         $cursos->video2 = str_replace("watch?v=","embed/",$request->video2);
         $cursos->video3 = str_replace("watch?v=","embed/",$request->video3);
         $cursos->pdf = $request->pdf;
+
         $cursos->save();
+
         return redirect('/cursos');
 
 
@@ -130,7 +137,10 @@ class CursoController extends Controller
 
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
-        $cursos->img = $request->img;
+        
+        $path = Storage::disk('public')->putFile('cursos',$request->img);
+        $cursos->img = ( URL::to('/storage') . "/" . $path);
+
         $cursos->video1 = str_replace("watch?v=","embed/",$request->video1);
         $cursos->video2 = str_replace("watch?v=","embed/",$request->video2);
         $cursos->video3 = str_replace("watch?v=","embed/",$request->video3);

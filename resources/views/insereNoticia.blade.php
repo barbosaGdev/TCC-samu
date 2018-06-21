@@ -12,7 +12,7 @@
             <div class="col-8">
             <h1 class="display-3 Texto">Nova Notícia</h1>
 
-<form method="post" action="/noticiaInserir">
+<form method="post" action="/noticiaInserir" enctype="multipart/form-data">
 
     {{ csrf_field() }}
 
@@ -23,7 +23,7 @@
 
 <div class="form-group">
 <label for="imagem1" class="Texto">Primeira Imagem</label>
-<input type="text" class="Texto form-control" name="imagem1" id="imagem1">
+<input type="file" class="Texto form-control" name="imagem1" id="imagem1">
 </div>
 
 <div class="form-group">
@@ -33,7 +33,7 @@
 
 <div class="form-group">
 <label for="video2" class="Texto">Segunda Imagem</label>
-<input type="text" class="Texto form-control" name="imagem2" id="imagem2">
+<input type="file" class="Texto form-control" name="imagem2" id="imagem2">
 </div>
 
 <div class="form-group">
@@ -43,7 +43,7 @@
 
 <div class="form-group">
 <label for="pdf" class="Texto">Terceira Imagem</label>
-<input type="text" class="Texto form-control" name="imagem3" id="imagem3">
+<input type="file" class="Texto form-control" name="imagem3" id="imagem3">
 </div>
 
 <div class="form-group">

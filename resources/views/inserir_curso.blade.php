@@ -14,7 +14,7 @@
             <h1 class="display-3 Texto">Novo Curso</h1>
 
 
-<form method="post" action="/salvar">
+<form method="post" action="/salvar" enctype="multipart/form-data">
 
     {{ csrf_field() }}
 
@@ -30,7 +30,7 @@
 
 <div class="form-group">
 <label for="img" class="Texto">Imagem Principal</label>
-<input type="text" class="Texto form-control" name="img" id="img">
+<input type="file" class="Texto form-control" name="img" id="img">
 </div>
 
 <div class="form-group">

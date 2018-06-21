@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Feedback;
 use App\Noticia;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Storage;
+use DB;
 
 class HomeController extends Controller
 {
@@ -52,13 +55,21 @@ class HomeController extends Controller
         $noticia = new Noticia();
 
         $noticia->titulo_noticia = $request->titulo_noticia;
-        $noticia->imagem1 = $request->imagem1;
-        $noticia->imagem2 = $request->imagem2;
-        $noticia->imagem3 = $request->imagem3;
+
+        $path = Storage::disk('public')->putFile('cursos',$request->imagem1);
+        $noticia->imagem1 = ( URL::to('/storage') . "/" . $path);
+
+        $path = Storage::disk('public')->putFile('cursos',$request->imagem2);
+        $noticia->imagem2 = ( URL::to('/storage') . "/" . $path);
+
+        $path = Storage::disk('public')->putFile('cursos',$request->imagem3);
+        $noticia->imagem3 = ( URL::to('/storage') . "/" . $path);
+
         $noticia->paragrafo1 = $request->paragrafo1;
-        $noticia->paragrafo2 = $request->paragrafo2;
-        $noticia->paragrafo3 = $request->paragrafo3;
-        $noticia->paragrafo4 = $request->paragrafo4;
+        //$noticia->paragrafo2 = $request->paragrafo2;
+        //$noticia->paragrafo3 = $request->paragrafo3;
+        //$noticia->paragrafo4 = $request->paragrafo4;
+        $noticia->paragrafo1 = nl2br($noticia->paragrafo1);
 
         $noticia->save();
 
@@ -84,11 +95,21 @@ class HomeController extends Controller
         $noticia = Noticia::find($request->id);
 
         $noticia->titulo_noticia = $request->titulo_noticia;
-        $noticia->imagem1 = $request->imagem1;
+        
+        $path = Storage::disk('public')->putFile('cursos',$request->imagem1);
+        $noticia->imagem1 = ( URL::to('/storage') . "/" . $path);
+
         $noticia->paragrafo1 = $request->paragrafo1;
-        $noticia->imagem2 = $request->imagem2;
+        
+        $path = Storage::disk('public')->putFile('cursos',$request->imagem2);
+        $noticia->imagem2 = ( URL::to('/storage') . "/" . $path);
+
         $noticia->paragrafo2 = $request->paragrafo2;
-        $noticia->imagem3 = $request->imagem3;
+        
+        $path = Storage::disk('public')->putFile('cursos',$request->imagem3);
+        $noticia->imagem3 = ( URL::to('/storage') . "/" . $path);
+
+
         $noticia->paragrafo3 = $request->paragrafo3;
         $noticia->paragrafo4 = $request->paragrafo4;
         $noticia->save();
