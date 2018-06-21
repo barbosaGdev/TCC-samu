@@ -26,10 +26,10 @@ class OuvidoriaController extends Controller
         $feedback->nome = $request->nome;
         $feedback->telefone = $request->telefone;
         $feedback->email = $request->email;
-        $feedback->texto = $request->texto;
+        $feedback->texto = substr($request->texto,20,"<br />\n"); 
         
         
-        $feedback->save();
+         $feedback->save();
         
         return redirect('/');
         

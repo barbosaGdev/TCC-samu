@@ -28,7 +28,7 @@
                     <td class="Texto">{{ $value->nome }}</td>
                     <td class="Texto">{{ $value->telefone }}</td>
                     <td class="Texto">{{ $value->email }}</td>
-                    <td class="Texto" style="white-space: initial">{{ $value->texto}}</td>
+                    <td class="Texto" style="white-space: initial">{{ $value->texto }}</td>
                 </tr>
 
 
