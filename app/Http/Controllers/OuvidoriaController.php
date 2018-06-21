@@ -10,7 +10,7 @@ class OuvidoriaController extends Controller
 {
     public function ouvidoria()
     {
-        return view('feedback');    
+        return view('feedback');   
     }
 
     public function sobre()
@@ -26,7 +26,7 @@ class OuvidoriaController extends Controller
         $feedback->nome = $request->nome;
         $feedback->telefone = $request->telefone;
         $feedback->email = $request->email;
-        $feedback->texto = substr($request->texto,20,"<br />\n"); 
+        $feedback->texto = $request->texto;
         
         
          $feedback->save();

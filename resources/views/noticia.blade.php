@@ -28,7 +28,7 @@
           <hr>
 
           <!-- Post Content -->
-          <p class="lead Texto">{{$dados->paragrafo1}}</p>
+          <p class="lead Texto">{{ $dados->paragrafo1 }}</p>
 
         @if ($dados->imagem2 == '')
         @else
