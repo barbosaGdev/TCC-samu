@@ -34,18 +34,8 @@
 </div>
 
 <div class="form-group">
-<label for="video1" class="Texto">Vídeo Principal</label>
+<label for="video1" class="Texto">Vídeos</label>
 <input type="text" class="Texto form-control" name="video1" id="video1">
-</div>
-
-<div class="form-group">
-<label for="video2" class="Texto">Vídeo 2</label>
-<input type="text" class="Texto form-control" name="video2" id="video2">
-</div>
-
-<div class="form-group">
-<label for="video3">Vídeo 3</label>
-<input type="text" class="Texto form-control" name="video3" id="video3">
 </div>
 
  <div class="form-group">

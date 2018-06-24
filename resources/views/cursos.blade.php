@@ -13,7 +13,7 @@
 <span class="breadcrumb-item active Texto">Meus Cursos</span>
 </nav>
 <h1 class="mt-4 mb-3 Titulo">Meus Cursos
-  <small class="Titulo">- Núcleo de Educação e Pesquisa</small>
+  <small class="Titulo">- Núcleo de Educação Permanente</small>
 </h1>
 <br>
 
