@@ -50,8 +50,8 @@
       <div class="text-center">
         
       <br>
-          <h1 class="Titulo">SAMU 192</h1>
-          <p class="Texto">O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) 
+          <h1 class="Titulo animated fadeInDown">SAMU 192</h1>
+          <p class="Texto  animated fadeInDown">O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) 
               é um serviço Pré-hospitalar de Atendimento Móvel 
               de Urgência e Emergência, tendo como objetivo 
               chegar precocemente à vítima após ter ocorrido 
@@ -70,7 +70,7 @@
         
         
         
-      <h1 class="Titulo">Primeiros Socorros</h1>
+      <h1 class="Titulo animated fadeInDown">Primeiros Socorros</h1>
 
       <!-- Marketing Icons Section -->
   
@@ -78,12 +78,12 @@
        <div class="row" style="margin-top:30px">
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header Titulo" style="background-color: rgb(25, 25, 112);"><font color="white">Hipoglicemia</font></h4>
+            <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Hipoglicemia</font></h4>
             <div class="card-body">
-              <p class="card-text Texto">A Hipoglicemia ocorre quando há falta de açúcar no sangue (falta de glicose). Geralmente acontece no período da manhã e não ocorre necessariamente com pessoas diabéticas. A glicose é responsável por levar o oxigênio para o cérebro; com a diminuição ocorre tonturas , confusão mental e até parada respiratória.</p>
+              <p class="card-text Texto animated fadeInDown">A Hipoglicemia ocorre quando há falta de açúcar no sangue (falta de glicose). Geralmente acontece no período da manhã e não ocorre necessariamente com pessoas diabéticas. A glicose é responsável por levar o oxigênio para o cérebro; com a diminuição ocorre tonturas , confusão mental e até parada respiratória.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
-              <a href="#" class="btn btn-primary Texto" data-toggle="modal" data-target="#myModal" style="background-color: orangered; border-color: orangered;">Leia Mais</a>
+              <a href="#" class="btn btn-primary Texto animated fadeInDown" data-toggle="modal" data-target="#myModal" style="background-color: orangered; border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
               <div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog modal-lg" role="document">
@@ -140,13 +140,13 @@
           
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header Titulo" style="background-color: rgb(25, 25, 112);"><font color="white">Convulsão</font></h4>
+            <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Convulsão</font></h4>
             <div class="card-body">
-              <p class="card-text Texto">Convulsões geralmente são problemas neurológicos causados por uma descarga elétrica no cérebro. 
+              <p class="card-text Texto animated fadeInDown">Convulsões geralmente são problemas neurológicos causados por uma descarga elétrica no cérebro. 
               Em alguns casos ocorrem devidos a TCE's ( Trauma Crânio Encefálico) e overdoses.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
-              <a href="#" class="btn btn-primary Texto" data-toggle="modal" data-target="#myModal2" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
+              <a href="#" class="btn btn-primary Texto animated fadeInDown" data-toggle="modal" data-target="#myModal2" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
               <div class="modal fade bd-example-modal-lg" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	      	<div class="modal-dialog modal-lg" role="document">
@@ -190,13 +190,13 @@
           
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header Titulo" style="background-color: rgb(25, 25, 112);"><font color="white">Traumas</font></h4>
+            <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Traumas</font></h4>
             <div class="card-body">
-              <p class="card-text Texto">Os Traumas podem ocorrer por quedas acidentais ou quedas da própria altura além de acidentes de trânsito. 
+              <p class="card-text Texto animated fadeInDown">Os Traumas podem ocorrer por quedas acidentais ou quedas da própria altura além de acidentes de trânsito. 
 Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadeira. Enquanto uma queda da própria altura, seria basicamente tropeçar e cair.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
-              <a href="#" class="btn btn-primary Texto" data-toggle="modal" data-target="#myModal3" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
+              <a href="#" class="btn btn-primary Texto animated fadeInDown" data-toggle="modal" data-target="#myModal3" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
               <div class="modal fade bd-example-modal-lg" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog modal-lg" role="document">
@@ -239,14 +239,14 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
           
           <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header Titulo" style="background-color: rgb(25, 25, 112);"><font color="white">Parada Cardiorrespiratória</font></h4>
+            <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Parada Cardiorrespiratória</font></h4>
             <div class="card-body">
-              <p class="card-text Texto">Parada Cardiorrespiratória
+              <p class="card-text Texto animated fadeInDown">Parada Cardiorrespiratória
               A Parada Cardiorrespiratória é o momento em que o coração deixa de funcionar e o indivíduo deixa de respirar. 
               A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida parada cardíaca. O Trauma pode levar diretamente a parada cardíaca.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
-              <a href="#" class="btn btn-primary Texto" data-toggle="modal" data-target="#myModal4" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
+              <a href="#" class="btn btn-primary Texto animated fadeInDown" data-toggle="modal" data-target="#myModal4" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
               <div class="modal fade bd-example-modal-lg" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog modal-lg" role="document">
@@ -308,12 +308,12 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
           
           <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header Titulo" style="background-color: rgb(25, 25, 112);"><font color="white">Engasgo</font></h4>
+            <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Engasgo</font></h4>
             <div class="card-body">
-              <p class="card-text Texto">Denominamos engasgo quando ocorre o bloqueio da traqueia ( órgão responsável em enviar e retirar o ar dos pulmões) por um objeto estranho, por vômito ou até mesmo sangue. Fisiologicamente, a traqueia é frequentemente protegida pela epiglote; esta nada mais serve como uma porta que abre e fecha, conforme a necessidade de ar. </p>
+              <p class="card-text Texto animated fadeInDown">Denominamos engasgo quando ocorre o bloqueio da traqueia ( órgão responsável em enviar e retirar o ar dos pulmões) por um objeto estranho, por vômito ou até mesmo sangue. Fisiologicamente, a traqueia é frequentemente protegida pela epiglote; esta nada mais serve como uma porta que abre e fecha, conforme a necessidade de ar. </p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
-              <a href="#" class="btn btn-primary Texto" data-toggle="modal" data-target="#myModal5" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
+              <a href="#" class="btn btn-primary Texto animated fadeInDown" data-toggle="modal" data-target="#myModal5" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
               <div class="modal fade bd-example-modal-lg" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog modal-lg" role="document">
@@ -377,12 +377,12 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
           
           <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header Titulo" style="background-color: rgb(25, 25, 112);"><font color="white" class="Titulo">Desmaio</font></h4>
+            <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white" class="Titulo">Desmaio</font></h4>
             <div class="card-body">
-              <p class="card-text Texto">O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.</p>
+              <p class="card-text Texto animated fadeInDown">O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
-              <a href="#" class="btn btn-primary Texto" data-toggle="modal" data-target="#myModal6" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
+              <a href="#" class="btn btn-primary Texto animated fadeInDown" data-toggle="modal" data-target="#myModal6" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
               <!-----Modal ---->
               <div class="modal fade bd-example-modal-lg" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog modal-lg" role="document">

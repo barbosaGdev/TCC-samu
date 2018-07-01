@@ -3,27 +3,27 @@
 <br><br>
   <!-- Page Content -->
   <div class="container">
-  <nav class="breadcrumb">
-  <a class="breadcrumb-item Texto" href="/">Home</a>
-  <span class="breadcrumb-item active Texto">Sobre</span>
+  <nav class="breadcrumb animated fadeInDown">
+  <a class="breadcrumb-item Texto animated fadeInDown" href="/">Home</a>
+  <span class="breadcrumb-item active Texto animated fadeInDown">Sobre</span>
   </nav>
 <!-- Page Heading/Breadcrumbs -->
-<h1 class="mt-4 mb-3 Titulo">Quem Somos
+<h1 class="mt-4 mb-3 Titulo animated fadeInDown">Quem Somos
   <small></small>
 </h1>
 
-<br>
+
 
 <!-- Intro Content -->
 <div class="row">
   <div class="col-lg-6">
-    <img class="img-fluid rounded mb-4" src="http://www.saobentodosul.sc.gov.br/img/noticias/foto/28796.jpg" alt="">
+    <img class="img-fluid rounded mb-4 animated fadeInRight" src="http://www.saobentodosul.sc.gov.br/img/noticias/foto/28796.jpg" alt="">
   </div>
   <div class="col-lg-6">
-    <h2 class="Titulo">SAMU</h2>
-    <p class="Texto">O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) é um serviço Pré-hospitalar de Atendimento Móvel de Urgência e Emergência, tendo como objetivo chegar precocemente à vítima após ter ocorrido um agravo à sua saúde (de natureza clínica, cirúrgica, traumática, obstétrica, pediátrica, psiquiátrica, entre outras). </p><br>
-    <h2 class="Titulo">SAMU NO BRASIL</h2>
-    <p class="Texto">Teve inicio a partir de um acordo bilateral entre Brasil e França, baseado
+    <h2 class="Titulo animated fadeInDown">SAMU</h2>
+    <p class="Texto animated fadeInDown">O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) é um serviço Pré-hospitalar de Atendimento Móvel de Urgência e Emergência, tendo como objetivo chegar precocemente à vítima após ter ocorrido um agravo à sua saúde (de natureza clínica, cirúrgica, traumática, obstétrica, pediátrica, psiquiátrica, entre outras). </p><br>
+    <h2 class="Titulo animated fadeInDown">SAMU NO BRASIL</h2>
+    <p class="Texto animated fadeInDown">Teve inicio a partir de um acordo bilateral entre Brasil e França, baseado
        no modelo Frances considerado por especialistas o melhor do mundo. 
        O Serviço é oferecido pelo Governo Federal em parcerias  com Estados e Municípios, com o objetivo de padronização e cobertura em todo território nacional,  regulamentada pela portaria 1010/MS e 2048/MS. 
     </p>

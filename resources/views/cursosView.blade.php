@@ -58,7 +58,7 @@
       <p>                  
         <iframe src="{{$dados->pdf}}" width= "840" height= "680"></iframe>
       </p>
-        @endif>
+        @endif
       </div>
       <br><br><br><br><br><br>
 </body>

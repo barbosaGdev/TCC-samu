@@ -17,12 +17,14 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/modern-business.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 </head>
 <body>
  
  
  <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" id="nav">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top animated fadeIn" id="nav">
       <div class="container">
           <img src="{{ asset('images/logoo.png') }}" width="45">
 
@@ -89,13 +91,13 @@
     </div>
 
    <!-- Footer -->
-    <footer class="footer" >
+    <footer class="footer animated fadeInUp" >
         <br><br>
-        <div class="container">
-        <h5 class="m-0 text-left text-white" ><i>Plataforma Web do SAMU da Baixa Mogiana</h5>&nbsp;&nbsp;&nbsp;&nbsp;   <img id="imgFooter" src="{{ asset('images/logo.png') }}"> <br> 
-        <p class="text-white ">Acesse a nossa página no  <a href="https://www.facebook.com/samubaixamogiana/?rf=287489251342339"<i style="margin: 2px" class="	fa fa-facebook-square"> Facebook</a></p>
-        <p class="text-white "><i style="margin: 2px" class="fa fa-phone"> Telefone Administrativo: (19) 3811-7450</i> </p> 
-        <a href="https://github.com/barbosaGdev/TCC-samu" class="text-white "> Copyright © OnSamu BM 2018</a>
+        <div class="container fadeInUp">
+        <h5 class="m-0 text-left text-white fadeInUp" ><i>Plataforma Web do SAMU da Baixa Mogiana</h5>&nbsp;&nbsp;&nbsp;&nbsp;   <img id="imgFooter" src="{{ asset('images/logo.png') }}"> <br> 
+        <p class="text-white fadeInUp">Acesse a nossa página no  <a href="https://www.facebook.com/samubaixamogiana/?rf=287489251342339"<i style="margin: 2px" class="	fa fa-facebook-square"> Facebook</a></p>
+        <p class="text-white fadeInUp"><i style="margin: 2px" class="fa fa-phone"> Telefone Administrativo: (19) 3811-7450</i> </p> 
+        <a href="https://github.com/barbosaGdev/TCC-samu" class="text-white fadeInUp"> Copyright © OnSamu BM 2018</a>
         
       </div>
   

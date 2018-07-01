@@ -5,25 +5,25 @@
 
      <div class="container">
       <!-- Page Heading/Breadcrumbs -->
-      <nav class="breadcrumb">
-      <a class="breadcrumb-item Texto" href="/">Home</a>
-      <a class="breadcrumb-item Texto" href="/about">Sobre</a>
-      <span class="breadcrumb-item active Texto">Ouvidoria</span>
+      <nav class="breadcrumb animated fadeInDown">
+      <a class="breadcrumb-item Texto animated fadeInDown" href="/">Home</a>
+      <a class="breadcrumb-item Texto animated fadeInDown" href="/about">Sobre</a>
+      <span class="breadcrumb-item active Texto animated fadeInDown">Ouvidoria</span>
       </nav>
-      <h1 class="mt-4 mb-3 Titulo">Ouvidoria<h1>
+      <h1 class="mt-4 mb-3 Titulo animated fadeInDown">Ouvidoria<h1>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <small class="Titulo">Base Delta1</small>
+      <small class="Titulo animated fadeInDown">Base Delta1</small>
       </h1>    
 
       <!-- Content Row -->
       <div class="row">
         <!-- Map Column -->
-        <div class="col-lg-8 mb-4">
+        <div class="col-lg-8 mb-4 animated fadeInRight">
           <!-- Embedded Google Map -->
           <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d548.6027544297151!2d-46.95040854364868!3d-22.333052022193026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8572367c99203%3A0xd506867208d04cb2!2sSAMU!5e0!3m2!1spt-BR!2sbr!4v1526059506897"></iframe>
         </div>
         <!-- Contact Details Column -->
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4 mb-4 animated fadeInDown">
           <h3 class="Titulo">Contato</h3>
           <p class="Texto">
             Mogi-Guaçu, São Paulo, Brazil
