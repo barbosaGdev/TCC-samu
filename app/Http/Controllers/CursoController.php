@@ -41,7 +41,9 @@ class CursoController extends Controller
         $cursos->video1 = str_replace("watch?v=","embed/",$request->video1);
         $cursos->video2 = str_replace("watch?v=","embed/",$request->video2);
         $cursos->video3 = str_replace("watch?v=","embed/",$request->video3);
-        $cursos->pdf = $request->pdf;
+        
+        $path = Storage::disk('public')->putFile('cursos',$request->pdf);
+        $cursos->pdf = ( URL::to('/storage') . "/" . $path);
 
         $cursos->save();
 
@@ -134,6 +136,7 @@ class CursoController extends Controller
     {
         $cursos = Curso::find($request->id);
 
+        
 
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
@@ -144,8 +147,10 @@ class CursoController extends Controller
         $cursos->video1 = str_replace("watch?v=","embed/",$request->video1);
         $cursos->video2 = str_replace("watch?v=","embed/",$request->video2);
         $cursos->video3 = str_replace("watch?v=","embed/",$request->video3);
-        $cursos->pdf = $request->pdf;
-        $cursos->save();
+        
+        $path = Storage::disk('public')->putFile('cursos',$request->pdf);
+        $cursos->pdf = ( URL::to('/storage') . "/" . $path);
+
         return redirect('/adminEditarCurso');
     }
 

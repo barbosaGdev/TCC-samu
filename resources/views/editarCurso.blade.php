@@ -29,7 +29,7 @@
 </div>
 
 <div class="form-group">
-<label for="img" class="Texto">Imagem do curso</label>
+<label for="img" class="Texto">Imagem do curso (Obrigatório)</label>
 <input type="file" class="Texto form-control" name="img" id="img" value="{{$dados->img}}">
 </div>
 
@@ -50,7 +50,7 @@
 
  <div class="form-group">
 <label for="pdf" class="Texto">PDF</label>
-<input type="text" class="Texto form-control" name="pdf" id="pdf" value="{{$dados->pdf}}">
+<input type="file" class="Texto form-control" name="pdf" id="pdf" value="{{$dados->pdf}}">
 </div>
 
 <button type="submit" class="btn btn-primary Texto" style="background-color: orangered;border-color: orangered;">Enviar</button>
