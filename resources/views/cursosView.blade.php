@@ -14,21 +14,32 @@
         <small class="Titulo">- Nep</small>
       </h1>
 
-      <!-- Portfolio Item Row -->
-      <div class="row">
-          @if ($videos->video == '')
+       @if ($dados->videoP == '')
           @else
         <div class="col-md-8 embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" width="750" height="500" src="{{$videos->video}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" width="750" height="500" src="{{$dados->videoP}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
           @endif
 
+      <!-- Portfolio Item Row -->
+      <div class="row">
+      @foreach($videos as $v)
+          @if ($v->video == '')
+          @else
+        <div class="col-md-8 embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="750" height="500" src="{{$v->video}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+          @endif
+      @endforeach
         <div class="col-md-4">
+        <h2>Descrição</h2>  
           <p class="Texto">{{$dados->descricao}}</p>
         </div>
 
       </div>
       <!-- /.row -->
+
+
      
 
       </div>
@@ -37,7 +48,7 @@
         @else
       <div class="main-container threecolumns">      
       <p>                  
-        <iframe src="{{$dados->pdf}}" width= "840" height= "680"></iframe>
+        <center><iframe src="{{$dados->pdf}}" width= "840" height= "680"></iframe></center>
       </p>
         @endif
       </div>

@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`cursos` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NULL,
   `descricao` MEDIUMTEXT NULL,
+  `videoP` VARCHAR(100) NULL,
   `img` VARCHAR(150) NULL,
   `pdf` VARCHAR(150) NULL,
   `created_at` TIMESTAMP NULL,

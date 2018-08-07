@@ -38,6 +38,11 @@
 <input type="file" class="Texto form-control" name="pdf" id="pdf">
 </div>
 
+<div class="form-group">
+<label for="videoP" class="Texto">Aula Principal</label>
+<input type="text" class="Texto form-control" name="videoP" id="videoP">
+</div>
+
  
 
 <button type="submit" class="Texto btn btn-primary" style="background-color: orangered;border-color: orangered;">Enviar</button>

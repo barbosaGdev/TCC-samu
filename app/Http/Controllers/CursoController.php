@@ -35,6 +35,7 @@ class CursoController extends Controller
         $cursos = new Curso();
         
 
+        $cursos->videoP = str_replace("watch?v=","embed/",$request->videoP);
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
 
@@ -85,7 +86,7 @@ class CursoController extends Controller
         $loggedUser = \Auth::user();
         return view('cursos', compact('dados','loggedUser'));
 
-    }
+    }   
 
     //Controller que gerencia os usuarios que acessam o curso
   
@@ -97,6 +98,7 @@ class CursoController extends Controller
         $videos = DB::table('video_cursos')
                 ->where('cursos_id', '=' , $dados->id)
                 ->get();
+
 
         $loggedUser = \Auth::user();
         
