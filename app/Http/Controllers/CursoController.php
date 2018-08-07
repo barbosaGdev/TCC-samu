@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Curso;
 use App\Cursos_has_user;
+use App\Video_curso;
 use App\User;
 use DB;
 use Illuminate\Support\Facades\URL;
@@ -32,25 +33,49 @@ class CursoController extends Controller
     public function salvar(Request $request)
     {
         $cursos = new Curso();
+        
+
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
 
         $path = Storage::disk('public')->putFile('cursos',$request->img);
         $cursos->img = ( URL::to('/storage') . "/" . $path);
 
-        $cursos->video1 = str_replace("watch?v=","embed/",$request->video1);
-        $cursos->video2 = str_replace("watch?v=","embed/",$request->video2);
-        $cursos->video3 = str_replace("watch?v=","embed/",$request->video3);
-        
         $path = Storage::disk('public')->putFile('cursos',$request->pdf);
         $cursos->pdf = ( URL::to('/storage') . "/" . $path);
 
         $cursos->save();
+        
 
-        return redirect('/cursos');
+        return view('salvarVideo', compact('cursos'));
 
 
     }
+
+    //Salvar vídeo
+    public function salvarVideo(Curso $cursos)
+    {
+        $videos = new Video_curso();
+        $cursos = Curso::all();
+
+        return redirect('/persisteVideo');
+
+    }
+
+    public function persisteVideo(Request $request)
+    {
+        $videos = new Video_curso();
+
+        $videos->cursos_id = $request->cursos_id;
+        $videos->video = str_replace("watch?v=","embed/",$request->video);
+
+
+        $videos->save();
+
+        return redirect('/cursos');
+    }
+
+
 
     //Pagina de lista de cursos
     public function cursos()
@@ -68,6 +93,11 @@ class CursoController extends Controller
     public function cursosView(Curso $dados)
     {
         $cursando = new Cursos_has_user();
+
+        $videos = DB::table('video_cursos')
+                ->where('cursos_id', '=' , $dados->id)
+                ->get();
+
         $loggedUser = \Auth::user();
         
         $cursando->users_id = $loggedUser->id;
@@ -75,7 +105,7 @@ class CursoController extends Controller
         
         $cursando->save();
 
-        return view('cursosView', compact('dados'));
+        return view('cursosView', compact('dados','videos'));
     }
 
     //Pega a lista de usuarios cadastrados
@@ -144,9 +174,7 @@ class CursoController extends Controller
         $path = Storage::disk('public')->putFile('cursos',$request->img);
         $cursos->img = ( URL::to('/storage') . "/" . $path);
 
-        $cursos->video1 = str_replace("watch?v=","embed/",$request->video1);
-        $cursos->video2 = str_replace("watch?v=","embed/",$request->video2);
-        $cursos->video3 = str_replace("watch?v=","embed/",$request->video3);
+        $cursos->video = str_replace("watch?v=","embed/",$request->video);
         
         $path = Storage::disk('public')->putFile('cursos',$request->pdf);
         $cursos->pdf = ( URL::to('/storage') . "/" . $path);

@@ -34,14 +34,11 @@
 </div>
 
 <div class="form-group">
-<label for="video1" class="Texto">Vídeos</label>
-<input type="text" class="Texto form-control" name="video1" id="video1">
-</div>
-
- <div class="form-group">
 <label for="pdf" class="Texto">PDF</label>
 <input type="file" class="Texto form-control" name="pdf" id="pdf">
 </div>
+
+ 
 
 <button type="submit" class="Texto btn btn-primary" style="background-color: orangered;border-color: orangered;">Enviar</button>
 </form>

@@ -29,6 +29,8 @@ Route::get('/adminOuvidoria', ['middleware' => 'authAdmin', 'uses' => 'HomeContr
 //rotas curso
 Route::get('/adminAddCurso', ['middleware' => 'authAdmin', 'uses' => 'CursoController@adminAddCurso' ]);
 Route::post('/salvar', ['middleware' => 'authAdmin', 'uses' => 'CursoController@salvar']);
+Route::get('/salvarVideo/{cursos}', ['middleware' => 'authAdmin', 'uses' => 'CursoController@salvarVideo']);
+Route::post('/persisteVideo', ['middleware' => 'authAdmin', 'uses' => 'CursoController@persisteVideo']);
 Route::get('/insert/{dados}', 'CursoController@insert');
 Route::get('/adminUsers', ['middleware' => 'authAdmin', 'uses' => 'CursoController@users']);
 Route::get('/adminUsersCurso/{dados}', ['middleware' => 'authAdmin', 'uses' => 'CursoController@adminUsersCurso']);

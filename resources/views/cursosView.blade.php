@@ -16,10 +16,10 @@
 
       <!-- Portfolio Item Row -->
       <div class="row">
-          @if ($dados->video1 == '')
+          @if ($videos->video == '')
           @else
         <div class="col-md-8 embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" width="750" height="500" src="{{$dados->video1}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" width="750" height="500" src="{{$videos->video}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
           @endif
 
@@ -29,25 +29,6 @@
 
       </div>
       <!-- /.row -->
-
-      <!-- Related Projects Row -->  
-          @if ($dados->video2 == '')
-          @else
-          <h3 class="my-4">Videos</h3>
-          <div class="row">
-        <div class="text-align-left">
-       
-        <iframe width="500" height="300" src="{{$dados->video2}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>          
-        </div>
-         &nbsp; &nbsp; &nbsp; &nbsp;
-          @endif
-          
-          @if ($dados->video3 == '')
-          @else
-        <div class="text-align-right">
-            <iframe width="500" height="300" src="{{$dados->video3}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-          @endif
      
 
       </div>
