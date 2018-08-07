@@ -114,6 +114,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `onsamu`.`noticias` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `titulo_noticia` VARCHAR(45) NULL,
+  `texto` LONGTEXT NULL,
   `created_at` TIMESTAMP NULL DEFAULT NULL,
   `updated_at` TIMESTAMP NULL DEFAULT NULL,
   `texto_noticia` LONGTEXT NULL DEFAULT NULL,

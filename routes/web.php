@@ -46,6 +46,8 @@ Route::get('/cursosView/{dados}', 'CursoController@cursosView');
 //rotas notícia
 Route::get('/noticiaInsere', ['middleware' => 'authAdmin', 'uses' => 'HomeController@inserirNoticia' ]);
 Route::post('/noticiaInserir',['middleware' => 'authAdmin', 'uses' => 'HomeController@persisteNoticia' ] );
+Route::get('/salvarImagem/{noticia}',['middleware' => 'authAdmin', 'uses' => 'HomeController@salvarImagem' ] );
+Route::post('/persisteImagem',['middleware' => 'authAdmin', 'uses' => 'HomeController@persisteImagem' ] );
 Route::get('/adminEditarNoticia', ['middleware' => 'authAdmin', 'uses' => 'HomeController@adminEditarNoticia' ]);
 Route::get('/editarNoticia/{dados}', ['middleware' => 'authAdmin', 'uses' => 'HomeController@editarNoticia' ]);
 Route::post('/updateNoticia', ['middleware' => 'authAdmin', 'uses' => 'HomeController@updateNoticia' ]);

@@ -14,27 +14,29 @@
         <small class="Titulo">- Nep</small>
       </h1>
 
+       <div class="row">
        @if ($dados->videoP == '')
           @else
         <div class="col-md-8 embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" width="750" height="500" src="{{$dados->videoP}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
           @endif
-
-      <!-- Portfolio Item Row -->
-      <div class="row">
-      @foreach($videos as $v)
-          @if ($v->video == '')
-          @else
-        <div class="col-md-8 embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" width="750" height="500" src="{{$v->video}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-          @endif
-      @endforeach
-        <div class="col-md-4">
+          <div class="col-md-4">
         <h2>Descrição</h2>  
           <p class="Texto">{{$dados->descricao}}</p>
         </div>
+
+      <!-- Portfolio Item Row -->
+     
+      @foreach($videos as $v)
+          @if ($v->video == '')
+          @else
+        <div class="col-md-3 col-sm-6 mb-4">
+            <iframe class="embed-responsive-item" width="500" height="300" src="{{$v->video}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+          @endif
+      @endforeach
+        
 
       </div>
       <!-- /.row -->

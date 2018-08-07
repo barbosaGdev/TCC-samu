@@ -10,8 +10,9 @@
 
     <input type="hidden" name="cursos_id" id="cursos_id" value="{{$cursos->id}}">
 <div class="form-group">
-<label for="video" class="Texto">Aula Complementar</label>
+<label for="video" class="Texto">Aulas Complementares</label>
 <input type="text" class="Texto form-control" name="video" id="video"><br>
+<input type="text" class="Texto form-control" name="video" id="video">
 <button type="submit" class="Texto btn btn-primary">Enviar</button><br>
 </div><br>
 </form>

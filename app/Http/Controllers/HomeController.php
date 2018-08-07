@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Feedback;
 use App\Noticia;
+use App\Img_noticia;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Storage;
 use DB;
@@ -56,26 +57,40 @@ class HomeController extends Controller
 
         $noticia->titulo_noticia = $request->titulo_noticia;
 
-        $path = Storage::disk('public')->putFile('cursos',$request->imagem1);
-        $noticia->imagem1 = ( URL::to('/storage') . "/" . $path);
 
-        $path = Storage::disk('public')->putFile('cursos',$request->imagem2);
-        $noticia->imagem2 = ( URL::to('/storage') . "/" . $path);
-
-        $path = Storage::disk('public')->putFile('cursos',$request->imagem3);
-        $noticia->imagem3 = ( URL::to('/storage') . "/" . $path);
-
-        $noticia->paragrafo1 = $request->paragrafo1;
-        //$noticia->paragrafo2 = $request->paragrafo2;
-        //$noticia->paragrafo3 = $request->paragrafo3;
-        //$noticia->paragrafo4 = $request->paragrafo4;
-        $noticia->paragrafo1 = nl2br($noticia->paragrafo1);
+        $noticia->texto = $request->texto;
+        
 
         $noticia->save();
 
-        return redirect('/admin');
+        return view('insereImagemNoticia',compact('noticia'));
 
     }
+
+    public function salvarImagem(Noticia $noticia){
+
+        $noticia = Noticia::All();
+        $img = new Img_curso();
+
+        return redirect('/persisteImagem');
+
+    }
+
+    public function persisteImagem(Request $request)
+    {
+        $imagens = new Img_noticia();
+
+        $imagens->noticias_id = $request->noticias_id;
+        $path = Storage::disk('public')->putFile('img_noticias',$request->img);
+        $imagens->imagem = ( URL::to('/storage') . "/" . $path);
+
+
+        $imagens->save();
+
+        return redirect('/admin');
+    }
+
+
 
     public function adminEditarNoticia()
     {
