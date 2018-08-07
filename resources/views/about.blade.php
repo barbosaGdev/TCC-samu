@@ -56,45 +56,45 @@
 </ul>
 <br>
 <!-- Team Members -->
-<h2 class="Titulo">Hierarquia</h2>
+<h2 class="Titulo">Desenvolvedores</h2>
 
 <div class="row">
   <div class="col-lg-4 mb-4">
     <div class="card h-100 text-center">
-      <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+      <img class="card-img-top" src="{{ asset('images/Koala.jpg') }}" height="210">
       <div class="card-body">
-        <h4 class="card-title Titulo">Coordenador</h4>
+        <h4 class="card-title Titulo">Gabriel Barbosa</h4>
         <h6 class="card-subtitle mb-2 text-muted Titulo">Geral</h6>
-        <p class="card-text Texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+        <p class="card-text Texto">Estudante, capoeirista, atleta, amante da programação e da arte de fazer amor</p>
       </div>
       <div class="card-footer">
-        <a href="#" class="Texto">name@example.com</a>
+        <a href="#" class="Texto">gabriel.david@hotmail.com</a>
       </div>
     </div>
   </div>
   <div class="col-lg-4 mb-4">
     <div class="card h-100 text-center">
-      <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+      <img class="card-img-top" src="{{ asset('images/Koala.jpg') }}" height="210">
       <div class="card-body">
-        <h4 class="card-title Titulo">Coordenador</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Enfermagem</h6>
-        <p class="card-text Texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+        <h4 class="card-title Titulo">João Vitor</h4>
+        <h6 class="card-subtitle mb-2 text-muted Titulo">Front-End</h6>
+        <p class="card-text Texto">Estudante, músico, atleta, toca vários instrumentos inclusive o coração das novinhas</p>
       </div>
       <div class="card-footer">
-        <a href="#" class="Texto">name@example.com</a>
+        <a href="#" class="Texto">vitorsilvestre9@hotmail.com</a>
       </div>
     </div>
   </div>
   <div class="col-lg-4 mb-4">
     <div class="card h-100 text-center">
-      <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+      <img class="card-img-top" src="{{ asset('images/Koala.jpg') }}" height="210">
       <div class="card-body">
-        <h4 class="card-title Titulo">Coordenador</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Educação</h6>
-        <p class="card-text Texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+        <h4 class="card-title Titulo">Vitor Marques</h4>
+        <h6 class="card-subtitle mb-2 text-muted Titulo">Back-End</h6>
+        <p class="card-text Texto">Estudante, atleta, gosta de ler e algumas artes como a de ganhar campeonatos de beleza</p>
       </div>
       <div class="card-footer">
-        <a href="#" class="Texto">name@example.com</a>
+        <a href="#" class="Texto">vitor.marques@hotmail.com</a>
       </div>
     </div>
   </div>
@@ -102,7 +102,7 @@
 <!-- /.row -->
 <br>
 <!-- Our Customers -->
-<h2 class="Titulo">Desenvolvedores do site</h2>
+<h2 class="Titulo">Hierarquia</h2><br>
 <div class="row">
   <div class="col-lg-2 col-sm-4 mb-4">
     <img class="img-fluid" src="http://placehold.it/500x300" alt="">
