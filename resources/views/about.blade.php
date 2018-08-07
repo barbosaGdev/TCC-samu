@@ -61,7 +61,7 @@
 <div class="row">
   <div class="col-lg-4 mb-4">
     <div class="card h-100 text-center">
-      <img class="card-img-top" src="{{ asset('images/Koala.jpg') }}" height="210">
+      <img class="card-img-top" src="{{ asset('images/G1.jpeg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">Gabriel Barbosa</h4>
         <h6 class="card-subtitle mb-2 text-muted Titulo">Geral</h6>
@@ -74,7 +74,7 @@
   </div>
   <div class="col-lg-4 mb-4">
     <div class="card h-100 text-center">
-      <img class="card-img-top" src="{{ asset('images/Koala.jpg') }}" height="210">
+      <img class="card-img-top" src="{{ asset('images/Eu1.jpeg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">João Vitor</h4>
         <h6 class="card-subtitle mb-2 text-muted Titulo">Front-End</h6>
@@ -87,7 +87,7 @@
   </div>
   <div class="col-lg-4 mb-4">
     <div class="card h-100 text-center">
-      <img class="card-img-top" src="{{ asset('images/Koala.jpg') }}" height="210">
+      <img class="card-img-top" src="{{ asset('images/Vi1.jpeg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">Vitor Marques</h4>
         <h6 class="card-subtitle mb-2 text-muted Titulo">Back-End</h6>
@@ -98,7 +98,64 @@
       </div>
     </div>
   </div>
+
+<div class="col-lg-4 mb-4">
+    <div class="card h-100 text-center">
+      <img class="card-img-top" src="{{ asset('images/Jo1.jpeg') }}" height="210">
+      <div class="card-body">
+        <h4 class="card-title Titulo">João Pedro</h4>
+        <h6 class="card-subtitle mb-2 text-muted Titulo">Banco de Dados</h6>
+        <p class="card-text Texto">Estudante, jogador de overwatch, profissional da arte do embelezamento</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="Texto">mysfer.pedro@hotmail.com</a>
+      </div>
+    </div>
+  </div>
+
+<div class="col-lg-4 mb-4">
+    <div class="card h-100 text-center">
+      <img class="card-img-top" src="{{ asset('images/Ju1.jpeg') }}" height="210">
+      <div class="card-body">
+        <h4 class="card-title Titulo">Júlia Souza</h4>
+        <h6 class="card-subtitle mb-2 text-muted Titulo">Banco de Dados</h6>
+        <p class="card-text Texto">Estudante, ex atleta, garota gamer, adora memes e cachorros</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="Texto">julinha.souza@hotmail.com</a>
+      </div>
+    </div>
+  </div>
+
+<div class="col-lg-4 mb-4">
+    <div class="card h-100 text-center">
+      <img class="card-img-top" src="{{ asset('images/Mu1.jpeg') }}" height="210">
+      <div class="card-body">
+        <h4 class="card-title Titulo">Murilo Martins</h4>
+        <h6 class="card-subtitle mb-2 text-muted Titulo">Escritor</h6>
+        <p class="card-text Texto">Estudante, jogador profissional de qualquer jogo eletrônico, amante de RPGs e outras coisas do mundo geek</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="Texto">murilo.martins@hotmail.com</a>
+      </div>
+    </div>
+  </div>
+
+<div class="col-lg-4 mb-4">
+    <div class="card h-100 text-center">
+      <img class="card-img-top" src="{{ asset('images/Ba1.jpeg') }}" height="210">
+      <div class="card-body">
+        <h4 class="card-title Titulo">Bárbara</h4>
+        <h6 class="card-subtitle mb-2 text-muted Titulo">Escritora</h6>
+        <p class="card-text Texto">Estudante, apreciadora do mundo automotivo, adora animais como gatos, não se deixa levar pelo "tamanho" do problema</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="Texto">barbara.burgo@hotmail.com</a>
+      </div>
+    </div>
+  </div>
 </div>
+
 <!-- /.row -->
 <br>
 <!-- Our Customers -->
