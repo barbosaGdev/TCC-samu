@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Noticia;
-
+use App\Img_noticia;
+use DB;
 
 class NoticiasController extends Controller
 {
@@ -21,7 +22,12 @@ class NoticiasController extends Controller
     public function exibirNoticia($id)
     {
         $dados = Noticia::find($id);
-        return view('noticia', compact('dados'));
+
+        $imagens = DB::table('img_noticias')
+                ->where('noticias_id', '=' , $id)
+                ->get();
+
+        return view('noticia', compact('dados', 'imagens'));
     }
 
     public function mostrarNoticias()

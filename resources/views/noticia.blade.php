@@ -14,11 +14,13 @@
         <!-- Post Content Column -->
         
         <div class="col-lg-8">
-        @if ($dados->imagem1 == '')
+        @foreach($imagens as $i)
+        @if ($i->imagem == '')
         @else
           <!-- Preview Image -->
-          <img class="img-fluid rounded" width="400" height="500" src="{{$dados->imagem1}}" ><br><br>
-        @endif   
+          <img class="img-fluid rounded" width="400" height="500" src="{{$i->imagem}}" ><br><br>
+        @endif
+        @endforeach
 
           <hr>
 
