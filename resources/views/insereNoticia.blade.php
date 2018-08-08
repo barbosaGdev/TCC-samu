@@ -25,6 +25,10 @@
 <label for="texto" class="Texto">Informações</label>
 <textarea rows="6" cols="100" class="Texto form-control" type="text" name="texto" id="texto"></textarea>
 </div>
+<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'texto' );
+    </script>
 
 <button type="submit" class="Texto btn btn-primary" style="background-color: orangered;border-color: orangered;">Enviar</button>
 <br><br><br><br>
@@ -34,3 +38,4 @@
 </html>
 
 @endsection
+
