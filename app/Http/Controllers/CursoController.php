@@ -168,8 +168,6 @@ class CursoController extends Controller
     {
         $cursos = Curso::find($request->id);
 
-        
-
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
         
@@ -180,6 +178,16 @@ class CursoController extends Controller
         
         $path = Storage::disk('public')->putFile('cursos',$request->pdf);
         $cursos->pdf = ( URL::to('/storage') . "/" . $path);
+
+        $this->validate($request,[
+            'img' => 'required',
+            'pdf' => 'required'
+        ],[
+            'img.required' => 'Insira uma imagem',
+            'img.required' => 'Insira um pdf',
+        ]);
+
+        $cursos->save();
 
         return redirect('/adminEditarCurso');
     }
