@@ -64,21 +64,21 @@
       <img class="card-img-top" src="{{ asset('images/G1.jpeg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">Gabriel Barbosa</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Geral</h6>
-        <p class="card-text Texto">Estudante, capoeirista, atleta, amante da programação e da arte de fazer amor</p>
+        <h6 class="card-subtitle mb-2 text-muted Titulo">Gerente</h6>
+        <p class="card-text Texto">Estudante, capoeirista, atleta, amante da programação entre outras coisas</p>
       </div>
       <div class="card-footer">
-        <a href="#" class="Texto">gabriel.david@hotmail.com</a>
+        <a href="#" class="Texto">biki.jam@hotmail.com</a>
       </div>
     </div>
   </div>
   <div class="col-lg-4 mb-4">
     <div class="card h-100 text-center">
-      <img class="card-img-top" src="{{ asset('images/Eu1.jpeg') }}" height="210">
+      <img class="card-img-top" src="{{ asset('images/Eu.jpg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">João Vitor</h4>
         <h6 class="card-subtitle mb-2 text-muted Titulo">Front-End</h6>
-        <p class="card-text Texto">Estudante, músico, atleta, toca vários instrumentos inclusive o coração das novinhas</p>
+        <p class="card-text Texto">Estudante, músico, atleta, adora tecnologia e jogos</p>
       </div>
       <div class="card-footer">
         <a href="#" class="Texto">vitorsilvestre9@hotmail.com</a>
@@ -91,10 +91,10 @@
       <div class="card-body">
         <h4 class="card-title Titulo">Vitor Marques</h4>
         <h6 class="card-subtitle mb-2 text-muted Titulo">Back-End</h6>
-        <p class="card-text Texto">Estudante, atleta, gosta de ler e algumas artes como a de ganhar campeonatos de beleza</p>
+        <p class="card-text Texto">Estudante, atleta, gosta de ler e de arte</p>
       </div>
       <div class="card-footer">
-        <a href="#" class="Texto">vitor.marques@hotmail.com</a>
+        <a href="#" class="Texto">victormarques090600@gmail.com</a>
       </div>
     </div>
   </div>
@@ -104,25 +104,25 @@
       <img class="card-img-top" src="{{ asset('images/Jo1.jpeg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">João Pedro</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Banco de Dados</h6>
-        <p class="card-text Texto">Estudante, jogador de overwatch, profissional da arte do embelezamento</p>
+        <h6 class="card-subtitle mb-2 text-muted Titulo">Back-End</h6>
+        <p class="card-text Texto">Estudante, jogador de overwatch, amante do mundo dos games</p>
       </div>
       <div class="card-footer">
-        <a href="#" class="Texto">mysfer.pedro@hotmail.com</a>
+        <a href="#" class="Texto">jpfreitas2001@gmail.com</a>
       </div>
     </div>
   </div>
 
 <div class="col-lg-4 mb-4">
     <div class="card h-100 text-center">
-      <img class="card-img-top" src="{{ asset('images/Ju1.jpeg') }}" height="210">
+      <img class="card-img-top" src="{{ asset('images/Ju.jpg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">Júlia Souza</h4>
         <h6 class="card-subtitle mb-2 text-muted Titulo">Banco de Dados</h6>
         <p class="card-text Texto">Estudante, ex atleta, garota gamer, adora memes e cachorros</p>
       </div>
       <div class="card-footer">
-        <a href="#" class="Texto">julinha.souza@hotmail.com</a>
+        <a href="#" class="Texto">jsouzajj27@gmail.com</a>
       </div>
     </div>
   </div>
@@ -136,7 +136,7 @@
         <p class="card-text Texto">Estudante, jogador profissional de qualquer jogo eletrônico, amante de RPGs e outras coisas do mundo geek</p>
       </div>
       <div class="card-footer">
-        <a href="#" class="Texto">murilo.martins@hotmail.com</a>
+        <a href="#" class="Texto">murilo.camilo.martins@hotmail.com</a>
       </div>
     </div>
   </div>
@@ -150,7 +150,7 @@
         <p class="card-text Texto">Estudante, apreciadora do mundo automotivo, adora animais como gatos, não se deixa levar pelo "tamanho" do problema</p>
       </div>
       <div class="card-footer">
-        <a href="#" class="Texto">barbara.burgo@hotmail.com</a>
+        <a href="#" class="Texto">ba.burgo@gmail.com</a>
       </div>
     </div>
   </div>
