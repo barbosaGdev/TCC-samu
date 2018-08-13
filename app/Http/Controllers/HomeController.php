@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 use App\Feedback;
 use App\Noticia;
-use App\Img_noticia;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Storage;
 use DB;
@@ -63,18 +62,10 @@ class HomeController extends Controller
 
         $noticia->save();
 
-        return view('insereImagemNoticia',compact('noticia'));
+        return redirect('/admin');
 
     }
 
-    public function salvarImagem(Noticia $noticia){
-
-        $noticia = Noticia::All();
-        $img = new Img_curso();
-
-        return redirect('/persisteImagem');
-
-    }
 
     public function persisteImagem(Request $request)
     {

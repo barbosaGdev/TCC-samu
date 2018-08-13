@@ -14,42 +14,14 @@
         <!-- Post Content Column -->
         
         <div class="col-lg-8">
-        @foreach($imagens as $i)
-        @if ($i->imagem == '')
-        @else
-          <!-- Preview Image -->
-          <img class="img-fluid rounded" width="400" height="500" src="{{$i->imagem}}" ><br><br>
-        @endif
-        @endforeach
 
           <hr>
 
           <!-- Date/Time -->
           <p class="Texto">Data do Post da Notícia: {{$dados->created_at}}</p>
 
-          <hr>
-
-          <!-- Post Content -->
-          <p class="lead Texto">{{ $dados->paragrafo1 }}</p>
-
-        @if ($dados->imagem2 == '')
-        @else
-          <!-- Preview Image -->
-          <img class="img-fluid rounded" width="400" height="500" src="{{$dados->imagem2}}" ><br><br>
-        @endif   
-
-          <p class="lead Texto">{{$dados->paragrafo2}}</p><br>
-        
-        
-        @if ($dados->imagem3 == '')
-        @else
-          <!-- Preview Image -->
-          <img class="img-fluid rounded" width="600" height="700" src="{{$dados->imagem3}}" ><br><br>
-        @endif   
-        
-          <p class="lead Texto">{{$dados->paragrafo3}}</p>
-
-          <p class="lead Texto">{{$dados->paragrafo4}}</p>
+          <hr>    
+          <p class="lead Texto">{{$dados->texto}}</p>
 
         </div>  
           <hr>
