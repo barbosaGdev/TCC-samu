@@ -21,6 +21,10 @@
 <input type="text" class="Texto form-control" name="titulo_noticia" id="titulo_noticia">
 </div>
 
+<label for="imagem1" class="Texto">Imagem Destaque</label>
+<input type="file" class="Texto form-control" name="imagem1" id="imagem1">
+</div>
+
 <div class="form-group">
 <label for="texto" class="Texto">Informações</label>
 <textarea rows="6" cols="100" class="Texto form-control" type="text" name="texto" id="texto"></textarea>

@@ -58,6 +58,8 @@ class HomeController extends Controller
 
 
         $noticia->texto = $request->texto;
+        $path = Storage::disk('public')->putFile('noticias',$request->imagem1);
+        $noticia->imagem1 = ( URL::to('/storage') . "/" . $path);
         
 
         $noticia->save();
@@ -65,22 +67,6 @@ class HomeController extends Controller
         return redirect('/admin');
 
     }
-
-
-    public function persisteImagem(Request $request)
-    {
-        $imagens = new Img_noticia();
-
-        $imagens->noticias_id = $request->noticias_id;
-        $path = Storage::disk('public')->putFile('img_noticias',$request->img);
-        $imagens->imagem = ( URL::to('/storage') . "/" . $path);
-
-
-        $imagens->save();
-
-        return redirect('/admin');
-    }
-
 
 
     public function adminEditarNoticia()

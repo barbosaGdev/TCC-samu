@@ -4,7 +4,7 @@
 <br><br>
     <!-- Page Content -->
     <div class="container">
-
+ 
       <!-- Page Heading/Breadcrumbs -->
       <h1 class="mt-4 mb-3 Titulo">{{$dados->titulo_noticia}}
       </h1>
@@ -21,7 +21,7 @@
           <p class="Texto">Data do Post da Notícia: {{$dados->created_at}}</p>
 
           <hr>    
-          <p class="lead Texto">{{$dados->texto}}</p>
+          <p class="lead Texto"><?php echo htmlspecialchars_decode(stripslashes($dados->texto)); ?></p>
 
         </div>  
           <hr>
