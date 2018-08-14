@@ -65,7 +65,7 @@
       <div class="card-body">
         <h4 class="card-title Titulo">Gabriel Barbosa</h4>
         <h6 class="card-subtitle mb-2 text-muted Titulo">Gerente</h6>
-        <p class="card-text Texto">Estudante, capoeirista, atleta, amante da programação entre outras coisas</p>
+        <p class="card-text Texto">Estudante, capoeirista, poeta, amante de programação e filosofia</p>
       </div>
       <div class="card-footer">
         <a href="#" class="Texto">biki.jam@hotmail.com</a>
