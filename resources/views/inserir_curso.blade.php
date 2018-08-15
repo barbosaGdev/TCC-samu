@@ -11,8 +11,18 @@
     </nav>
         <div class="row">
             <div class="col-8">
-            <h1 class="display-3 Texto">Novo Curso</h1>
-
+            <h1 class="display-3 Texto">Novo Curso</h1> 
+<div class="panel-body">
+    @if(count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+            @foreach($errors->all() as $error)
+             <li>{{$error}}</li>  
+            @endforeach          
+            </ul>
+        </div>
+        @endif
+</div>
 
 <form method="post" action="/salvar" enctype="multipart/form-data">
 
@@ -37,6 +47,7 @@
 <label for="pdf" class="Texto">PDF</label>
 <input type="file" class="Texto form-control" name="pdf" id="pdf">
 </div>
+
 
 <div class="form-group">
 <label for="videoP" class="Texto">Aula Principal</label>

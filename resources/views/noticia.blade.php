@@ -21,6 +21,7 @@
           <p class="Texto">Data do Post da Notícia: {{$dados->created_at}}</p>
 
           <hr>    
+          <img src="{{$dados->imagem1}}"  height="300">
           <p class="lead Texto"><?php echo htmlspecialchars_decode(stripslashes($dados->texto)); ?></p>
 
         </div>  

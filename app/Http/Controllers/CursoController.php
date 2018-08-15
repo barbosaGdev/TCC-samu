@@ -33,6 +33,16 @@ class CursoController extends Controller
     public function salvar(Request $request)
     {
         $cursos = new Curso();
+
+        $this->validate($request,[
+            'nome' => 'required',
+            'img' => 'required',
+            'pdf' => 'required'
+        ],[
+            'nome.required' => 'Insira o título do curso',
+            'img.required' => 'Insira uma imagem',
+            'pdf.required' => 'Insira um PDF',
+        ]);
         
 
         $cursos->videoP = str_replace("watch?v=","embed/",$request->videoP);
@@ -44,6 +54,9 @@ class CursoController extends Controller
 
         $path = Storage::disk('public')->putFile('cursos',$request->pdf);
         $cursos->pdf = ( URL::to('/storage') . "/" . $path);
+
+        
+
 
         $cursos->save();
         
@@ -168,24 +181,27 @@ class CursoController extends Controller
     {
         $cursos = Curso::find($request->id);
 
+        $this->validate($request,[
+
+            'img' => 'required',
+            'pdf' => 'required'
+        ],[
+            'img.required' => 'Insira novamente uma imagem',
+            'pdf.required' => 'Insira novamente um PDF',
+            
+        ]);
+        
+
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
         
         $path = Storage::disk('public')->putFile('cursos',$request->img);
         $cursos->img = ( URL::to('/storage') . "/" . $path);
 
-        $cursos->video = str_replace("watch?v=","embed/",$request->video);
+        $cursos->videoP = str_replace("watch?v=","embed/",$request->videoP);
         
         $path = Storage::disk('public')->putFile('cursos',$request->pdf);
         $cursos->pdf = ( URL::to('/storage') . "/" . $path);
-
-        $this->validate($request,[
-            'img' => 'required',
-            'pdf' => 'required'
-        ],[
-            'img.required' => 'Insira uma imagem',
-            'img.required' => 'Insira um pdf',
-        ]);
 
         $cursos->save();
 

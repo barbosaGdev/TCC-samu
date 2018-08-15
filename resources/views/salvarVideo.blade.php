@@ -3,6 +3,7 @@
 @section('content')
 <br><br>
 
+<div class="container">
 <h1>Enviar vídeo aulas</h1>
 <form action="/persisteVideo" method="post" enctype="multipart/form-data">
     
@@ -13,9 +14,11 @@
 <label for="video" class="Texto">Aulas Complementares</label>
 <input type="text" class="Texto form-control" name="video" id="video"><br>
 <input type="text" class="Texto form-control" name="video" id="video">
+<br>
 <button type="submit" class="Texto btn btn-primary">Enviar</button><br>
 </div><br>
 </form>
+</div>
 
 
 

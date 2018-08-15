@@ -54,6 +54,16 @@ class HomeController extends Controller
 
         $noticia = new Noticia();
 
+        $this->validate($request,[
+            'titulo_noticia' => 'required',
+            'imagem1' => 'required',
+            'texto' => 'required'
+        ],[
+            'titulo_noticia.required' => 'Insira a manchete',
+            'imagem1.required' => 'Insira a imagem principal da notícia',
+            'texto.required' => 'Insira o texto da notícia',
+        ]);
+        
         $noticia->titulo_noticia = $request->titulo_noticia;
 
 

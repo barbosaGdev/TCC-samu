@@ -101,6 +101,7 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`noticias` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `titulo_noticia` VARCHAR(45) NOT NULL,
   `texto` LONGTEXT NOT NULL,
+  `imagem1` LONGTEXT NOT NULL,
   `created_at` TIMESTAMP NULL,
   `updated_at` TIMESTAMP NULL,
   `imagem1` TEXT(500),
