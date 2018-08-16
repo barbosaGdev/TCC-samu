@@ -104,7 +104,6 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`noticias` (
   `imagem1` LONGTEXT NOT NULL,
   `created_at` TIMESTAMP NULL,
   `updated_at` TIMESTAMP NULL,
-  `imagem1` TEXT(500),
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
