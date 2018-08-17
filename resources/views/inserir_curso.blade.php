@@ -54,7 +54,11 @@
 <input type="text" class="Texto form-control" name="videoP" id="videoP">
 </div>
 
- 
+<div class="form-group">
+<label for="video" class="Texto">Aulas Complementares</label>
+<input type="text" class="Texto form-control" name="video" id="video">
+<input type="text" class="Texto form-control" name="video1" id="video1">
+</div> 
 
 <button type="submit" class="Texto btn btn-primary" style="background-color: orangered;border-color: orangered;">Enviar</button>
 </form>

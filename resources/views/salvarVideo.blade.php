@@ -9,7 +9,7 @@
     
     {{ csrf_field() }}
 
-    <input type="hidden" name="cursos_id" id="cursos_id" value="{{$cursos->id}}">
+ <input type="hidden" name="cursos_id" id="cursos_id" value="{{$cursos->id}}">
 <div class="form-group">
 <label for="video" class="Texto">Aulas Complementares</label>
 <input type="text" class="Texto form-control" name="video" id="video"><br>

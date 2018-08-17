@@ -55,13 +55,27 @@ class CursoController extends Controller
         $path = Storage::disk('public')->putFile('cursos',$request->pdf);
         $cursos->pdf = ( URL::to('/storage') . "/" . $path);
 
-        
-
-
         $cursos->save();
         
+        if(isset($request->video))
+        {
+            $videos = new Video_curso();
+            $videos->cursos_id = $cursos->id;
+            $videos->video = str_replace("watch?v=","embed/",$request->video);
+            $videos->save();
+        }
 
-        return view('salvarVideo', compact('cursos'));
+        if(isset($request->video))
+        {
+            $videos1 = new Video_curso();
+            $videos1->cursos_id = $cursos->id;
+            $videos1->video = str_replace("watch?v=","embed/",$request->video1);
+            $videos1->save();
+        }
+
+        return redirect('/cursos');
+        
+        // return view('salvarVideo', compact('cursos'));
 
 
     }
@@ -82,7 +96,6 @@ class CursoController extends Controller
 
         $videos->cursos_id = $request->cursos_id;
         $videos->video = str_replace("watch?v=","embed/",$request->video);
-
 
         $videos->save();
 
