@@ -26,7 +26,7 @@
  <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top animated fadeIn" id="nav">
       <div class="container">
-          <img src="{{ asset('images/logoo.png') }}" width="45">
+          <img src="{{ asset('images/logooo.png') }}" width="45">
 
 
         <a class="navbar-brand navHome Logoo" href="/">&nbsp SAMU Baixa Mogiana</a>
