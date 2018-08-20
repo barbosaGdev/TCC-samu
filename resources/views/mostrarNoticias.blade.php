@@ -3,7 +3,19 @@
 @section('content')
 <br><br><br>
 
+
 <div class="container">
+<div class="form-group">
+    <form method="get" action="/search" enctype="multipart/form-data">
+        {{ csrf_field() }}
+            <input type="search" class="Texto form-control" id="search" list="historico" placeholder="Pesquisar Notícia">
+            <datalist id="historico">
+                @foreach($dados as $n)
+                <option value="{{$n->titulo_noticia}}">
+                @endforeach
+            </datalist>
+    </form>
+</div>
 <!-- Page Heading/Breadcrumbs -->
 <nav class="breadcrumb">
 <a class="breadcrumb-item Texto" href="/">Home</a>

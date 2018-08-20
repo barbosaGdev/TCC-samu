@@ -65,7 +65,7 @@ class CursoController extends Controller
             $videos->save();
         }
 
-        if(isset($request->video))
+        if(isset($request->video1))
         {
             $videos1 = new Video_curso();
             $videos1->cursos_id = $cursos->id;

@@ -8,21 +8,10 @@
     }*/
 
 
-@font-face {
-    font-family: Agenda Bold;
-    src: url(AgendaBold.woff);
-}
-
-
-@font-face {
-    font-family: Agenda Medium;
-    src: url(AgendaMedium.woff);
-}
-
 
 
 .logoo{
-    font-family: 'Agenda Medium';
+    font-family: 'Roboto', sans-serif;
 }
 
 

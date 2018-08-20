@@ -4,25 +4,8 @@
   background-color: #191970;
 }
 
-@font-face {
-    font-family: Agenda Bold;
-    src: url(AgendaBold.woff);
-}
-
-
-@font-face {
-    font-family: Agenda Medium;
-    src: url(AgendaMedium.woff);
-}
-
-@font-face {
-    font-family: Agenda Regular;
-    src: url(AgendaRegular.woff);
-}
-
-
 .footer {
-    font-family: 'Agenda medium';
+    font-family: 'Roboto', sans-serif;
     background: #191970;
     margin: auto;
     width: 100%;
@@ -33,11 +16,13 @@
 
 
 .Titulo {
-    font-family: 'Agenda Medium';
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .Texto {
-    font-family: 'Agenda regular';
+    font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -50,7 +35,7 @@
 }
 
 .imgWelcome {
-    font-family: 'Agenda medium';
+
     height: 150px;
     top: 25%;
     right: 30%;
@@ -58,14 +43,14 @@
 }
 
 #fonteHome {
-    font-family: 'Agenda medium';
+
     font-size: 25px;
     letter-spacing: 0, 5px;
     color: whitesmoke;
 }
 
 .navHome {
-  font-family: 'Agenda medium';  
+
   transition: 0.3s ease;
   background: #191970;
   color: #ffffff;
