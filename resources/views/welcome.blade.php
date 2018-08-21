@@ -69,7 +69,7 @@
         </div> 
         
         
-        
+      <hr>
       <h1 class="Titulo animated fadeInDown">Primeiros Socorros</h1>
 
       <!-- Marketing Icons Section -->
@@ -77,7 +77,7 @@
        <!-- Marketing Icons Section -->
        <div class="row" style="margin-top:30px">
         <div class="col-lg-4 mb-4">
-          <div class="card h-100">
+          <div class="card h-100 shadowCard" >
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Hipoglicemia</font></h4>
             <div class="card-body">
               <p class="card-text Texto animated fadeInDown">A Hipoglicemia ocorre quando há falta de açúcar no sangue (falta de glicose). Geralmente acontece no período da manhã e não ocorre necessariamente com pessoas diabéticas. A glicose é responsável por levar o oxigênio para o cérebro; com a diminuição ocorre tonturas , confusão mental e até parada respiratória.</p>
@@ -139,7 +139,7 @@
         </div>
           
         <div class="col-lg-4 mb-4">
-          <div class="card h-100">
+          <div class="card h-100 shadowCard">
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Convulsão</font></h4>
             <div class="card-body">
               <p class="card-text Texto animated fadeInDown">Convulsões geralmente são problemas neurológicos causados por uma descarga elétrica no cérebro. 
@@ -189,7 +189,7 @@
         </div>
           
         <div class="col-lg-4 mb-4">
-          <div class="card h-100">
+          <div class="card h-100 shadowCard">
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Traumas</font></h4>
             <div class="card-body">
               <p class="card-text Texto animated fadeInDown">Os Traumas podem ocorrer por quedas acidentais ou quedas da própria altura além de acidentes de trânsito. 
@@ -238,7 +238,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
         </div>
           
           <div class="col-lg-4 mb-4">
-          <div class="card h-100">
+          <div class="card h-100 shadowCard">
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Parada Cardiorrespiratória</font></h4>
             <div class="card-body">
               <p class="card-text Texto animated fadeInDown">Parada Cardiorrespiratória
@@ -307,7 +307,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
         </div>
           
           <div class="col-lg-4 mb-4">
-          <div class="card h-100">
+          <div class="card h-100 shadowCard">
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Engasgo</font></h4>
             <div class="card-body">
               <p class="card-text Texto animated fadeInDown">Denominamos engasgo quando ocorre o bloqueio da traqueia ( órgão responsável em enviar e retirar o ar dos pulmões) por um objeto estranho, por vômito ou até mesmo sangue. Fisiologicamente, a traqueia é frequentemente protegida pela epiglote; esta nada mais serve como uma porta que abre e fecha, conforme a necessidade de ar. </p>
@@ -376,7 +376,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
         </div>
           
           <div class="col-lg-4 mb-4">
-          <div class="card h-100">
+          <div class="card h-100 shadowCard">
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white" class="Titulo">Desmaio</font></h4>
             <div class="card-body">
               <p class="card-text Texto animated fadeInDown">O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.</p>
