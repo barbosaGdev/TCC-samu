@@ -80,29 +80,6 @@ class CursoController extends Controller
 
     }
 
-    //Salvar vídeo
-    public function salvarVideo(Curso $cursos)
-    {
-        $videos = new Video_curso();
-        $cursos = Curso::all();
-
-        return redirect('/persisteVideo');
-
-    }
-
-    public function persisteVideo(Request $request)
-    {
-        $videos = new Video_curso();
-
-        $videos->cursos_id = $request->cursos_id;
-        $videos->video = str_replace("watch?v=","embed/",$request->video);
-
-        $videos->save();
-
-        return redirect('/cursos');
-    }
-
-
 
     //Pagina de lista de cursos
     public function cursos()
@@ -180,8 +157,9 @@ class CursoController extends Controller
     public function adminEditarCurso()
     {
         $dados = Curso::all();
+        $videos = Video_curso::all();
 
-        return view('adminEditarCurso', compact('dados'));
+        return view('adminEditarCurso', compact('dados','videos'));
 
     }
 
@@ -193,6 +171,8 @@ class CursoController extends Controller
     public function editar(Request $request)
     {
         $cursos = Curso::find($request->id);
+        $video = Video_curso::find($request->id);
+        $video1 = Video_curso::find($request->id);
 
         $this->validate($request,[
 
@@ -217,6 +197,22 @@ class CursoController extends Controller
         $cursos->pdf = ( URL::to('/storage') . "/" . $path);
 
         $cursos->save();
+
+        if(isset($request->video))
+        {
+            $videos = new Video_curso();
+            $videos->cursos_id = $cursos->id;
+            $videos->video = str_replace("watch?v=","embed/",$request->video);
+            $videos->save();
+        }
+
+        if(isset($request->video1))
+        {
+            $videos1 = new Video_curso();
+            $videos1->cursos_id = $cursos->id;
+            $videos1->video = str_replace("watch?v=","embed/",$request->video1);
+            $videos1->save();
+        }
 
         return redirect('/adminEditarCurso');
     }

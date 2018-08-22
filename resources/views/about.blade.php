@@ -31,36 +31,85 @@
   </div>
 </div>
 <!-- /.row -->
+<hr>
 
-<h2 class="Titulo">QUANDO E COMO CHAMAR O SAMU</h2><br>
-  <h3 class="Titulo">Quando chamar </h3>
-    <ul class="inside">
-      <li class="Texto">Em trabalhos de parto onde haja risco de morte da mãe e o feto</li> 
-      <li class="Texto">Em casos de tentativa de suicídio</li>  
-      <li class="Texto">Quando houver acidentes com vítimas </li> 
-      <li class="Texto">Em acidentes de trânsito (atropelamentos)</li> 
-      <li class="Texto">Intoxicação exógena </li>  
-      <li class="Texto">Afogamento </li>  
-      <li class="Texto">Choque elétrico </li> 
-      <li class="Texto">Problema cardiorrespiratório </li> 
-      <li class="Texto">Crise hipertensiva </li>  
-      <li class="Texto">Acidentes com produtos perigosos </li> 
-      <li class="Texto">Queimaduras graves.</li>  
-</ul>
-<h3 class="Titulo">Como chamar</h3>
-<ul class="inside">
-   <li class="Texto">Por meio do número 192 você tem acesso ao Serviço de Atendimento Móvel de Urgência</li>
-   <li class="Texto">O acionamento é feito pela central telefônica. Após o contato você deve dizer seu nome, o que e onde aconteceu</li>
-   <li class="Texto">A partir do relato será feita a classificação do risco: que pode ser desde uma orientação por telefone até o envio de uma ambulância básica ou avançada para o local</li>
-   <li class="Texto">Não mexa na vítima. Isso pode acarretar outra sequela mais grave.</li>   
-</ul>
+<h2 class="Titulo">QUANDO E COMO CHAMAR O SAMU</h2>
+<br>
+<div class="table-responsive">
+<table class="table table-hover tableAbout">
+    <thead> 
+      <tr>
+        <th class="thAbout">QUANDO CHAMAR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="Texto">Em trabalhos de parto onde haja risco de morte da mãe e o feto</td>
+      </tr>
+      <tr>
+        <td class="Texto">Em casos de tentativa de suicídio</td>
+      </tr>
+      <tr>
+        <td class="Texto">Quando houver acidentes com vítimas</td>
+      </tr>
+      <tr>
+        <td class="Texto">Em acidentes de trânsito (atropelamentos)</td>
+      </tr>
+      <tr>
+        <td class="Texto">Intoxicação exógena</td>
+      </tr>
+      <tr>
+        <td class="Texto">Afogamento </td>
+      </tr>
+      <tr>
+        <td class="Texto">Choque elétrico </td>
+      </tr>
+      <tr>
+        <td class="Texto">Problema cardiorrespiratório</td>
+      </tr>
+      <tr>
+        <td class="Texto">Crise hipertensiva</td>
+      </tr>
+      <tr>
+        <td class="Texto">Acidentes com produtos perigosos</td>
+      </tr>
+      <tr>
+        <td class="Texto">Queimaduras graves</td>
+      </tr>
+
+    </tbody>
+
+ </table> 
+<br>
+<table class="table table-hover tableAbout">
+    <thead> 
+      <tr>
+        <th class="thAbout">COMO CHAMAR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1º</strong> Por meio do número 192 você tem acesso ao Serviço de Atendimento Móvel de Urgência</td>
+      </tr>
+      <tr>
+        <td><strong>2º</strong> O acionamento é feito pela central telefônica. Após o contato você deve dizer seu nome, o que e onde aconteceu</td>
+      </tr>
+      <tr>
+        <td><strong>3º</strong> A partir do relato será feita a classificação do risco: que pode ser desde uma orientação por telefone até o envio de uma ambulância básica ou avançada para o local</td>
+      </tr> 
+      <tr>
+        <td><strong>4º</strong> Não mexa na vítima. Isso pode acarretar outra sequela mais grave.</td>
+      </tr> 
+    </tbody>
+</table>
+</div>
 <br>
 <!-- Team Members -->
 <h2 class="Titulo">Desenvolvedores</h2>
 
 <div class="row">
   <div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center">
+    <div class="card h-100 text-center shadowCard">
       <img class="card-img-top" src="{{ asset('images/G1.jpeg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">Gabriel Barbosa</h4>
@@ -73,7 +122,7 @@
     </div>
   </div>
   <div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center">
+    <div class="card h-100 text-center shadowCard">
       <img class="card-img-top" src="{{ asset('images/Eu.jpg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">João Vitor</h4>
@@ -86,7 +135,7 @@
     </div>
   </div>
   <div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center">
+    <div class="card h-100 text-center shadowCard">
       <img class="card-img-top" src="{{ asset('images/Vi1.jpeg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">Vitor Marques</h4>
@@ -100,7 +149,7 @@
   </div>
 
 <div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center">
+    <div class="card h-100 text-center shadowCard">
       <img class="card-img-top" src="{{ asset('images/Jo1.jpeg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">João Pedro</h4>
@@ -114,7 +163,7 @@
   </div>
 
 <div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center">
+    <div class="card h-100 text-center shadowCard">
       <img class="card-img-top" src="{{ asset('images/Ju.jpg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">Júlia Souza</h4>
@@ -128,7 +177,7 @@
   </div>
 
 <div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center">
+    <div class="card h-100 text-center shadowCard">
       <img class="card-img-top" src="{{ asset('images/Mu1.jpeg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">Murilo Martins</h4>
@@ -142,7 +191,7 @@
   </div>
 
 <div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center">
+    <div class="card h-100 text-center shadowCard">
       <img class="card-img-top" src="{{ asset('images/Ba1.jpeg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">Bárbara</h4>

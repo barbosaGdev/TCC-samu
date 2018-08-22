@@ -61,4 +61,14 @@
 
 .shadowCard {
     box-shadow: 5px 8px 21px #0f0a54;
+    border: midnightblue;
+}
+
+.thAbout {
+    background-color: midnightblue;
+    color: white;
+}
+
+.tableAbout {
+    border: 3px solid midnightblue;
 }

@@ -46,14 +46,14 @@
 <input type="file" class="Texto form-control" name="img" id="img" value="{{$dados->img}}">
 </div>
 
-<div class="form-group">
-<label for="videoP" class="Texto">Vídeo Principal</label>
-<input type="text" class="Texto form-control" name="videoP" id="videoP" value="{{$dados->videoP}}">
-</div>
-
  <div class="form-group">
 <label for="pdf" class="Texto">PDF</label>
 <input type="file" class="Texto form-control" name="pdf" id="pdf" value="{{$dados->pdf}}">
+</div>
+
+<div class="form-group">
+<label for="videoP" class="Texto">Aula Principal</label>
+<input type="text" class="Texto form-control" name="videoP" id="videoP" value="{{$dados->videoP}}">
 </div>
 
 <button type="submit" class="btn btn-primary Texto" style="background-color: orangered;border-color: orangered;">Enviar</button>
