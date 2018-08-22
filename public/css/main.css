@@ -44,20 +44,51 @@
 }
 
 .navHome {
-    transition: 0.3s ease;
-    background: #191970;
-    color: #ffffff;
-    font-size: 20px;
-    border-top: 4px solid #191970;
-    border-bottom: 4px solid #191970;
-    padding: 5px 0;
-    margin: 0 5px;
-}
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+  }
+  .navHome:hover, .navHome:focus, .navHome:active {
+    background-color: orangered;
+    color: orangered;
+  }
 
-.navHome:hover {
-    border-top: 4px solid #ffffff;
-    border-bottom: 4px solid #ffffff;
-}
+  .navGrande {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .navGrande:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: orangered;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .navGrande:hover:before, .navGrande:focus:before, .navGrande:active:before {
+    left: 0;
+    right: 0;
+  }
 
 .shadowCard {
     box-shadow: 5px 8px 21px #0f0a54;

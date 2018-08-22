@@ -28,7 +28,7 @@
           <img src="{{ asset('images/logooo.png') }}" width="45">
 
 
-        <a class="navbar-brand navHome Logoo" href="/">&nbsp SAMU Baixa Mogiana</a>
+        <a class="navbar-brand navGrande Logoo" href="/">&nbsp SAMU Baixa Mogiana</a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
