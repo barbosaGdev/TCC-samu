@@ -42,6 +42,7 @@ Route::post('/deleteCurso/{curso}', ['middleware' => 'authAdmin', 'uses' => 'Cur
 Route::post('/deleteColaborador/{user}', ['middleware' => 'authAdmin', 'uses' => 'CursoController@deleteColaborador']);
 Route::get('/cursos', 'CursoController@cursos');
 Route::get('/cursosView/{dados}', 'CursoController@cursosView');
+Route::get('/searchCursos', 'CursoController@searchCursos');
 
 //rotas notícia
 Route::get('/noticiaInsere', ['middleware' => 'authAdmin', 'uses' => 'HomeController@inserirNoticia' ]);
@@ -52,6 +53,7 @@ Route::post('/updateNoticia', ['middleware' => 'authAdmin', 'uses' => 'HomeContr
 Route::post('/deleteNoticia/{noticia}', ['middleware' => 'authAdmin', 'uses' => 'HomeController@deleteNoticia' ]);
 Route::get('/noticia/{id}', 'NoticiasController@exibirNoticia');
 Route::get('/ver/noticias', 'NoticiasController@mostrarNoticias');
+Route::get('/searchNoticias', 'NoticiasController@searchNoticias');
 
 
 

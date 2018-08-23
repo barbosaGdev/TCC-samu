@@ -77,7 +77,6 @@ class CursoController extends Controller
         
         // return view('salvarVideo', compact('cursos'));
 
-
     }
 
 
@@ -219,13 +218,23 @@ class CursoController extends Controller
 
     public function deleteCurso(Curso $curso)
     {
-
         $curso->delete();
-
-
-        // $curso->delete();
+        
         return redirect('/adminEditarCurso');
         
+    }
+    
+    public function searchCursos(Request $request)
+    {
+        $dados = DB::table('cursos')
+                            ->Where('nome', 'like', '%' . $request->search . '%')
+                            ->get();
+
+        $search = $request->search;
+        $loggedUser = \Auth::user();
+
+
+        return view('searchCursos', compact('dados', 'search', 'loggedUser'));
     }
 }
 

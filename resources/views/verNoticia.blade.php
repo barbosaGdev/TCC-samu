@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="form-group">
-    <form method="get" action="/search" enctype="multipart/form-data">
+    <form method="get" action="/searchNoticias" enctype="multipart/form-data">
         {{ csrf_field() }}
             <input type="search" class="Texto form-control" id="search" list="historico" placeholder="Pesquisar Notícia">
             <datalist id="historico">
@@ -22,7 +22,7 @@
     @if ($v->imagem1 == '')
     @else
     <div>
-    <img width="560" height="315" src="{{$v->imagem1}}"></img>
+    <img width="560" height="315" src="{{$v->imagem1}}">
     </div>
      @endif
     <br>
