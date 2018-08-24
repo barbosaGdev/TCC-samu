@@ -123,7 +123,7 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`video_cursos` (
   CONSTRAINT `fk_video_cursos_cursos`
     FOREIGN KEY (`cursos_id`)
     REFERENCES `onsamu`.`cursos` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;

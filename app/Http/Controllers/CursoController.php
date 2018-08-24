@@ -8,6 +8,7 @@ use App\Curso;
 use App\Cursos_has_user;
 use App\Video_curso;
 use App\User;
+use App\StringUtil;
 use DB;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Storage;
@@ -45,7 +46,7 @@ class CursoController extends Controller
         ]);
         
 
-        $cursos->videoP = str_replace("watch?v=","embed/",$request->videoP);
+        $cursos->videoP = StringUtil::convertToYoutubeUrl($request->videoP);
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
 
@@ -61,7 +62,7 @@ class CursoController extends Controller
         {
             $videos = new Video_curso();
             $videos->cursos_id = $cursos->id;
-            $videos->video = str_replace("watch?v=","embed/",$request->video);
+            $videos->video = StringUtil::convertToYoutubeUrl($request->video);
             $videos->save();
         }
 
@@ -69,7 +70,7 @@ class CursoController extends Controller
         {
             $videos1 = new Video_curso();
             $videos1->cursos_id = $cursos->id;
-            $videos1->video = str_replace("watch?v=","embed/",$request->video1);
+            $videos1->video = StringUtil::convertToYoutubeUrl($request->video1);
             $videos1->save();
         }
 
@@ -174,15 +175,12 @@ class CursoController extends Controller
         $video1 = Video_curso::find($request->id);
 
         $this->validate($request,[
-
             'img' => 'required',
             'pdf' => 'required'
         ],[
             'img.required' => 'Insira novamente uma imagem',
             'pdf.required' => 'Insira novamente um PDF',
-            
         ]);
-        
 
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
@@ -216,6 +214,7 @@ class CursoController extends Controller
         return redirect('/adminEditarCurso');
     }
 
+    //deletar curso
     public function deleteCurso(Curso $curso)
     {
         $curso->delete();
@@ -223,6 +222,8 @@ class CursoController extends Controller
         return redirect('/adminEditarCurso');
         
     }
+
+    
     
     public function searchCursos(Request $request)
     {
