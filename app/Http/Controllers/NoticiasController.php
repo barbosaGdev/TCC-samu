@@ -36,12 +36,13 @@ class NoticiasController extends Controller
     
     public function searchNoticias(Request $request)
     {
+        $dados1 = Noticia::All();
         $dados = DB::table('noticias')
                             ->Where('titulo_noticia', 'like', '%' . $request->search . '%')
                             ->get();
-        
+
         $search = $request->search;
-        return view('searchNoticias', compact('dados', 'search'));
+        return view('searchNoticias', compact('dados', 'search', 'dados1'));
     }
 
 }

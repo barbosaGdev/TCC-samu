@@ -226,6 +226,7 @@ class CursoController extends Controller
     
     public function searchCursos(Request $request)
     {
+        $dados1 = Curso::All();
         $dados = DB::table('cursos')
                             ->Where('nome', 'like', '%' . $request->search . '%')
                             ->get();
@@ -234,7 +235,7 @@ class CursoController extends Controller
         $loggedUser = \Auth::user();
 
 
-        return view('searchCursos', compact('dados', 'search', 'loggedUser'));
+        return view('searchCursos', compact('dados', 'search', 'loggedUser', 'dados1'));
     }
 }
 

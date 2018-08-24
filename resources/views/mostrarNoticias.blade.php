@@ -8,7 +8,7 @@
 <div class="form-group">
     <form method="get" action="/searchNoticias" enctype="multipart/form-data">
         {{ csrf_field() }}
-            <input type="search" class="Texto form-control" id="search" list="historico" placeholder="Pesquisar Notícia">
+            <input type="search" class="Texto form-control" id="search" name="search" list="historico" placeholder="Pesquisar Notícia">
             <datalist id="historico">
                 @foreach($dados as $n)
                 <option value="{{$n->titulo_noticia}}">

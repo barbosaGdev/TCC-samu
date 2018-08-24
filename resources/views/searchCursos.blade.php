@@ -10,7 +10,7 @@
         {{ csrf_field() }}
             <input type="search" name="search" class="Texto form-control" id="search" list="cursos" placeholder="Pesquisar Cursos" value="{{$search}}">
             <datalist id="cursos">
-                @foreach($dados as $n)
+                @foreach($dados1 as $n)
                 <option value="{{$n->nome}}">
                 @endforeach
             </datalist>
