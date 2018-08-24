@@ -31,15 +31,15 @@
 
 <div class="form-group" >   
 <label for="titulo_noticia" class="Texto">Manchete</label>
-<input type="text" class="Texto form-control" name="titulo_noticia" id="titulo_noticia">
+<input type="text" class="Texto form-control" name="titulo_noticia" id="titulo_noticia" autocomplete="off">
 </div>
 
 <label for="imagem1" class="Texto">Imagem Destaque</label>
-<input type="file" class="Texto form-control" name="imagem1" id="imagem1">
+<input type="file" class="Texto form-control" name="imagem1" id="imagem1" autocomplete="off">
 </div>
 <div class="form-group">
 <label for="texto" class="Texto">Informações</label>
-<textarea rows="6" cols="100" class="Texto form-control" type="text" name="texto" id="texto"></textarea>
+<textarea rows="6" cols="100" class="Texto form-control" type="text" name="texto" id="texto" autocomplete="off"></textarea>
 
 <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>

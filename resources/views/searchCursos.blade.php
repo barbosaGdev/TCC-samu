@@ -8,7 +8,7 @@
 <div class="form-group">
     <form method="get" action="/searchCursos" enctype="multipart/form-data">
         {{ csrf_field() }}
-            <input type="search" name="search" class="Texto form-control" id="search" list="cursos" placeholder="Pesquisar Cursos" value="{{$search}}">
+            <input type="search" name="search" class="Texto form-control" id="search" list="cursos" placeholder="Pesquisar Cursos" value="{{$search}}" autocomplete="off">
             <datalist id="cursos">
                 @foreach($dados1 as $n)
                 <option value="{{$n->nome}}">

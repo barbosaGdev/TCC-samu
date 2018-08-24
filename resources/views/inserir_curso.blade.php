@@ -40,24 +40,24 @@
 
 <div class="form-group">
 <label for="img" class="Texto">Imagem Principal</label>
-<input type="file" class="Texto form-control" name="img" id="img">
+<input type="file" class="Texto form-control" name="img" id="img" autocomplete="off">
 </div>
 
 <div class="form-group">
 <label for="pdf" class="Texto">PDF</label>
-<input type="file" class="Texto form-control" name="pdf" id="pdf">
+<input type="file" class="Texto form-control" name="pdf" id="pdf" autocomplete="off">
 </div>
 
 
 <div class="form-group">
 <label for="videoP" class="Texto">Aula Principal</label>
-<input type="text" class="Texto form-control" name="videoP" id="videoP">
+<input type="text" class="Texto form-control" name="videoP" id="videoP" autocomplete="off">
 </div>
 
 <div class="form-group">
 <label for="video" class="Texto">Aulas Complementares</label>
-<input type="text" class="Texto form-control" name="video" id="video">
-<input type="text" class="Texto form-control" name="video1" id="video1">
+<input type="text" class="Texto form-control" name="video" id="video" autocomplete="off">
+<input type="text" class="Texto form-control" name="video1" id="video1" autocomplete="off">
 </div> 
 
 <button type="submit" class="Texto btn btn-primary" style="background-color: orangered;border-color: orangered;">Enviar</button>
