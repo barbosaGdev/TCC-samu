@@ -52,7 +52,6 @@ class HomeController extends Controller
 
     public function persisteNoticia(Request $request){
 
-        $noticia = new Noticia();
 
         $this->validate($request,[
             'titulo_noticia' => 'required',
@@ -63,10 +62,10 @@ class HomeController extends Controller
             'imagem1.required' => 'Insira a imagem principal da notícia',
             'texto.required' => 'Insira o texto da notícia',
         ]);
+
+        $noticia = new Noticia();
         
         $noticia->titulo_noticia = $request->titulo_noticia;
-
-
         $noticia->texto = $request->texto;
         $path = Storage::disk('public')->putFile('noticias',$request->imagem1);
         $noticia->imagem1 = ( URL::to('/storage') . "/" . $path);
@@ -94,27 +93,25 @@ class HomeController extends Controller
 
     public function updateNoticia(Request $request)
     {
+        $this->validate($request,[
+            'titulo_noticia' => 'required',
+            'imagem1' => 'required',
+            'texto' => 'required'
+        ],[
+            'titulo_noticia.required' => 'Insira a manchete',
+            'imagem1.required' => 'Insira a imagem principal da notícia',
+            'texto.required' => 'Insira o texto da notícia',
+        ]);
+        
         $noticia = Noticia::find($request->id);
 
         $noticia->titulo_noticia = $request->titulo_noticia;
-        
-        $path = Storage::disk('public')->putFile('cursos',$request->imagem1);
+        $noticia->texto = $request->texto;
+        $path = Storage::disk('public')->putFile('noticias',$request->imagem1);
         $noticia->imagem1 = ( URL::to('/storage') . "/" . $path);
-
-        $noticia->paragrafo1 = $request->paragrafo1;
-        
-        $path = Storage::disk('public')->putFile('cursos',$request->imagem2);
-        $noticia->imagem2 = ( URL::to('/storage') . "/" . $path);
-
-        $noticia->paragrafo2 = $request->paragrafo2;
-        
-        $path = Storage::disk('public')->putFile('cursos',$request->imagem3);
-        $noticia->imagem3 = ( URL::to('/storage') . "/" . $path);
-
-
-        $noticia->paragrafo3 = $request->paragrafo3;
-        $noticia->paragrafo4 = $request->paragrafo4;
+    
         $noticia->save();
+
         return redirect('/adminEditarNoticia');
     }
 

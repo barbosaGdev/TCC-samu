@@ -1,11 +1,13 @@
+
 @extends('layouts.app')
 
 @section('content')
+
 <br><br><br>
 <div class="container">
 <nav class="breadcrumb">
 <a class="breadcrumb-item Texto" href="/">Home</a>
-<a class="breadcrumb-item Texto" href="/admin">Administrar</a>
+<a class="breadcrumb-item Tex   to" href="/admin">Administrar</a>
 <a class="breadcrumb-item Texto" href="/adminEditarCurso">Editar Curso</a>
 <span class="breadcrumb-item active Texto">Curso</span>
 </nav>
@@ -53,8 +55,14 @@
 
 <div class="form-group">
 <label for="videoP" class="Texto">Aula Principal</label>
-<input type="text" class="Texto form-control" name="videoP" id="videoP" value="{{$dados->videoP}}">
+<input type="text" class="Texto form-control" name="videoP" id="videoP" autocomplete="off" value="{{$dados=videoP}}">
 </div>
+
+<div class="form-group">
+<label for="video" class="Texto">Aulas Complementares</label>
+<input type="text" class="Texto form-control" name="video" id="video" autocomplete="off" value="{{$dados=video}}">
+<input type="text" class="Texto form-control" name="video1" id="video1" autocomplete="off" value="{{$dados=video1}}">
+</div> 
 
 <button type="submit" class="btn btn-primary Texto" style="background-color: orangered;border-color: orangered;">Enviar</button>
 </form> 
