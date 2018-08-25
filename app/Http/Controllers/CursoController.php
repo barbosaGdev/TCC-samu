@@ -60,18 +60,18 @@ class CursoController extends Controller
         
         if(isset($request->video))
         {
-            $videos = new Video_curso();
-            $videos->cursos_id = $cursos->id;
-            $videos->video = StringUtil::convertToYoutubeUrl($request->video);
-            $videos->save();
+            $video = new Video_curso();
+            $video->cursos_id = $cursos->id;
+            $video->video = StringUtil::convertToYoutubeUrl($request->video);
+            $video->save();
         }
 
         if(isset($request->video1))
         {
-            $videos1 = new Video_curso();
-            $videos1->cursos_id = $cursos->id;
-            $videos1->video = StringUtil::convertToYoutubeUrl($request->video1);
-            $videos1->save();
+            $video1 = new Video_curso();
+            $video1->cursos_id = $cursos->id;
+            $video1->video = StringUtil::convertToYoutubeUrl($request->video1);
+            $video1->save();
         }
 
         return redirect('/cursos');
@@ -172,8 +172,8 @@ class CursoController extends Controller
     public function editar(Request $request)
     {
         $cursos = Curso::find($request->id);
-        $video = Video_curso::find($request->id);
-        $video1 = Video_curso::find($request->id);
+        $video = Video_curso::find($request->VideoId);
+        $video1 = Video_curso::find($request->VideoId1);
 
         $this->validate($request,[
             'img' => 'required',
@@ -182,7 +182,7 @@ class CursoController extends Controller
             'img.required' => 'Insira novamente uma imagem',
             'pdf.required' => 'Insira novamente um PDF',
         ]);
-
+        
         $cursos->nome = $request->nome;
         $cursos->descricao = $request->descricao;
         
@@ -198,18 +198,16 @@ class CursoController extends Controller
 
         if(isset($request->video))
         {
-            $videos = new Video_curso();
-            $videos->cursos_id = $cursos->id;
-            $videos->video = str_replace("watch?v=","embed/",$request->video);
-            $videos->save();
+            $video->video = str_replace("watch?v=","embed/",$request->video);
+            $video->cursos_id = $cursos->id;
+            $video->save();
         }
 
         if(isset($request->video1))
         {
-            $videos1 = new Video_curso();
-            $videos1->cursos_id = $cursos->id;
-            $videos1->video = str_replace("watch?v=","embed/",$request->video1);
-            $videos1->save();
+            $video1->cursos_id = $cursos->id;
+            $video1->video = str_replace("watch?v=","embed/",$request->video1);
+            $video1->save();
         }
 
         return redirect('/adminEditarCurso');

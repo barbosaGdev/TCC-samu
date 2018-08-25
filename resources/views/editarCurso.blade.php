@@ -1,4 +1,7 @@
-
+<?php 
+$i='';
+$j='';
+?>
 @extends('layouts.app')
 
 @section('content')
@@ -33,6 +36,10 @@
 
 <input type="hidden" name="id" value="{{$dados->id}}">
 
+@foreach ($videos as $v)
+<input type="hidden" name="VideoId{{$i}}" value="{{$v->id}}">
+<?php $i++;?>
+@endforeach
 <div class="form-group">    
 <label for="nome" class="Texto">Nome do Curso</label>
 <input type="text" class="Texto form-control" name="nome" id="nome" value="{{$dados->nome}}">
@@ -55,13 +62,18 @@
 
 <div class="form-group">
 <label for="videoP" class="Texto">Aula Principal</label>
-<input type="text" class="Texto form-control" name="videoP" id="videoP" autocomplete="off" value="{{$dados=videoP}}">
+<input type="text" class="Texto form-control" name="videoP" id="videoP" autocomplete="off" value="{{$dados->videoP}}">
 </div>
 
 <div class="form-group">
 <label for="video" class="Texto">Aulas Complementares</label>
-<input type="text" class="Texto form-control" name="video" id="video" autocomplete="off" value="{{$dados=video}}">
-<input type="text" class="Texto form-control" name="video1" id="video1" autocomplete="off" value="{{$dados=video1}}">
+
+
+@foreach ($videos as $v)
+
+<input type="text" class="Texto form-control" name="video{{$j}}" id="video" autocomplete="off" value="{{$v->video}}">
+<?php $j++;?>
+@endforeach
 </div> 
 
 <button type="submit" class="btn btn-primary Texto" style="background-color: orangered;border-color: orangered;">Enviar</button>
