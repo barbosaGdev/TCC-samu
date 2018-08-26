@@ -126,7 +126,7 @@
       <img class="card-img-top" src="{{ asset('images/Eu.jpg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">João Vitor</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Front-End</h6>
+        <h6 class="card-subtitle mb-2 text-muted Titulo">Designer</h6>
         <p class="card-text Texto">Estudante, músico, atleta, adora tecnologia e jogos</p>
       </div>
       <div class="card-footer">
@@ -139,7 +139,7 @@
       <img class="card-img-top" src="{{ asset('images/Vi1.jpeg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">Vitor Marques</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Back-End</h6>
+        <h6 class="card-subtitle mb-2 text-muted Titulo">Banco de Dados</h6>
         <p class="card-text Texto">Estudante, atleta, gosta de ler e de arte</p>
       </div>
       <div class="card-footer">
@@ -153,7 +153,7 @@
       <img class="card-img-top" src="{{ asset('images/Jo1.jpeg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">João Pedro</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Back-End</h6>
+        <h6 class="card-subtitle mb-2 text-muted Titulo">Programador</h6>
         <p class="card-text Texto">Estudante, jogador de overwatch, amante do mundo dos games</p>
       </div>
       <div class="card-footer">
@@ -167,7 +167,7 @@
       <img class="card-img-top" src="{{ asset('images/Ju.jpg') }}" height="210">
       <div class="card-body">
         <h4 class="card-title Titulo">Júlia Souza</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Banco de Dados</h6>
+        <h6 class="card-subtitle mb-2 text-muted Titulo">Programadora</h6>
         <p class="card-text Texto">Estudante, ex atleta, garota gamer, adora memes e cachorros</p>
       </div>
       <div class="card-footer">

@@ -67,12 +67,12 @@ CREATE TABLE IF NOT EXISTS `onsamu`.`cursos_has_users` (
   CONSTRAINT `fk_cursos_has_users1_cursos`
     FOREIGN KEY (`cursos_id`)
     REFERENCES `onsamu`.`cursos` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_cursos_has_users1_users1`
     FOREIGN KEY (`users_id`)
     REFERENCES `onsamu`.`users` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;

@@ -12,7 +12,17 @@
         <div class="row">
             <div class="col-8">
             <h1 class="display-3 Texto">Editar Notícia</h1>
-
+                <div class="panel-body">
+                    @if(count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{$error}}</li>  
+                             @endforeach          
+                        </ul>
+            </div>
+                    @endif
+        </div>
 <form method="post" action="/updateNoticia" enctype="multipart/form-data">
 
     {{ csrf_field() }}
