@@ -55,11 +55,15 @@ class HomeController extends Controller
 
         $this->validate($request,[
             'titulo_noticia' => 'required',
-            'imagem1' => 'required',
+            'imagem1' => 'required|image|mimes:jpg,png,gif,jpeg|max:2048',
             'texto' => 'required'
         ],[
             'titulo_noticia.required' => 'Insira a manchete',
             'imagem1.required' => 'Insira a imagem principal da notícia',
+            'imagem1.required' => 'Insira a imagem principal da notícia',
+            'imagem1.image' => 'A imagem principal precisa ser uma imagem',
+            'imagem1.mimes' => 'A imagem precisa estar no formato jpg, jpeg, png ou gif',
+            'imagem1.max' => 'Imagem muito pesada',
             'texto.required' => 'Insira o texto da notícia',
         ]);
 
@@ -95,11 +99,14 @@ class HomeController extends Controller
     {
         $this->validate($request,[
             'titulo_noticia' => 'required',
-            'imagem1' => 'required',
+            'imagem1' => 'required|image|mimes:jpg,png,gif,jpeg|max:2048',
             'texto' => 'required'
         ],[
             'titulo_noticia.required' => 'Insira a manchete',
             'imagem1.required' => 'Insira a imagem principal da notícia',
+            'imagem1.image' => 'A imagem principal precisa ser uma imagem',
+            'imagem1.mimes' => 'A imagem precisa estar no formato jpg, jpeg, png ou gif',
+            'imagem1.max' => 'Imagem muito pesada',
             'texto.required' => 'Insira o texto da notícia',
         ]);
         

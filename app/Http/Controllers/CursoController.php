@@ -37,12 +37,16 @@ class CursoController extends Controller
 
         $this->validate($request,[
             'nome' => 'required',
-            'img' => 'required',
-            'pdf' => 'required'
+            'img' => 'required|image|mimes:jpg,png,gif,jpeg|max:2048',
+            'pdf' => 'required|mimes:pdf'
         ],[
             'nome.required' => 'Insira o título do curso',
             'img.required' => 'Insira uma imagem',
+            'img.image' => 'A imagem principal precisa ser uma imagem',
+            'img.mimes' => 'A imagem precisa estar no formato jpg, jpeg, png ou gif',
+            'img.max' => 'Imagem muito pesada',
             'pdf.required' => 'Insira um PDF',
+            'pdf.mimes' => 'Insira um PDF',
         ]);
         
 
@@ -52,6 +56,8 @@ class CursoController extends Controller
 
         $path = Storage::disk('public')->putFile('cursos',$request->img);
         $cursos->img = ( URL::to('/storage') . "/" . $path);
+
+        
 
         $path = Storage::disk('public')->putFile('cursos',$request->pdf);
         $cursos->pdf = ( URL::to('/storage') . "/" . $path);
@@ -176,11 +182,15 @@ class CursoController extends Controller
         $video1 = Video_curso::find($request->VideoId1);
 
         $this->validate($request,[
-            'img' => 'required',
-            'pdf' => 'required'
+            'img' => 'required|image|mimes:jpg,png,gif,jpeg|max:2048',
+            'pdf' => 'required|mimes:pdf'
         ],[
             'img.required' => 'Insira novamente uma imagem',
+            'img.image' => 'A imagem principal precisa ser uma imagem',
+            'img.mimes' => 'A imagem precisa estar no formato jpg, jpeg, png ou gif',
+            'img.max' => 'Imagem muito pesada',
             'pdf.required' => 'Insira novamente um PDF',
+            'pdf.mimes' => 'Insira um PDF',
         ]);
         
         $cursos->nome = $request->nome;
