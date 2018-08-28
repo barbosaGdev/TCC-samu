@@ -210,23 +210,9 @@
 <!-- Our Customers -->
 <h2 class="Titulo">Hierarquia</h2><br>
 <div class="row">
-  <div class="col-lg-2 col-sm-4 mb-4">
-    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-  </div>
-  <div class="col-lg-2 col-sm-4 mb-4">
-    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-  </div>
-  <div class="col-lg-2 col-sm-4 mb-4">
-    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-  </div>
-  <div class="col-lg-2 col-sm-4 mb-4">
-    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-  </div>
-  <div class="col-lg-2 col-sm-4 mb-4">
-    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-  </div>
-  <div class="col-lg-2 col-sm-4 mb-4">
-    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+
+<img class="img-fluid rounded mb-4 animated fadeInRight" src="" alt="">
+
   </div>
     
     
