@@ -21,7 +21,7 @@
   </div>
   <div class="col-lg-6">
     <h2 class="Titulo animated fadeInDown">SAMU</h2>
-    <p class="Texto animated fadeInDown">O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) é um serviço Pré-hospitalar de Atendimento Móvel de Urgência e Emergência, tendo como objetivo chegar precocemente à vítima após ter ocorrido um agravo à sua saúde (de natureza clínica, cirúrgica, traumática, obstétrica, pediátrica, psiquiátrica, entre outras). </p><br>
+    <p class="Texto animated fadeInDown" <font face="Roboto Light">O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) é um serviço Pré-hospitalar de Atendimento Móvel de Urgência e Emergência, tendo como objetivo chegar precocemente à vítima após ter ocorrido um agravo à sua saúde (de natureza clínica, cirúrgica, traumática, obstétrica, pediátrica, psiquiátrica, entre outras). </p></font><br>
     <h2 class="Titulo animated fadeInDown">SAMU NO BRASIL</h2>
     <p class="Texto animated fadeInDown">Teve inicio a partir de um acordo bilateral entre Brasil e França, baseado
        no modelo Frances considerado por especialistas o melhor do mundo. 
@@ -116,110 +116,101 @@
 
   </div><br><br>
 
-
-<!-- Team Members -->
-<h2 class="Titulo">Desenvolvedores</h2><br>
-
-<div class="row">
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center shadowCard">
-      <img class="card-img-top" src="{{ asset('images/G1.jpeg') }}" height="210">
-      <div class="card-body">
-        <h4 class="card-title Titulo">Gabriel Barbosa</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Gerente</h6>
-        <p class="card-text Texto">Estudante, capoeirista, poeta, amante de programação e filosofia</p>
+<!-- Desenvolvedores -->
+<div class="container-fluid">
+  <h1 class="text-center mb-3">Desenvolvedores</h1>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner row w-100 mx-auto">
+      <div class="carousel-item col-md-4 active">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f44242/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Gabriel Barbosa</h4>
+            <p class="card-text">Gerente</p>
+            <p class="card-text">Estudante, capoeirista, poeta, amante de programação e filosofia.</p>
+            <p class="card-text"><small class="text-muted">biki.jam@hotmail.com</small></p>
+          </div>
+        </div>
       </div>
-      <div class="card-footer">
-        <a href="#" class="Texto">biki.jam@hotmail.com</a>
+      <div class="carousel-item col-md-4">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/418cf4/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">João Pedro</h4>
+            <p class="card-text">Programador</p>
+            <p class="card-text">Estudante, jogador de Fortnite, amante do mundo dos games</p>
+            <p class="card-text"><small class="text-muted">jpfreitas2001@gmail.com</small></p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center shadowCard">
-      <img class="card-img-top" src="{{ asset('images/Eu.jpg') }}" height="210">
-      <div class="card-body">
-        <h4 class="card-title Titulo">João Vitor</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Designer</h6>
-        <p class="card-text Texto">Estudante, músico, atleta, adora tecnologia e jogos</p>
+      <div class="carousel-item col-md-4">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/3ed846/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">João Vitor</h4>
+            <p class="card-text">Designer</p>
+            <p class="card-text">Estudante, músico, atleta, adora tecnologia e jogos</p>
+            <p class="card-text"><small class="text-muted">vitorsilvestre9@hotmail.com</small></p>
+          </div>
+        </div>
       </div>
-      <div class="card-footer">
-        <a href="#" class="Texto">vitorsilvestre9@hotmail.com</a>
+      <div class="carousel-item col-md-4">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/42ebf4/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Julia Souza</h4>
+            <p class="card-text">Programadora</p>
+            <p class="card-text">Estudante, ex atleta, garota gamer, adora memes e cachorros</p>
+            <p class="card-text"><small class="text-muted">jsouzajj27@gmail.com</small></p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center shadowCard">
-      <img class="card-img-top" src="{{ asset('images/Vi1.jpeg') }}" height="210">
-      <div class="card-body">
-        <h4 class="card-title Titulo">Vitor Marques</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Banco de Dados</h6>
-        <p class="card-text Texto">Estudante, atleta, gosta de ler e de arte</p>
+      <div class="carousel-item col-md-4">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f4f141/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Victor Marques</h4>
+            <p class="card-text">Banco de Dados</p>
+            <p class="card-text">Estudante, atleta, gosta de ler e de arte</p>
+            <p class="card-text"><small class="text-muted">victormarques090600@gmail.com</small></p>
+          </div>
+        </div>
       </div>
-      <div class="card-footer">
-        <a href="#" class="Texto">victormarques090600@gmail.com</a>
+      <div class="carousel-item col-md-4">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f49b41/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Bárbara</h4>
+            <p class="card-text">Escritora</p>
+            <p class="card-text">Estudante, apreciadora do mundo automotivo, adora animais como gatos.</p>
+            <p class="card-text"><small class="text-muted">ba.burgo@gmail.com</small></p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-<div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center shadowCard">
-      <img class="card-img-top" src="{{ asset('images/Jo1.jpeg') }}" height="210">
-      <div class="card-body">
-        <h4 class="card-title Titulo">João Pedro</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Programador</h6>
-        <p class="card-text Texto">Estudante, jogador de overwatch, amante do mundo dos games</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="Texto">jpfreitas2001@gmail.com</a>
-      </div>
-    </div>
-  </div>
-
-<div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center shadowCard">
-      <img class="card-img-top" src="{{ asset('images/Ju.jpg') }}" height="210">
-      <div class="card-body">
-        <h4 class="card-title Titulo">Júlia Souza</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Programadora</h6>
-        <p class="card-text Texto">Estudante, ex atleta, garota gamer, adora memes e cachorros</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="Texto">jsouzajj27@gmail.com</a>
-      </div>
-    </div>
-  </div>
-
-<div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center shadowCard">
-      <img class="card-img-top" src="{{ asset('images/Mu1.jpeg') }}" height="210">
-      <div class="card-body">
-        <h4 class="card-title Titulo">Murilo Martins</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Escritor</h6>
-        <p class="card-text Texto">Estudante, jogador profissional de qualquer jogo eletrônico, amante de RPGs e outras coisas do mundo geek</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="Texto">murilo.camilo.martins@hotmail.com</a>
+      <div class="carousel-item col-md-4">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/8e41f4/fff" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Murilo</h4>
+            <p class="card-text">Escritor</p>
+            <p class="card-text">Estudante, jogador profissional de qualquer jogo eletrônico, amante de RPGs e outras coisas do mundo geek</p>
+            <p class="card-text"><small class="text-muted">murilo.camilo.martins@hotmail.com<</small></p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-<div class="col-lg-4 mb-4">
-    <div class="card h-100 text-center shadowCard">
-      <img class="card-img-top" src="{{ asset('images/Ba1.jpeg') }}" height="210">
-      <div class="card-body">
-        <h4 class="card-title Titulo">Bárbara</h4>
-        <h6 class="card-subtitle mb-2 text-muted Titulo">Escritora</h6>
-        <p class="card-text Texto">Estudante, apreciadora do mundo automotivo, adora animais como gatos, não se deixa levar pelo "tamanho" do problema</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="Texto">ba.burgo@gmail.com</a>
-      </div>
-    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </div>
 
 
-    
     
         
 </div>
