@@ -111,8 +111,8 @@
 <!-- Our Customers -->
 <h2 class="Titulo">Hierarquia</h2><br>
 <div class="row">
-
-<img class="img-fluid rounded mb-4 animated fadeInRight" src="https://github.com/barbosaGdev/TCC-samu/blob/master/public/images/hierarquiaa.PNG?raw=true" alt="">
+&nbsp;&nbsp;&nbsp;
+<img class="img-fluid rounded mb-4 animated fadeInRight" src="https://github.com/barbosaGdev/TCC-samu/blob/master/public/images/Capturar.PNG?raw=true" alt="">
 
 </div><br><br>
 

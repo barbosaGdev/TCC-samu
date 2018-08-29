@@ -13,12 +13,12 @@
       <h1 class="mt-4 mb-3 Titulo">{{$dados->nome}}
         <small class="Titulo">- Nep</small>
       </h1>
-
+            
        <div class="row">
        @if ($dados->videoP == '')
           @else
         <div class="col-md-8 embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" width="750" height="500" src="{{$dados->videoP}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" width="650" height="400" src="{{$dados->videoP}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
           @endif
           <div class="col-md-4">
@@ -26,23 +26,28 @@
           <p class="Texto">{{$dados->descricao}}</p>
         </div>
 
+        
+
       <!-- Portfolio Item Row -->
      
       @foreach($videos as $v)
           @if ($v->video == '')
           @else
         <div class="col-md-3 col-sm-6 mb-4">
+        &nbsp;&nbsp;&nbsp;&nbsp;
             <iframe class="embed-responsive-item" width="500" height="300" src="{{$v->video}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-          @endif
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          @endif 
       @endforeach
+
         
 
-      </div>
+      </div> <br>
       <!-- /.row -->
-
-
-     
+      <div align="center">
+    <h1>Material de Apoio</h1>
+      </div>
 
       </div>
       <br>
