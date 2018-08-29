@@ -104,8 +104,21 @@
 </table>
 </div>
 <br>
+
+
+<!-- /.row -->
+<br>
+<!-- Our Customers -->
+<h2 class="Titulo">Hierarquia</h2><br>
+<div class="row">
+
+<img class="img-fluid rounded mb-4 animated fadeInRight" src="https://github.com/barbosaGdev/TCC-samu/blob/master/public/images/hierarquia.PNG?raw=true" alt="">
+
+  </div><br><br>
+
+
 <!-- Team Members -->
-<h2 class="Titulo">Desenvolvedores</h2>
+<h2 class="Titulo">Desenvolvedores</h2><br>
 
 <div class="row">
   <div class="col-lg-4 mb-4">
@@ -205,15 +218,7 @@
   </div>
 </div>
 
-<!-- /.row -->
-<br>
-<!-- Our Customers -->
-<h2 class="Titulo">Hierarquia</h2><br>
-<div class="row">
 
-<img class="img-fluid rounded mb-4 animated fadeInRight" src="https://github.com/barbosaGdev/TCC-samu/blob/master/public/images/hierarquia.PNG?raw=true" alt="">
-
-  </div>
     
     
         
