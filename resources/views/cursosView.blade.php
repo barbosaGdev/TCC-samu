@@ -23,7 +23,7 @@
           @endif
           <div class="col-md-4">
         <h2>Descrição</h2>  
-          <p class="Texto">{{$dados->descricao}}</p>
+          <p class="Texto"  align="justify">{{$dados->descricao}}</p>
         </div>
 
         

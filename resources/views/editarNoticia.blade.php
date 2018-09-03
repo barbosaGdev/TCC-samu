@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<br><br><br>
+<br><br>
 <div class="container">
 <nav class="breadcrumb">
 <a class="breadcrumb-item Texto" href="/">Home</a>

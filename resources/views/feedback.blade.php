@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<br><br><br>
+<br><br>
 
      <div class="container">
       <!-- Page Heading/Breadcrumbs -->
@@ -46,7 +46,7 @@
       <!-- /.row -->
       <br>
         <h2 class="Titulo">Fake news / Trote e o SAMU</h2><br>
-        <p class="Texto">
+        <p class="Texto"  align="justify" >
             Segundo levantamento nacional do Ministério
             da Saúde, em 2007, cerca de 40% das ligações para o
             SAMU, eram trotes. Os horários de pico desses trotes

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<br><br><br>
+<br><br>
 <div class="container">
 <nav class="breadcrumb">
     <a class="breadcrumb-item Texto" href="/">Home</a>
@@ -34,9 +34,11 @@
 <input type="text" class="Texto form-control" name="titulo_noticia" id="titulo_noticia" autocomplete="off">
 </div>
 
+<div class="form-group" > 
 <label for="imagem1" class="Texto">Imagem Destaque</label>
 <input type="file" class="Texto form-control" name="imagem1" id="imagem1" autocomplete="off">
 </div>
+    
 <div class="form-group">
 <label for="texto" class="Texto">Informações</label>
 <textarea rows="6" cols="100" class="Texto form-control" type="text" name="texto" id="texto" autocomplete="off"></textarea>
@@ -48,6 +50,8 @@
 
 <br>
 <button type="submit" class="Texto btn btn-primary" style="background-color: orangered;border-color: orangered;">Enviar</button>
+</div>
+
 <br><br><br><br>
 </form> 
     

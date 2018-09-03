@@ -80,7 +80,7 @@
           <div class="card h-100 shadowCard" >
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Hipoglicemia</font></h4>
             <div class="card-body">
-              <p class="card-text Texto animated fadeInDown">A Hipoglicemia ocorre quando há falta de açúcar no sangue (falta de glicose). Geralmente acontece no período da manhã e não ocorre necessariamente com pessoas diabéticas. A glicose é responsável por levar o oxigênio para o cérebro; com a diminuição ocorre tonturas , confusão mental e até parada respiratória.</p>
+              <p class="card-text Texto animated fadeInDown"  align="justify">A Hipoglicemia ocorre quando há falta de açúcar no sangue (falta de glicose). Geralmente acontece no período da manhã e não ocorre necessariamente com pessoas diabéticas. A glicose é responsável por levar o oxigênio para o cérebro; com a diminuição ocorre tonturas , confusão mental e até parada respiratória.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
               <a href="#" class="btn btn-primary Texto animated fadeInDown" data-toggle="modal" data-target="#myModal" style="background-color: orangered; border-color: orangered;">Leia Mais</a>
@@ -93,7 +93,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
 				          <div class="modal-body">
-                                    <p  class="Texto"> O que é a Hipoglicemia? <br><br>                             
+                                    <p  class="Texto"  align="justify"> O que é a Hipoglicemia? <br><br>                             
 
                                         A Hipoglicemia ocorre quando há falta de açúcar no sangue (falta de glicose). Geralmente acontece no período da manhã e não ocorre necessariamente com pessoas diabéticas.<br> 
                                         A glicose é responsável por levar o oxigênio para o cérebro; com a diminuição ocorre tonturas , confusão mental e até parada respiratória.<br> <br> 
@@ -142,7 +142,7 @@
           <div class="card h-100 shadowCard">
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Convulsão</font></h4>
             <div class="card-body">
-              <p class="card-text Texto animated fadeInDown">Convulsões geralmente são problemas neurológicos causados por uma descarga elétrica no cérebro. 
+              <p class="card-text Texto animated fadeInDown"  align="justify">Convulsões geralmente são problemas neurológicos causados por uma descarga elétrica no cérebro. 
               Em alguns casos ocorrem devidos a TCE's ( Trauma Crânio Encefálico) e overdoses.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
@@ -156,7 +156,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
 				    <div class="modal-body">
-                                    <p class="Texto"> O que são as Convulsões? <br><br>
+                                    <p class="Texto"  align="justify"> O que são as Convulsões? <br><br>
                                       
                                         Convulsões geralmente são problemas neurológicos causados por uma descarga elétrica no cérebro.<br>
                                         Em alguns casos ocorrem devidos a TCE's ( Trauma Crânio Encefálico) e overdoses.<br><br>
@@ -192,7 +192,7 @@
           <div class="card h-100 shadowCard">
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Traumas</font></h4>
             <div class="card-body">
-              <p class="card-text Texto animated fadeInDown">Os Traumas podem ocorrer por quedas acidentais ou quedas da própria altura além de acidentes de trânsito. 
+              <p class="card-text Texto animated fadeInDown"  align="justify">Os Traumas podem ocorrer por quedas acidentais ou quedas da própria altura além de acidentes de trânsito. 
 Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadeira. Enquanto uma queda da própria altura, seria basicamente tropeçar e cair.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
@@ -206,7 +206,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
 				<div class="modal-body">
-                                    <p class="Texto"> O que é um Trauma? <br><br>
+                                    <p class="Texto"  align="justify"> O que é um Trauma? <br><br>
 
                                         Os Traumas podem ocorrer por quedas acidentais ou quedas da própria altura além de acidentes de trânsito.<br>
                                         Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadeira. Enquanto uma queda da própria altura, seria basicamente tropeçar e cair.<br><br>
@@ -241,7 +241,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
           <div class="card h-100 shadowCard">
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Parada Cardiorrespiratória</font></h4>
             <div class="card-body">
-              <p class="card-text Texto animated fadeInDown">Parada Cardiorrespiratória
+              <p class="card-text Texto animated fadeInDown"  align="justify">Parada Cardiorrespiratória
               A Parada Cardiorrespiratória é o momento em que o coração deixa de funcionar e o indivíduo deixa de respirar. 
               A Hipoglicemia e a Convulsão pode levar a uma parada respiratória, em seguida parada cardíaca. O Trauma pode levar diretamente a parada cardíaca.</p>
             </div>
@@ -256,7 +256,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
 				<div class="modal-body">
-                                    <p class="Texto"> O que é uma Parada Cardiorrespiratória? <br><br>
+                                    <p class="Texto"  align="justify"> O que é uma Parada Cardiorrespiratória? <br><br>
 
                                         A Parada Cardiorrespiratória é o momento em que o coração deixa de funcionar e o indivíduo deixa de respirar.<br>
                                         A Hipoglicemia e a Convulsão podem levar a uma parada respiratória, em seguida parada cardíaca. O Trauma pode levar diretamente a parada cardíaca.<br><br>
@@ -310,7 +310,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
           <div class="card h-100 shadowCard">
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Engasgo</font></h4>
             <div class="card-body">
-              <p class="card-text Texto animated fadeInDown">Denominamos engasgo quando ocorre o bloqueio da traqueia ( órgão responsável em enviar e retirar o ar dos pulmões) por um objeto estranho, por vômito ou até mesmo sangue. Fisiologicamente, a traqueia é frequentemente protegida pela epiglote; esta nada mais serve como uma porta que abre e fecha, conforme a necessidade de ar. </p>
+              <p class="card-text Texto animated fadeInDown"  align="justify">Denominamos engasgo quando ocorre o bloqueio da traqueia ( órgão responsável em enviar e retirar o ar dos pulmões) por um objeto estranho, por vômito ou até mesmo sangue. Fisiologicamente, a traqueia é frequentemente protegida pela epiglote; esta nada mais serve como uma porta que abre e fecha, conforme a necessidade de ar. </p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
               <a href="#" class="btn btn-primary Texto animated fadeInDown" data-toggle="modal" data-target="#myModal5" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
@@ -323,7 +323,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
 				<div class="modal-body">
-                                    <p class="Texto"> O que é engasgo? <br><br>
+                                    <p class="Texto"  align="justify"> O que é engasgo? <br><br>
 
                                         Denominamos engasgo quando ocorre o bloqueio da traqueia ( órgão responsável em enviar e retirar o ar dos pulmões) por um objeto estranho, por vômito ou até mesmo sangue. Fisiologicamente, a traqueia é frequentemente protegida pela epiglote; esta nada mais serve como uma porta que abre e fecha, conforme a necessidade de ar. Assim, quando ocorre a passagem de ar, a epiglote permanece aberta, porém quando ocorre a alimentação, a epiglote é fechada, impedindo que qualquer alimento ou corpo estranho, alcance a traqueia e, posteriormente, os pulmões.<br><br>
  
@@ -379,11 +379,11 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
           <div class="card h-100 shadowCard">
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white" class="Titulo">Desmaio</font></h4>
             <div class="card-body">
-              <p class="card-text Texto animated fadeInDown">O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.</p>
+              <p class="card-text Texto animated fadeInDown"  align="justify">O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
               <a href="#" class="btn btn-primary Texto animated fadeInDown" data-toggle="modal" data-target="#myModal6" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
-              <!-----Modal ---->
+              <!--Modal -->
               <div class="modal fade bd-example-modal-lg" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
@@ -392,7 +392,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
 				<div class="modal-body">
-                                    <p class="Texto"> O que é Desmaio? <br><br>
+                                    <p class="Texto" align="justify"> O que é Desmaio? <br><br>
 
                                       O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.
                                       É a perda momentânea dos sentidos.<br><br>

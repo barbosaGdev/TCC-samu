@@ -17,7 +17,7 @@
   </div>
   <div class="col-md-5">
     <h3>{{$v->nome}}</h3>
-    <p class="lead">{{$v->descricao}}</p>
+    <p class="lead"  align="justify">{{$v->descricao}}</p>
     <div class="align-right">
       <a href="/editarCurso/{{$v->id}}" class="btn btn-primary fa fa-wrench" method="post"></a>
       <form method="post" style="display: inline;" action="/deleteCurso/{{$v->id}}">

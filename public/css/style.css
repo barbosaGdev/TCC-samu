@@ -7,9 +7,8 @@
     src: local('Agenda Regular'), url('agenda__.woff') format('woff');
     }*/
 
-
-
-
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+    
 .logoo{
     font-family: 'Roboto', sans-serif;
 }

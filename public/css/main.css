@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
 #nav {
     padding: 20px;
     text-align: center;
@@ -6,6 +8,7 @@
 
 .footer {
     font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     background: #191970;
     margin: auto;
     width: 100%;
@@ -15,11 +18,11 @@
 }
 
 .Titulo {
-    font-family: 'Roboto', sans-serif;
+    font-weight: medium;
 }
 
 .Texto {
-    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
 
 #imgFooter {
@@ -38,6 +41,7 @@
 }
 
 #fonteHome {
+
     font-size: 25px;
     letter-spacing: 0, 5px;
     color: whitesmoke;

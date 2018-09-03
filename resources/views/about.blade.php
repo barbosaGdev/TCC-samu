@@ -21,9 +21,9 @@
   </div>
   <div class="col-lg-6">
     <h2 class="Titulo animated fadeInDown">SAMU</h2>
-    <p class="Texto animated fadeInDown" <font face="Roboto Light">O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) é um serviço Pré-hospitalar de Atendimento Móvel de Urgência e Emergência, tendo como objetivo chegar precocemente à vítima após ter ocorrido um agravo à sua saúde (de natureza clínica, cirúrgica, traumática, obstétrica, pediátrica, psiquiátrica, entre outras). </p></font><br>
+    <p class="Texto animated fadeInDown" align="justify">O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) é um serviço Pré-hospitalar de Atendimento Móvel de Urgência e Emergência, tendo como objetivo chegar precocemente à vítima após ter ocorrido um agravo à sua saúde (de natureza clínica, cirúrgica, traumática, obstétrica, pediátrica, psiquiátrica, entre outras). </p></font>
     <h2 class="Titulo animated fadeInDown">SAMU NO BRASIL</h2>
-    <p class="Texto animated fadeInDown">Teve inicio a partir de um acordo bilateral entre Brasil e França, baseado
+    <p class="Texto animated fadeInDown"  align="justify">Teve inicio a partir de um acordo bilateral entre Brasil e França, baseado
        no modelo Frances considerado por especialistas o melhor do mundo. 
        O Serviço é oferecido pelo Governo Federal em parcerias  com Estados e Municípios, com o objetivo de padronização e cobertura em todo território nacional,  regulamentada pela portaria 1010/MS e 2048/MS. 
     </p>
