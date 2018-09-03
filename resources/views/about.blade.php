@@ -226,4 +226,6 @@
 </div>
 <!-- /.container -->
 
+    <link href="{{ asset('css/carousel.css') }}" rel="stylesheet">
+    
 @endsection
