@@ -12,6 +12,9 @@
                 <br>
 
                 <ul class="animated fadeInDown">
+
+                <li class="animated fadeInDown"><a href="/ajuda"><font size="5" class="Texto">Manual de Instrução</font></a></li>
+
                 <li class="animated fadeInDown"><a href="{{ route('register') }}"><font size="5" class="Texto">Registrar novos Colaboradores</font></a></li>
                
                 <li class="animated fadeInDown"><a href="/adminOuvidoria"><font size="5" class="Texto">Ouvidoria</font></a></li>

@@ -20,6 +20,7 @@ Auth::routes();
 
 Route::get('/admin', ['middleware' => 'authAdmin', 'uses' => 'HomeController@admin' ]);
 Route::get('/about', 'OuvidoriaController@sobre');
+Route::get('/ajuda', 'HomeController@ajuda');
 
 //rotas ouvidoria
 Route::get('/ouvidoria', 'OuvidoriaController@ouvidoria');

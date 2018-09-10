@@ -37,6 +37,11 @@ class HomeController extends Controller
         return view('admin');
     }
 
+    public function ajuda()
+    {
+        return view('ajuda');    
+    }
+
     public function ouvidoria()
     {
         $dados = Feedback::all();
