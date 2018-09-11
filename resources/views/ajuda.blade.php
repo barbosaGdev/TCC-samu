@@ -6,11 +6,18 @@
 <div class="container">
     <div class="row">
         <h2>Guia de como o Administrador ministrar o site</h2>
-        <br>
+        
     </div>
-    <h5>Como Registrar novos Colaboradores:</h5>
-        <img class="img-fluid rounded mb-4 animated fadeInRight" src="" alt="">
+    <br><br>
+    <h4>Como Registrar novos Colaboradores:</h4> <br>
+        <img class="img-fluid rounded mb-4 animated fadeInRight" src="https://github.com/barbosaGdev/TCC-samu/blob/master/public/images/instrucao1.jpg?raw=true" alt="">
+        <p>Essa página foi desenvolvida para o registro de novos colaboradores que farão uso do material que a instituição disponibilizará.</p>
+
+    <hr>
+
+
 </div>
+
 
 
 
