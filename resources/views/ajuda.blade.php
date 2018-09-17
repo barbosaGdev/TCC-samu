@@ -17,8 +17,15 @@
 
     <br><br>
     <h4>Recebendo mensagens da Ouvidoria:</h4> <br>
-        <img class="img-fluid rounded mb-4 animated fadeInRight" src="https://github.com/barbosaGdev/TCC-samu/blob/master/public/images/instrução3.jpg?raw=true" alt="">
+        <img class="img-fluid rounded mb-4 animated fadeInRight" src="https://github.com/barbosaGdev/TCC-samu/blob/master/public/images/instrucao3.jpg?raw=true" alt="">
         <p>Aqui será onde a comunidade fará suas devidas sugestões e críticas a respeito do atendimento. Vocês terão um recurso para saber como estão se saindo ao atender a população</p>
+
+    <hr>
+
+    <br><br>
+    <h4>Vizualizando feedback da comunidade:</h4> <br>
+        <img class="img-fluid rounded mb-4 animated fadeInRight" src="https://github.com/barbosaGdev/TCC-samu/blob/master/public/images/instrucao2.jpg?raw=true" alt="">
+        <p></p>
 
     <hr>
 
