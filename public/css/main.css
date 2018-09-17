@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
-
 #nav {
     padding: 20px;
     text-align: center;
@@ -41,7 +40,6 @@
 }
 
 #fonteHome {
-
     font-size: 25px;
     letter-spacing: 0, 5px;
     color: whitesmoke;
@@ -59,13 +57,16 @@
     transition-duration: 0.3s;
     -webkit-transition-property: color, background-color;
     transition-property: color, background-color;
-  }
-  .navHome:hover, .navHome:focus, .navHome:active {
+}
+
+.navHome:hover,
+.navHome:focus,
+.navHome:active {
     background-color: orangered;
     color: orangered;
-  }
+}
 
-  .navGrande {
+.navGrande {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -73,8 +74,9 @@
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-  }
-  .navGrande:before {
+}
+
+.navGrande:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -89,11 +91,14 @@
     transition-duration: 0.2s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .navGrande:hover:before, .navGrande:focus:before, .navGrande:active:before {
+}
+
+.navGrande:hover:before,
+.navGrande:focus:before,
+.navGrande:active:before {
     left: 0;
     right: 0;
-  }
+}
 
 .shadowCard {
     box-shadow: 5px 8px 21px #888888;
@@ -111,22 +116,18 @@
 
 .dropdown-item:hover {
     background-color: orangered;
-
-
 }
 
-<<<<<<< HEAD
 .modules {
     float: left;
-  }
-=======
-.tableOuvidoria{
-    table-layout:fixed;
-    width: 1550px; 
+}
+
+.tableOuvidoria {
+    table-layout: fixed;
+    width: 1300px;
     border: 3px solid midnightblue;
 }
 
-.tdOuvidoria{
+.tdOuvidoria {
     word-wrap: break-word;
 }
->>>>>>> 0fc6ff0077239547c59f28ab358b54d921ca5d7e

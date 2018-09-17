@@ -13,7 +13,7 @@
     <br>
     </div>
 
-    <div class="col-sm-3">
+    <div class="col-sm-12">
     <table class="table table-striped tableOuvidoria">
             <thead>
                 <tr>
@@ -38,6 +38,16 @@
             </tbody>
             
         </table>
+        <br>
+        <form method="post" style="display: inline;" action="/deleteOuvidoria">
+            {{csrf_field()}}
+            <button class="btn Texto" style="background: #191970;color: white;" onclick="return confirm('Tem certeza que deseja limpar o histórico da ouvidoria?'); return false;">Limpar Histórico</button>
+         </form> 
+    </div>
+    </div>
+     
+
+
     </div>
     
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

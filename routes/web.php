@@ -26,6 +26,7 @@ Route::get('/ajuda', 'HomeController@ajuda');
 Route::get('/ouvidoria', 'OuvidoriaController@ouvidoria');
 Route::post('/saveFeedback', 'OuvidoriaController@saveFeedback');
 Route::get('/adminOuvidoria', ['middleware' => 'authAdmin', 'uses' => 'HomeController@ouvidoria' ]);
+Route::post('/deleteOuvidoria', ['middleware' => 'authAdmin', 'uses' => 'HomeController@DelOuvidoria' ]);
 
 //rotas curso
 Route::get('/adminAddCurso', ['middleware' => 'authAdmin', 'uses' => 'CursoController@adminAddCurso' ]);
