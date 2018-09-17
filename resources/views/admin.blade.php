@@ -23,6 +23,8 @@
                 
                 <li class="animated fadeInDown"><a href="/adminAddCurso"><font size="5" class="Texto">Adicionar novos cursos</font></a></li>
 
+                <li class="animated fadeInDown"><a href="https://www.youtube.com/channel/UCf6GpEN-oK1zxgCanha7PzQ?view_as=subscriber"><font size="5" class="Texto">Enviar novas vídeo aulas</font></a></li>
+
                 <li class="animated fadeInDown"><a href="https://www.google.com/intl/pt/drive/"><font size="5" class="Texto">Elaborar Avaliações</font></a></li>
 
                 <li class="animated fadeInDown"><a href="/noticiaInsere"><font size="5" class="Texto">Adicionar uma Notícia</font></a></li>
