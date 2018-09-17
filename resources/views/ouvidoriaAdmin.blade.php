@@ -11,14 +11,16 @@
     </nav>
     <h1 class="Texto">Feedback da Comunidade</h1>
     <br>
+    </div>
 
-    <table class="table table-striped table-hover">
+    <div class="col-sm-3">
+    <table class="table table-striped tableOuvidoria">
             <thead>
                 <tr>
-                    <th class="Texto">Nome</th>
-                    <th class="Texto">Telefone para Contato</th>
-                    <th class="Texto">Email para Contato</th>
-                    <th class="Texto">Texto</th>
+                    <th class="Texto thAbout">Nome</th>
+                    <th class="Texto thAbout">Telefone para Contato</th>
+                    <th class="Texto thAbout">Email para Contato</th>
+                    <th class="Texto thAbout">Texto</th>
                     
                 </tr>
             </thead>
@@ -28,7 +30,7 @@
                     <td class="Texto">{{ $value->nome }}</td>
                     <td class="Texto">{{ $value->telefone }}</td>
                     <td class="Texto">{{ $value->email }}</td>
-                    <td class="Texto" style="white-space: initial">{{ $value->texto }}</td>
+                    <td class="Texto tdOuvidoria">{{ $value->texto }}</td>
                 </tr>
 
 
