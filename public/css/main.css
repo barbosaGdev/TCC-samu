@@ -115,6 +115,11 @@
 
 }
 
+<<<<<<< HEAD
+.modules {
+    float: left;
+  }
+=======
 .tableOuvidoria{
     table-layout:fixed;
     width: 1550px; 
@@ -124,3 +129,4 @@
 .tdOuvidoria{
     word-wrap: break-word;
 }
+>>>>>>> 0fc6ff0077239547c59f28ab358b54d921ca5d7e

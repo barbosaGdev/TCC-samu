@@ -13,13 +13,13 @@
         
 
     <h1 class="Texto">Colaboradores</h1>
-        <table class="table table-striped table-hover">
+        <table class="table table-striped tableAbout">
                 <thead>
                     <tr>
                         
-                        <th class="Texto">Nome</th>
-                        <th class="Texto">Email</th>
-                        <th></th>
+                        <th class="Texto thAbout">Nome</th>
+                        <th class="Texto thAbout">Email</th>
+                        <th class="Texto thAbout"></th>
 
                     </tr>
                 </thead>

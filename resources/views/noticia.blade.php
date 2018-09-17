@@ -21,11 +21,22 @@
           <p class="Texto">Data do Post da Notícia: {{$dados->created_at}}</p>
 
           <hr>    
-          <img src="{{$dados->imagem1}}"  height="300">
-          <p class="lead Texto"><?php echo htmlspecialchars_decode(stripslashes($dados->texto)); ?></p>
+          
+          
+          <!--<img src="{{$dados->imagem1}}"  height="300"> -->
+
+          
+          
+
+          <figure class="r right"><img src="{{$dados->imagem1}}" alt="mossy log with ferns growing out of it">
+          </figure>
+
+          
 
         </div>  
-          <hr>
+          <p class="lead Texto"><?php echo htmlspecialchars_decode(stripslashes($dados->texto)); ?></p>
+
+        
 
           <!-- Comments Form -->
          
@@ -48,7 +59,6 @@
 
         <!-- Sidebar Widgets Column -->
         
-
         </div>
       
       </div>
@@ -62,6 +72,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="public/css/teste.css"></script>
 
   </body>
 

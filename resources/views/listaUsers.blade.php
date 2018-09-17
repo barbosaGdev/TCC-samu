@@ -12,13 +12,13 @@
     </nav>
     <div class="align align-right">
     </div>
-        <table class="table table-striped table-hover">
+        <table class="table table-striped tableAbout">
                 <thead>
                     <tr>
                         
-                        <th class="Texto">Nome</th>
-                        <th class="Texto">Curso</th>
-                        <th class="Texto">Data do ultimo acesso</th>
+                        <th class="Texto thAbout">Nome</th>
+                        <th class="Texto thAbout">Curso</th>
+                        <th class="Texto thAbout">Data do ultimo acesso</th>
 
                     </tr>
                 </thead>
