@@ -360,7 +360,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
 
                                         Deite o bebê de barriga para cima sem seu braço e abra boca e nariz;<br>
                                         Verifique se o bebê está respirando;<br>
-                                        Se o bebê não estiver respirando, realize duas respirações que boca-boca, bloqueando a boca e o nariz;<br>
+                                        Se o bebê não estiver respirando, realize duas respirações boca-boca, bloqueando a boca e o nariz;<br>
                                         Observe se há expansão do peito; em caso negativo, realize novamente a respiração;<br>
                                         Contate imediatamente o serviço de atendimento de emergência.<br>
                                         Em todas as situações de primeiros socorros é necessário manter a calma, para poder agir com segurança e inteligência.<br>

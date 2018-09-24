@@ -20,7 +20,7 @@
 <nav class="breadcrumb animated fadeInDown">
 <a class="breadcrumb-item Texto animated fadeInDown" href="/">Home</a>
 @if($loggedUser->email == 'admin@samu.com')
-<a class="breadcrumb-item Texto animated fadeInDown" href="/admin">Admin</a>
+<a class="breadcrumb-item Texto animated fadeInDown" href="/admin">Administrar</a>
 @endif
 <span class="breadcrumb-item active Texto animated fadeInDown">Meus Cursos</span>
 </nav>

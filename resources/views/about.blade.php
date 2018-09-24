@@ -20,9 +20,9 @@
     <img class="img-fluid rounded mb-4 animated fadeInRight" src="http://www.saobentodosul.sc.gov.br/img/noticias/foto/28796.jpg" alt="">
   </div>
   <div class="col-lg-6">
-    <h2 class="Titulo animated fadeInDown">SAMU</h2>
+    <h2 class="Titulo animated fadeInDown">Samu</h2>
     <p class="Texto animated fadeInDown" align="justify">O SERVIÇO DE ATENDIMENTO MÓVEL DE URGÊNCIA (SAMU) é um serviço Pré-hospitalar de Atendimento Móvel de Urgência e Emergência, tendo como objetivo chegar precocemente à vítima após ter ocorrido um agravo à sua saúde (de natureza clínica, cirúrgica, traumática, obstétrica, pediátrica, psiquiátrica, entre outras). </p></font>
-    <h2 class="Titulo animated fadeInDown">SAMU NO BRASIL</h2>
+    <h2 class="Titulo animated fadeInDown">Samu no Brasil</h2>
     <p class="Texto animated fadeInDown"  align="justify">Teve inicio a partir de um acordo bilateral entre Brasil e França, baseado
        no modelo Frances considerado por especialistas o melhor do mundo. 
        O Serviço é oferecido pelo Governo Federal em parcerias  com Estados e Municípios, com o objetivo de padronização e cobertura em todo território nacional,  regulamentada pela portaria 1010/MS e 2048/MS. 
@@ -33,13 +33,13 @@
 <!-- /.row -->
 <hr>
 
-<h2 class="Titulo">QUANDO E COMO CHAMAR O SAMU</h2>
+<h2 class="Titulo">Quando e como chamar o Samu</h2>
 <br>
 <div class="table-responsive">
 <table class="table table-hover tableAbout">
     <thead> 
       <tr>
-        <th class="thAbout">QUANDO CHAMAR</th>
+        <th class="thAbout">Quando chamar</th>
       </tr>
     </thead>
     <tbody>
