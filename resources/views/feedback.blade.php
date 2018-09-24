@@ -88,13 +88,14 @@
             <div class="control-group form-group">
               <div class="controls">
                 <label class="Texto">Email:</label>
-                <input type="email" class="Texto form-control" id="email" name="email" required data-validation-required-message="Por Favor , insira seu Email">
+                <input type="email"  maxlength="50" class="Texto form-control" id="email" name="email" required data-validation-required-message="Por Favor , insira seu Email">
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
                 <label class="Texto">Mensagem:</label>
-                <textarea rows="10" cols="100" class="Texto form-control" name="texto" id="texto" required data-validation-required-message="Por Favor , insira sua Mensagem" maxlength="500" style="resize:none"></textarea>
+                <textarea rows="10" cols="100" id="TxtObservacoes" class="Texto form-control" name="texto" id="texto" required data-validation-required-message="Por Favor , insira sua Mensagem" maxlength="250" style="resize:none"></textarea>
+                <span id="caracteres">250</span> Restantes <br>
               </div>
             </div>
             <div id="success"></div>
@@ -108,7 +109,19 @@
 
     </div>
     <!-- /.container -->
-   
+
+    <script>
+
+    document.querySelector('#TxtObservacoes').addEventListener("input", function () {
+        var limite = 250;
+        var caracteresDigitados = this.value.length;
+        var caracteresRestantes = limite - caracteresDigitados;
+
+        document.querySelector("#caracteres").innerHTML = caracteresRestantes;
+    });
+
+</script>
+    
     
 </body>
 </html>
