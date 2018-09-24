@@ -50,6 +50,21 @@
 
     <hr>
 
+    <br><br>
+    <h4>Editando um curso:</h4> <br>
+        <img class="img-fluid rounded mb-4 animated fadeInRight" src="https://github.com/barbosaGdev/TCC-samu/blob/master/public/images/instrucao7.PNG?raw=true" alt="">
+        <p>Nesta página o administrador poderá editar todas as informações de um curso já existente clicando no ícone azul (chave), e apagar o curso clicando no ícone vermelho (lixeira).</p>
+
+    <hr>
+
+    <br><br>
+    <h4>Editando uma notícia:</h4> <br>
+        <img class="img-fluid rounded mb-4 animated fadeInRight" src="https://github.com/barbosaGdev/TCC-samu/blob/master/public/images/instrucao8.PNG?raw=true" alt="">
+        <p>Nesta página o administrador poderá editar todas as informações de uma notícia já existente clicando no ícone azul (chave), e apagá-la a notícia clicando no ícone vermelho (lixeira).</p>
+
+    <hr>
+
+    
 
 </div>
 
