@@ -422,8 +422,19 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
           
       </div>
       
-      
-      
+<!-- function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+       -->
+
+
       <!-- /.row -->
 
       <!-- Portfolio Section -->

@@ -28,14 +28,15 @@
           
           
 
-          <figure class="r right"><img src="{{$dados->imagem1}}" alt="mossy log with ferns growing out of it">
+          <figure class="right"><img src="{{$dados->imagem1}}"  alt="mossy log with ferns growing out of it">
           </figure>
 
           
 
         </div>  
-          <p class="lead Texto"><?php echo htmlspecialchars_decode(stripslashes($dados->texto)); ?></p>
-
+        <div class="container">
+          <p class="lead Texto" align="justify"><?php echo htmlspecialchars_decode(stripslashes($dados->texto)); ?></p>
+        </div>
         
 
           <!-- Comments Form -->

@@ -20,7 +20,6 @@
 </head>
 <body>
  
- 
  <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top animated fadeIn" id="nav">
       <div class="container">
@@ -106,9 +105,11 @@
       </div>
     </footer>
                       
- 
-    
 
+
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="{{ asset('js/app.js') }}"></script>
   <script src="{{ asset('js/bootstrap.min.js') }}"></script>
   <script src="{{ asset('js/contact_me.js') }}"></script>
