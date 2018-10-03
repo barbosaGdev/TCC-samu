@@ -65,9 +65,10 @@
        </div>
 
        <div> 
-            
-        </div> 
-        
+      </div>
+
+
+      <a href="/ajudaComunidade"><button class="btn btn-primary Texto animated fadeInDown" style="background-color: orangered; border-color: orangered;">Instruções</button><a/>
         
       <hr>
       <h1 class="Titulo animated fadeInDown">Primeiros Socorros</h1>

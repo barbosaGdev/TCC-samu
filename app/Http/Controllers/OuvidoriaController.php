@@ -18,6 +18,11 @@ class OuvidoriaController extends Controller
         return view('about');    
     }
 
+    public function ajudaComunidade()
+    {
+        return view('ajudaComunidade');    
+    }
+
 
     public function saveFeedback(Request $request)
     {
