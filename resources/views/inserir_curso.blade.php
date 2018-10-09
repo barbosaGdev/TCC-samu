@@ -22,7 +22,6 @@
             </ul>
         </div>
         @endif
-</div>
 
 <form method="post" action="/salvar" enctype="multipart/form-data">
 

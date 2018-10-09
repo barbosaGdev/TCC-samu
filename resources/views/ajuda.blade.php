@@ -2,7 +2,13 @@
 
 @section('content')
 <br><br>
-
+<div class="container">
+<nav class="breadcrumb">
+<a class="breadcrumb-item" href="/">Home</a>
+<a class="breadcrumb-item" href="/admin">Administrar</a>
+<span class="breadcrumb-item active">Editar curso</span>
+</nav>
+<br> 
 <div class="container">
     <div class="row">
         <h2>Guia de como o Administrador ministrar o site</h2>
