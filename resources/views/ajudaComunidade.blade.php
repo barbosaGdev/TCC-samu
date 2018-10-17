@@ -5,7 +5,7 @@
 
 <div class="container">
     <div class="row">
-        <h2>Guia de Navegação</h2>
+        <h2>Guia de Navegação para a Comunidade</h2>
         
     </div>
     <br><br>

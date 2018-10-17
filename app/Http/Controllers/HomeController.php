@@ -62,6 +62,11 @@ class HomeController extends Controller
 
     }
 
+    public function ajudaColaborador()
+    {
+        return view('ajudaColaborador');    
+    }
+
     public function persisteNoticia(Request $request){
 
 

@@ -22,9 +22,11 @@ Route::get('/admin', ['middleware' => 'authAdmin', 'uses' => 'HomeController@adm
 Route::get('/about', 'OuvidoriaController@sobre');
 Route::get('/ajuda', 'HomeController@ajuda');
 
+//rotas de instrução
+Route::get('/ajudaComunidade', 'OuvidoriaController@ajudaComunidade');
+Route::get('/ajudaColaborador', 'HomeController@ajudaColaborador');
 
 //rotas ouvidoria
-Route::get('/ajudaComunidade', 'OuvidoriaController@ajudaComunidade');
 Route::get('/ouvidoria', 'OuvidoriaController@ouvidoria');
 Route::post('/saveFeedback', 'OuvidoriaController@saveFeedback');
 Route::get('/adminOuvidoria', ['middleware' => 'authAdmin', 'uses' => 'HomeController@ouvidoria' ]);
