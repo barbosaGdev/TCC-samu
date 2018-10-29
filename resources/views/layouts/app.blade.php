@@ -47,10 +47,28 @@
             </li>
 
                @guest
-                    <li><a class="nav-link navHome" href="{{ route('login') }}"><font color="white" size="3px">NEP</font></a></li>
+                    
                         
                         
                     <li class="nav-item dropdown">
+                            <a  class="nav-link dropdown-toggle navHome" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                    <font color="white" class="Titulo"size="3px">Instruções</font> <span class="caret"></span>
+                        </a>
+  
+                 <div class="dropdown-menu Texto" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item Texto" href="/ajudaComunidade">
+                                        Comunidade
+                    </a>
+
+                    <a class="dropdown-item Texto" href="/ajudaColaborador">
+                                        Colaborador
+                    </a>
+                    <li><a class="nav-link navHome" href="{{ route('login') }}"><font color="white" size="3px">NEP</font></a></li>
+                      
+                        @else
+
+                         <li class="nav-item dropdown">
                             <a  class="nav-link dropdown-toggle navHome" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
                                     <font color="white" class="Titulo"size="3px">Instruções</font> <span class="caret"></span>
@@ -64,12 +82,8 @@
                     <a class="dropdown-item Texto" href="/ajudaColaborador">
                                         Colaborador
                     </a>
-                      
-                        @else
-
-                    
-
-                        <li class="nav-item dropdown">
+ 
+                    <li class="nav-item dropdown">
                             <a  class="nav-link dropdown-toggle navHome" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
                                     <font color="white" class="Titulo"size="3px">{{ Auth::user()->name }}</font> <span class="caret"></span>
@@ -88,22 +102,6 @@
                                 document.getElementById('logout-form').submit();">
                                         Sair
                     </a>
-
-                         <li class="nav-item dropdown">
-                            <a  class="nav-link dropdown-toggle navHome" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                                    <font color="white" class="Titulo"size="3px">Instruções</font> <span class="caret"></span>
-                        </a>
-
-                 <div class="dropdown-menu Texto" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item Texto" href="/ajudaComunidade">
-                                        Comunidade
-                    </a>
-
-                    <a class="dropdown-item Texto" href="/ajudaColaborador">
-                                        Colaborador
-                    </a>
- 
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
