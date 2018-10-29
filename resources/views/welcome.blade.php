@@ -60,7 +60,7 @@
               psiquiátrica, entre outras). O serviço SAMU 192 presta socorro a população nas 
               residências, locais de trabalho e vias públicas. A equipe é composta por condutores-socorristas, 
               técnicos em enfermagem, enfermeiros e médicos, todos capacitados em atendimento de 
-              urgência de natureza traumática, clínica, pediátrica, obstétricas e psiquiátricas.</p>
+              urgência e emergência.</p>
           
        </div>
 
@@ -97,7 +97,7 @@
                                     <p  class="Texto"  > O que é a Hipoglicemia? <br><br>                             
 
                                         A Hipoglicemia ocorre quando há falta de açúcar no sangue (falta de glicose). Geralmente acontece no período da manhã e não ocorre necessariamente com pessoas diabéticas.<br> 
-                                        A glicose é responsável por levar o oxigênio para o cérebro; com a diminuição ocorre tonturas , confusão mental e até parada respiratória.<br> <br> 
+                                        A glicose é responsável por levar o oxigênio para o cérebro; com a diminuição ocorre tonturas, confusão mental e até parada respiratória.<br> <br> 
 
 
                                         Como reconhecer? Sinais e sintomas:<br> <br> 
@@ -119,7 +119,7 @@
                                         Deitar a pessoa (com as pernas mais elevadas que a cabeça);<br>
                                         Aguardar o atendimento chegar.<br><br>
 
-                                        Como proceder em casos mais graves? (pessoa inconsciente)<br><br>
+                                        Como proceder em casos mais graves? (Pessoa inconsciente)<br><br>
 
                                         Ligar 192;<br>
                                         Se possível colocar a pessoa em um local ventilado;<br>
@@ -160,7 +160,7 @@
                                     <p class="Texto"> O que são as Convulsões? <br><br>
                                       
                                         Convulsões geralmente são problemas neurológicos causados por uma descarga elétrica no cérebro.<br>
-                                        Em alguns casos ocorrem devidos a TCE's ( Trauma Crânio Encefálico) e overdoses.<br><br>
+                                        Em alguns casos ocorrem devidos a TCE's (Trauma Crânio Encefálico) e overdoses.<br><br>
 
                                         Como reconhecer? Sinais e sintomas:<br><br>
 
@@ -311,7 +311,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
           <div class="card h-100 shadowCard">
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white">Engasgo</font></h4>
             <div class="card-body">
-              <p class="card-text Texto animated fadeInDown"  >Denominamos engasgo quando ocorre o bloqueio da traqueia ( órgão responsável em enviar e retirar o ar dos pulmões) por um objeto estranho, por vômito ou até mesmo sangue. Fisiologicamente, a traqueia é frequentemente protegida pela epiglote; esta nada mais serve como uma porta que abre e fecha, conforme a necessidade de ar. </p>
+              <p class="card-text Texto animated fadeInDown"  >Denominamos engasgo quando ocorre o bloqueio da traqueia (órgão responsável em enviar e retirar o ar dos pulmões) por um objeto estranho, por vômito ou até mesmo sangue. Fisiologicamente, a traqueia é frequentemente protegida pela epiglote; esta nada mais serve como uma porta que abre e fecha, conforme a necessidade de ar. </p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
               <a href="#" class="btn btn-primary Texto animated fadeInDown" data-toggle="modal" data-target="#myModal5" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
@@ -326,9 +326,9 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
 				<div class="modal-body">
                                     <p class="Texto" > O que é engasgo? <br><br>
 
-                                        Denominamos engasgo quando ocorre o bloqueio da traqueia ( órgão responsável em enviar e retirar o ar dos pulmões) por um objeto estranho, por vômito ou até mesmo sangue. Fisiologicamente, a traqueia é frequentemente protegida pela epiglote; esta nada mais serve como uma porta que abre e fecha, conforme a necessidade de ar. Assim, quando ocorre a passagem de ar, a epiglote permanece aberta, porém quando ocorre a alimentação, a epiglote é fechada, impedindo que qualquer alimento ou corpo estranho, alcance a traqueia e, posteriormente, os pulmões.<br><br>
+                                        Denominamos engasgo quando ocorre o bloqueio da traqueia (órgão responsável em enviar e retirar o ar dos pulmões) por um objeto estranho, por vômito ou até mesmo sangue. Fisiologicamente, a traqueia é frequentemente protegida pela epiglote; esta nada mais serve como uma porta que abre e fecha, conforme a necessidade de ar. Assim, quando ocorre a passagem de ar, a epiglote permanece aberta, porém quando ocorre a alimentação, a epiglote é fechada, impedindo que qualquer alimento ou corpo estranho, alcance a traqueia e, posteriormente, os pulmões.<br><br>
  
-                                        Dessa forma, quando a epiglote falha em sua função, os alimentos, líquidos ou qualquer tipo de objeto estranho, ultrapassa a epiglote, alcançando a traqueia, ocasionando o bloqueio do ar. Por isso que, em alguns casos, o engasgo pode levar à morte por asfixia e, às vezes, pode até deixar a pessoa parcialmente ou totalmente inconsciente.<br>
+                                        Dessa forma, quando a epiglote falha em sua função, os alimentos, líquidos ou qualquer tipo de objeto estranho, ultrapassa a epiglote, alcançando a traqueia, ocasionando o bloqueio do ar. Por isso que, em alguns casos, o engasgo pode levar à morte por asfixia e, às vezes, pode até deixar a pessoa parcialmente ou totalmente inconsciente.<br><br>
 
                                         É necessário saber que dependendo da gravidade do engasgo, este é uma situação de emergência médica, sendo necessário chamar o serviço de atendimento especializado em emergência o mais rápido possível; pode ser uma questão de vida ou morte!<br><br>
                                       
@@ -352,7 +352,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
 
                                         Bebê consciente:<br><br>
 
-                                        Coloque o bebê de bruços em cima de seu braço e faça 5 compressões entre as escápulas ( no meio das costas);<br>
+                                        Coloque o bebê de bruços em cima de seu braço e faça 5 compressões entre as escápulas (no meio das costas);<br>
                                         Depois, vire o bebê de barriga para cima e faça 5 compressões sobre o esterno (osso do meio);<br>
                                         Se conseguir visualizar o objeto, retire o mesmo;<br>
                                         Caso não seja possível a visualização do objeto, nem a retirada, continue realizando as compressões até a chegada do serviço de emergência.<br><br>
@@ -380,7 +380,7 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
           <div class="card h-100 shadowCard">
             <h4 class="card-header Titulo animated fadeInDown" style="background-color: rgb(25, 25, 112);"><font color="white" class="Titulo">Desmaio</font></h4>
             <div class="card-body">
-              <p class="card-text Texto animated fadeInDown">O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.</p>
+              <p class="card-text Texto animated fadeInDown">O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é "Síncope". Um desmaio geralmente dura de alguns segundos a alguns minutos.</p>
             </div>
             <div class="card-footer" style="background-color: rgb(25, 25, 112);">
               <a href="#" class="btn btn-primary Texto animated fadeInDown" data-toggle="modal" data-target="#myModal6" style="background-color: orangered;border-color: orangered;">Leia Mais</a>
@@ -395,12 +395,12 @@ Um exemplo de queda acidental, seria quando se cai de uma escada ou de uma cadei
 				<div class="modal-body">
                                     <p class="Texto"> O que é Desmaio? <br><br>
 
-                                      O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é síncope. Um desmaio geralmente dura de alguns segundos a alguns minutos.
+                                      O desmaio acontece quando você perde a consciência por um curto período de tempo. O termo médico para o desmaio é "Síncope". Um desmaio geralmente dura de alguns segundos a alguns minutos.
                                       É a perda momentânea dos sentidos.<br><br>
 
                                       Sintomas Apresentados:<br><br>
 
-                                      Inconsciência, suor abundante, pulso e respiração fracos, visão nublada.<br><br>
+                                      Inconsciência, suor abundante, pulso e respiração fraca, visão nublada.<br><br>
 
                                       <img class="imgi" src="{{ asset('images/desmaio.jpg') }}" width="500"> <br><br>
 
