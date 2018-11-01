@@ -99,7 +99,7 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `onsamu`.`noticias` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `titulo_noticia` VARCHAR(45) NOT NULL,
+  `titulo_noticia` VARCHAR(150) NOT NULL,
   `texto` LONGTEXT NOT NULL,
   `imagem1` LONGTEXT NOT NULL,
   `created_at` TIMESTAMP NULL,
