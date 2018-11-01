@@ -47,7 +47,7 @@ $j='';
 
 <div class="form-group">
 <label for="descricao"class="Texto">Descrição</label>
-<input rows="6" cols="100" type="text" class="Texto form-control" name="descricao" id="descricao" value="{{$dados->descricao}}"></input>
+<textarea rows="6" cols="100" type="text" class="Texto form-control" name="descricao" id="descricao" >{{$dados->descricao}}</textarea>
 </div>
 
 <div class="form-group">

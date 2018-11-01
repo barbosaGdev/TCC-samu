@@ -6,7 +6,7 @@
     <div class="container">
  
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3 Titulo">{{$dados->titulo_noticia}}
+      <h1 class="mt-4 mb-3 Titulo">{{$dados->titulo_noticia}} 
       </h1>
 
       <div class="row">
@@ -23,12 +23,12 @@
           <hr>    
           
           
-          <!--<img src="{{$dados->imagem1}}"  height="300"> -->
+          
 
           
           
 
-          <figure class="right"><img src="{{$dados->imagem1}}"  alt="mossy log with ferns growing out of it">
+          <figure class="right"><img  width="888" height="592" src="{{$dados->imagem1}}">
           </figure>
 
           

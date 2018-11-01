@@ -21,9 +21,11 @@
     <br>
     @if ($v->imagem1 == '')
     @else
-    <div>
-    <img width="560" height="315" src="{{$v->imagem1}}">
-    </div>
+
+
+    <img width="560" height="315" class="img-fluid" src="{{$v->imagem1}}">
+
+   
      @endif
     <br>
     <div class="align-right">

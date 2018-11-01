@@ -171,7 +171,9 @@ class CursoController extends Controller
 
     public function editarCurso(Curso $dados)
     {
+
         $videos = Video_curso::Where('cursos_id', '=', $dados->id)->get();
+
         return view('editarCurso', compact('dados', 'videos'));
     }
 
