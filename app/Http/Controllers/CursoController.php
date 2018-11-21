@@ -144,6 +144,59 @@ class CursoController extends Controller
 
     }
 
+    public function gerarExcel(User $users){
+        
+        $users = Cursos_has_user::All();
+
+        $arqexcel =  "<meta charset='utf-8'>";
+         
+        $arqexcel .= "<table class='table table-striped tableAbout'>
+        <thead>
+            <tr>
+                
+                <th class='Texto thAbout'>Nome</th>
+                <th class='Texto thAbout'>Curso</th>
+                <th class='Texto thAbout'>Data do ultimo acesso</th>
+    
+            </tr>
+        </thead>
+        <tbody>";
+
+                foreach($users as $d){
+          $arqexcel .="   <tr>
+                <td class='Texto'>  $d->nome}</td>
+                <td class='Texto'>{ $d->curso }}</td>
+                <td class='Texto'>{ $d->acesso }}</td>
+            </tr>";
+                }   
+    
+         $arqexcel .= "</tbody>
+    
+       </table>";     
+        
+        // Determina que o arquivo é uma planilha do Excel
+        header("Content-type: application/vnd.ms-excel");   
+
+        // Força o download do arquivo
+        header("Content-type: application/force-download");  
+
+        // Seta o nome do arquivo
+        header("Content-Disposition: attachment; filename = file.xls");
+
+        header("Pragma: no-cache");
+        // Imprime o conteúdo da nossa tabela no arquivo que será gerado
+        echo $arqexcel;
+
+        return view('welcome');
+
+        
+
+    }
+
+
+
+       
+
     //rota que exclui historico de acesso dos usuarios
     public function deleteUsers()
     {

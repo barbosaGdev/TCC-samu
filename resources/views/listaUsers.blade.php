@@ -24,7 +24,7 @@
                 </thead>
                 <tbody>
                 @foreach($users as $d)
-
+                    
                     <tr>
                         <td class="Texto">{{ $d->nome }}</td>
                         <td class="Texto">{{ $d->curso }}</td>
@@ -35,6 +35,11 @@
                 
                 </tbody>
         </table>
+        <form action="/gerarExcel" method="post" enctype="multipart/form-data">
+        {{ csrf_field() }}
+            <button class="btn Texto" style="background: #191970;color: white;">Gerar Excel</button>
+        </form>
     </div>
+        
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 @endsection
