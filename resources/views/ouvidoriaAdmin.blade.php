@@ -23,6 +23,7 @@
                     <th class="Texto thAbout">Telefone para Contato</th>
                     <th class="Texto thAbout">Email para Contato</th>
                     <th class="Texto thAbout">Texto</th>
+                    <th class="Texto thAbout">Status</th>
                     
                 </tr>
             </thead>
@@ -33,6 +34,20 @@
                     <td class="Texto">{{ $value->telefone }}</td>
                     <td class="Texto">{{ $value->email }}</td>
                     <td class="Texto tdOuvidoria">{{ $value->texto }}</td>
+                    <form method="post" style="display: inline;" action="/alterarSituacao">
+                    {{csrf_field()}}
+                    @if($value->resolvido == 0)
+                    <input type="hidden" name="situacao" value="1">
+                    <input type="hidden" name="id" value="{{$value->id}}">
+                       <td class="Texto"> <button class="btn Texto" style="background: #FF0000;color: white;" onclick="return confirm('Tem certeza que deseja marcar como resolvido?'); return false;">Em Análise</button>
+                        </td>
+                    @else
+                    <input type="hidden" name="situacao" value="0">
+                    <input type="hidden" name="id" value="{{$value->id}}">
+                    <td class="Texto"> <button class="btn Texto" style="background: #00FF00;color: white;" onclick="return confirm('Tem certeza que deseja colocar em Análise?'); return false;">Resolvido</button>
+                        </td>
+                    @endif
+                 </form> 
                 </tr>
 
 

@@ -149,7 +149,15 @@ class HomeController extends Controller
 
     
     
+    public function alterarSituacao(Request $request){
 
+        $dados = Feedback::find($request->id);
+
+        $dados->resolvido = $request->situacao;
+        $dados->save();
+
+        return redirect("/adminOuvidoria");
+    }
 
     
 

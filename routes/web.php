@@ -22,6 +22,7 @@ Route::get('/admin', ['middleware' => 'authAdmin', 'uses' => 'HomeController@adm
 Route::get('/about', 'OuvidoriaController@sobre');
 Route::get('/ajuda', 'HomeController@ajuda');
 
+
 //rotas de instrução
 Route::get('/ajudaComunidade', 'OuvidoriaController@ajudaComunidade');
 Route::get('/ajudaColaborador', 'HomeController@ajudaColaborador');
@@ -31,6 +32,7 @@ Route::get('/ouvidoria', 'OuvidoriaController@ouvidoria');
 Route::post('/saveFeedback', 'OuvidoriaController@saveFeedback');
 Route::get('/adminOuvidoria', ['middleware' => 'authAdmin', 'uses' => 'HomeController@ouvidoria' ]);
 Route::post('/deleteOuvidoria', ['middleware' => 'authAdmin', 'uses' => 'HomeController@DelOuvidoria' ]);
+Route::post('/alterarSituacao', ['middleware' => 'authAdmin', 'uses' => 'HomeController@alterarSituacao' ]);
 
 //rotas curso
 Route::get('/adminAddCurso', ['middleware' => 'authAdmin', 'uses' => 'CursoController@adminAddCurso' ]);
@@ -49,6 +51,7 @@ Route::post('/deleteColaborador/{user}', ['middleware' => 'authAdmin', 'uses' =>
 Route::get('/cursos', 'CursoController@cursos');
 Route::get('/cursosView/{dados}', 'CursoController@cursosView');
 Route::get('/searchCursos', 'CursoController@searchCursos');
+
 
 //rotas notícia
 Route::get('/noticiaInsere', ['middleware' => 'authAdmin', 'uses' => 'HomeController@inserirNoticia' ]);
