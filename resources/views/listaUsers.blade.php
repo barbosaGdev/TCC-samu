@@ -35,10 +35,8 @@
                 
                 </tbody>
         </table>
-        <form action="/gerarExcel" method="post" enctype="multipart/form-data">
-        {{ csrf_field() }}
-            <button class="btn Texto" style="background: #191970;color: white;">Gerar Excel</button>
-        </form>
+            
+
     </div>
         
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

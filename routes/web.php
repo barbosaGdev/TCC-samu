@@ -51,7 +51,7 @@ Route::post('/deleteColaborador/{user}', ['middleware' => 'authAdmin', 'uses' =>
 Route::get('/cursos', 'CursoController@cursos');
 Route::get('/cursosView/{dados}', 'CursoController@cursosView');
 Route::get('/searchCursos', 'CursoController@searchCursos');
-Route::post('/gerarExcel', 'CursoController@gerarExcel');
+Route::get('/gerarExcel', 'CursoController@gerarExcel');
 
 
 

@@ -48,6 +48,8 @@
             {{csrf_field()}}
             <button class="btn Texto" style="background: #191970;color: white;" onclick="return confirm('Tem certeza que deseja limpar o histórico de acesso?'); return false;">Limpar Histórico</button>
          </form> 
+
+         <a href="/gerarExcel" class="btn Texto" style="background: #191970;color: white;">Gerar Excel</a>
     </div>
      
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

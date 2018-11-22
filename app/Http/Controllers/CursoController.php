@@ -144,50 +144,49 @@ class CursoController extends Controller
 
     }
 
-    public function gerarExcel(User $users){
+    public function gerarExcel(){
         
+        //Coletando dados do banco
         $users = Cursos_has_user::All();
+        //Nome que será exportado
+        $arquivo = "listaUsers.xls";
+        //Tabela html com formato de planilha
+        $html = '';
+		$html .= '<table border="1">';
+		$html .= '<tr>';
+		$html .= '<td colspan="5">Acesso do Usuário</tr>';
+		$html .= '</tr>';
+		
+		
+		$html .= '<tr>';
+		$html .= '<td><b>Nome</b></td>';
+		$html .= '<td><b>Curso</b></td>';
+		$html .= '<td><b>Data do último acesso</b></td>';
+		$html .= '</tr>';
 
-        $arqexcel =  "<meta charset='utf-8'>";
-         
-        $arqexcel .= "<table class='table table-striped tableAbout'>
-        <thead>
-            <tr>
-                
-                <th class='Texto thAbout'>Nome</th>
-                <th class='Texto thAbout'>Curso</th>
-                <th class='Texto thAbout'>Data do ultimo acesso</th>
-    
-            </tr>
-        </thead>
-        <tbody>";
-
-                foreach($users as $d){
-          $arqexcel .="   <tr>
-                <td class='Texto'>  $d->nome}</td>
-                <td class='Texto'>{ $d->curso }}</td>
-                <td class='Texto'>{ $d->acesso }}</td>
-            </tr>";
-                }   
-    
-         $arqexcel .= "</tbody>
-    
-       </table>";     
         
-        // Determina que o arquivo é uma planilha do Excel
-        header("Content-type: application/vnd.ms-excel");   
 
-        // Força o download do arquivo
-        header("Content-type: application/force-download");  
+        foreach($users as $u){
+        $html .= '<tr>';
+		$html .= '<td>'.$u->nome.'</td>';
+		$html .= '<td>'.$u->curso.'</td>';
+        $html .= '<td>'.$u->acesso.'</td>';
+        }
 
-        // Seta o nome do arquivo
-        header("Content-Disposition: attachment; filename = file.xls");
+        //Forçar download do arquivo no excel
+		header ("Cache-Control: no-cache, must-revalidate");
+		header ("Pragma: no-cache");
+		header ("Content-type: application/x-msexcel");
+		header ("Content-Disposition: attachment; filename=\"{$arquivo}\"" );
+		header ("Content-Description: PHP Generated Data" );
 
-        header("Pragma: no-cache");
-        // Imprime o conteúdo da nossa tabela no arquivo que será gerado
-        echo $arqexcel;
+        echo $html;
+        exit;
 
-        return view('welcome');
+        return view('listaUsers');
+
+
+        
 
         
 
