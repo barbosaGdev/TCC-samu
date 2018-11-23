@@ -144,19 +144,43 @@ class CursoController extends Controller
 
     }
 
-    public function gerarExcel(){
+    public function gerarExcel (){
+
+        
+         $users = DB::table('cursos_has_users')
+         ->join('cursos', 'cursos.id', '=', 'cursos_has_users.cursos_id')
+         ->join('users', 'users.id', '=', 'cursos_has_users.users_id')
+         ->select('users.name as nome', 'cursos.nome as curso', 'cursos_has_users.created_at as acesso')
+         ->get();
+
+         //dd($users);
         
         //Coletando dados do banco
-        $users = Cursos_has_user::All();
+        //$users = Cursos_has_user::All();
+
+        
+
         //Nome que será exportado
         $arquivo = "listaUsers.xls";
         //Tabela html com formato de planilha
         $html = '';
+
+        $html .= "Acesso do usuário\r\n";
+        $html .= "Nome\tCurso\tData do último acesso\r\n";
+
+
+
+        foreach ($users as $user) {
+            $html .= implode("\t", array_values(get_object_vars($user))) . "\r\n";
+        }
+        
+
+
+        /*
 		$html .= '<table border="1">';
 		$html .= '<tr>';
 		$html .= '<td colspan="5">Acesso do Usuário</tr>';
 		$html .= '</tr>';
-		
 		
 		$html .= '<tr>';
 		$html .= '<td><b>Nome</b></td>';
@@ -164,14 +188,14 @@ class CursoController extends Controller
 		$html .= '<td><b>Data do último acesso</b></td>';
 		$html .= '</tr>';
 
-        
-
         foreach($users as $u){
         $html .= '<tr>';
 		$html .= '<td>'.$u->nome.'</td>';
 		$html .= '<td>'.$u->curso.'</td>';
         $html .= '<td>'.$u->acesso.'</td>';
         }
+
+        */
 
         //Forçar download do arquivo no excel
 		header ("Cache-Control: no-cache, must-revalidate");
