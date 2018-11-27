@@ -129,7 +129,7 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 
-INSERT INTO `onsamu`.`users` (`id`, `name`, `password`, `email`, `created_at`, `updated_at`) VALUES (1,'samu', '$2y$10$D8VVa8Gu.NBiOCkArbSx4OB91.CJXPxiC4iF38m2hEcUj/FmHRsZS', 'admin@samu.com', '2018-04-19 16:34:39', '2018-04-19 16:34:39');
+INSERT INTO `onsamu`.`users` (`id`, `name`, `password`, `email`, `created_at`, `updated_at`) VALUES (1,'SAMU', '$2y$10$D8VVa8Gu.NBiOCkArbSx4OB91.CJXPxiC4iF38m2hEcUj/FmHRsZS', 'admin@samu.com', '2018-04-19 16:34:39', '2018-04-19 16:34:39');
 
 
 ALTER TABLE `onsamu`.`feedback` 
