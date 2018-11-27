@@ -12,6 +12,12 @@
 .logoo{
     font-family: 'Roboto', sans-serif;
 }
-
+.dropdown-menu {
+    text-align: left !important;
+    align-items: left !important;
+}
+.dropdown-item {
+    padding: 0.2em !important;
+}
 
 

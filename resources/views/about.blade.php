@@ -123,7 +123,7 @@
     <div class="carousel-inner row w-100 mx-auto">
       <div class="carousel-item col-md-4 active">
         <div class="card">
-          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f44242/fff" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="{{ asset('images/b1.jpg') }}" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Gabriel Barbosa</h4>
             <p class="card-text">Gerente</p>
@@ -134,7 +134,7 @@
       </div>
       <div class="carousel-item col-md-4">
         <div class="card">
-          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/418cf4/fff" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="{{ asset('images/jp2.jpg') }}" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">João Pedro</h4>
             <p class="card-text">Programador</p>
@@ -145,7 +145,7 @@
       </div>
       <div class="carousel-item col-md-4">
         <div class="card">
-          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/3ed846/fff" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="{{ asset('images/eu2.jpg') }}" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">João Vitor</h4>
             <p class="card-text">Designer</p>
@@ -156,7 +156,7 @@
       </div>
       <div class="carousel-item col-md-4">
         <div class="card">
-          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/42ebf4/fff" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="{{ asset('images/ju4.jpg') }}" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Julia Souza</h4>
             <p class="card-text">Programadora</p>
@@ -167,7 +167,7 @@
       </div>
       <div class="carousel-item col-md-4">
         <div class="card">
-          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f4f141/fff" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="{{ asset('images/v1.jpg') }}" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Victor Marques</h4>
             <p class="card-text">Banco de Dados</p>
@@ -228,4 +228,4 @@
 
     <link href="{{ asset('css/carousel.css') }}" rel="stylesheet">
     
-@endsection
+@endsectione

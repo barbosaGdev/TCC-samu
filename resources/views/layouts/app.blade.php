@@ -91,9 +91,10 @@
 
                  <div class="dropdown-menu Texto" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item Texto" href="/cursos">
-                                        Meus Cursos
+                                        Meus Cursos 
                     </a>
-
+  
+                  
                     <a class="dropdown-item Texto" href="{{ route('logout') }}"
 
                     <a class="dropdown-item Texto" href="{{ route('logout') }}"

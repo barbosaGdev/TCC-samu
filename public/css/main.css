@@ -131,3 +131,7 @@
 .tdOuvidoria {
     word-wrap: break-word;
 }
+.dropdown-menu {
+    text-align: left !important;
+    align-items: left !important;
+}
