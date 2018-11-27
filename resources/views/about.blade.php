@@ -228,4 +228,4 @@
 
     <link href="{{ asset('css/carousel.css') }}" rel="stylesheet">
     
-@endsectione
+@endsection
