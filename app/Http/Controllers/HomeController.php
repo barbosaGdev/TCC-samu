@@ -49,6 +49,7 @@ class HomeController extends Controller
         return view('ouvidoriaAdmin', compact('dados'));
     }
 
+
     public function DelOuvidoria()
     {
         Feedback::getQuery()->delete();

@@ -161,7 +161,7 @@ class CursoController extends Controller
         
 
         //Nome que será exportado
-        $arquivo = "listaUsers.xls";
+        $arquivo = "listaAcesso.xls";
         //Tabela html com formato de planilha
         $html = '';
 
