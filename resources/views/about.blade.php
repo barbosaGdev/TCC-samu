@@ -127,7 +127,7 @@
           <div class="card-body">
             <h4 class="card-title">Gabriel Barbosa</h4>
             <p class="card-text">Gerente</p>
-            <p class="card-text">Estudante, capoeirista, poeta, amante de programação e filosofia.</p>
+            <p class="card-text">Estudante, poeta, amante de programação e filosofia.</p>
             <p class="card-text"><small class="text-muted">biki.jam@hotmail.com</small></p>
           </div>
         </div>
@@ -138,7 +138,7 @@
           <div class="card-body">
             <h4 class="card-title">João Pedro</h4>
             <p class="card-text">Programador</p>
-            <p class="card-text">Estudante, jogador de Fortnite, amante do mundo dos games</p>
+            <p class="card-text">Estudante, amante de programação.</p>
             <p class="card-text"><small class="text-muted">jpfreitas2001@gmail.com</small></p>
           </div>
         </div>
@@ -149,7 +149,7 @@
           <div class="card-body">
             <h4 class="card-title">João Vitor</h4>
             <p class="card-text">Designer</p>
-            <p class="card-text">Estudante, músico, atleta, adora tecnologia e jogos</p>
+            <p class="card-text">Estudante, músico, adora tecnologia e jogos</p>
             <p class="card-text"><small class="text-muted">vitorsilvestre9@hotmail.com</small></p>
           </div>
         </div>
@@ -160,7 +160,7 @@
           <div class="card-body">
             <h4 class="card-title">Julia Souza</h4>
             <p class="card-text">Programadora</p>
-            <p class="card-text">Estudante, ex atleta, garota gamer, adora memes e cachorros</p>
+            <p class="card-text">Estudante, ex atleta, garota gamer, adora memes e animais.</p>
             <p class="card-text"><small class="text-muted">jsouzajj27@gmail.com</small></p>
           </div>
         </div>
@@ -171,7 +171,7 @@
           <div class="card-body">
             <h4 class="card-title">Victor Marques</h4>
             <p class="card-text">Banco de Dados</p>
-            <p class="card-text">Estudante, atleta, gosta de ler e de arte</p>
+            <p class="card-text">Estudante, gosta de esportes e musculação, adora tecnologias porém pretende ser policial.</p>
             <p class="card-text"><small class="text-muted">victormarques090600@gmail.com</small></p>
           </div>
         </div>
@@ -181,7 +181,7 @@
           <img class="card-img-top img-fluid" src="{{ asset('images/ba2.jpg') }}" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Bárbara</h4>
-            <p class="card-text">Escritora</p>
+            <p class="card-text">Escritora/Marketing</p>
             <p class="card-text">Estudante, apreciadora do mundo automotivo, adora animais como gatos.</p>
             <p class="card-text"><small class="text-muted">ba.burgo@gmail.com</small></p>
           </div>
@@ -192,8 +192,8 @@
           <img class="card-img-top img-fluid" src="{{ asset('images/mu4.jpg') }}" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Murilo</h4>
-            <p class="card-text">Escritor</p>
-            <p class="card-text">Estudante, jogador profissional de qualquer jogo eletrônico, amante de RPGs e outras coisas do mundo geek</p>
+            <p class="card-text">Escritor/Marketing</p>
+            <p class="card-text">Estudante, amante de jogos eletrônicos, RPGs entre outras coisas.</p>
             <p class="card-text"><small class="text-muted">murilo.camilo.martins@hotmail.com<</small></p>
           </div>
         </div>
